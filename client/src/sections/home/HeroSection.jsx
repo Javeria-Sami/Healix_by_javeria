@@ -289,10 +289,10 @@ export function HeroSection() {
                 <div className="pt-2">
                   <Link
                     to={currentSlide.ctaLink}
-                    className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] text-sm sm:text-base font-extrabold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all active:scale-[0.99] group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F]"
+                    className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#075C49] hover:bg-[#054839] text-[#8FD21F] text-sm sm:text-base font-extrabold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all active:scale-[0.99] group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F]"
                   >
                     <span>{currentSlide.ctaText}</span>
-                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 group-hover:translate-x-1 text-[#10231E]" />
+                    <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 group-hover:translate-x-1 text-[#8FD21F]" />
                   </Link>
                 </div>
               </div>
