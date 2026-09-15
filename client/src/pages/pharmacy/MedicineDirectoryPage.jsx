@@ -61,7 +61,7 @@ export default function MedicineDirectoryPage() {
             <span>/</span>
             <Link to={ROUTES.PHARMACY} className="hover:text-primary-600 transition-colors">Pharmacy</Link>
             <span>/</span>
-            <span className="text-neutral-900 font-semibold" aria-current="page">Medicines Directory</span>
+            <span className="text-[#075B43] font-semibold" aria-current="page">Medicines Directory</span>
           </nav>
 
           <div className="max-w-2xl">
@@ -73,11 +73,11 @@ export default function MedicineDirectoryPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         {/* Results Count Header */}
         <div className="mb-6">
-          <span className="text-sm font-bold text-neutral-900">
+          <span className="text-sm font-bold text-[#075B43]">
             {sortedMedicines.length} {sortedMedicines.length === 1 ? 'Product' : 'Products'} available
           </span>
           {selectedLetter && (
-            <span className="ml-3 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800 text-xs font-semibold">
+            <span className="ml-3 px-2.5 py-0.5 rounded-full bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] text-xs font-semibold">
               Starting with "{selectedLetter}"
             </span>
           )}
@@ -95,7 +95,7 @@ export default function MedicineDirectoryPage() {
             <div className="w-16 h-16 mx-auto rounded-2xl bg-neutral-100 flex items-center justify-center text-3xl mb-4">
               🔍
             </div>
-            <h2 className="text-lg font-bold text-neutral-900 mb-1">
+            <h2 className="text-lg font-bold text-[#075B43] mb-1">
               No medicines found starting with "{selectedLetter}"
             </h2>
             <p className="text-sm text-neutral-500 mb-6">
@@ -105,7 +105,7 @@ export default function MedicineDirectoryPage() {
               <button
                 type="button"
                 onClick={() => handleSelectLetter('')}
-                className="px-4 py-2 bg-primary-600 text-white rounded-xl text-sm font-semibold hover:bg-primary-700 transition-colors shadow-sm"
+                className="px-4 py-2 bg-[#075B43] text-white rounded-xl text-sm font-semibold hover:bg-[#064C38] transition-colors shadow-sm"
               >
                 View All Medicines
               </button>

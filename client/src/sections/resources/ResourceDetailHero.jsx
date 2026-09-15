@@ -37,7 +37,7 @@ export function ResourceDetailHero({ article }) {
             </div>
           </div>
 
-          <h1 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-900 tracking-tight leading-[1.18]">
+          <h1 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#075B43] tracking-tight leading-[1.18]">
             {article.title}
           </h1>
 
@@ -54,9 +54,9 @@ export function ResourceDetailHero({ article }) {
                 <User className="w-5 h-5 stroke-[2]" />
               </div>
               <div>
-                <div className="font-bold text-sm text-neutral-900">
+                <div className="font-bold text-sm text-[#075B43]">
                   {article.authorSlug ? (
-                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#075B43] transition-colors">
+                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#0D7657] transition-colors">
                       {article.author}
                     </Link>
                   ) : (

@@ -29,7 +29,7 @@ export function ResourceContentBody({ article }) {
         <div className="space-y-8 text-neutral-700 leading-relaxed font-body">
           {article.sections.map((section, idx) => (
             <div key={idx} className="space-y-3">
-              <h2 className="font-heading text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight leading-snug">
+              <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight leading-snug">
                 {section.heading}
               </h2>
               <p className="text-base sm:text-[17px] leading-[1.8] text-neutral-700">

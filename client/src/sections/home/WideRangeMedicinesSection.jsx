@@ -67,7 +67,7 @@ export function WideRangeMedicinesSection() {
 
             <h2
               id="wide-range-medicines-heading"
-              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#075B43] tracking-tight leading-tight"
             >
               Wide Range of Medicines
             </h2>
@@ -140,7 +140,7 @@ export function WideRangeMedicinesSection() {
               {/* Product Meta & Pricing */}
               <div className="space-y-3 text-left">
                 <div className="space-y-0.5">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-neutral-900 group-hover:text-[#075B43] transition-colors leading-snug">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
                     <Link
                       to={`/pharmacy/medicine/${featuredProduct.slug}`}
                       className="focus:outline-none focus-visible:underline"
@@ -231,7 +231,7 @@ export function WideRangeMedicinesSection() {
                   {/* Product Details & Price */}
                   <div className="space-y-2 text-left">
                     <div className="space-y-0.5">
-                      <h3 className="font-heading text-xs sm:text-sm font-bold text-neutral-900 group-hover:text-[#075B43] transition-colors line-clamp-1 leading-snug">
+                      <h3 className="font-heading text-xs sm:text-sm font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors line-clamp-1 leading-snug">
                         <Link
                           to={`/pharmacy/medicine/${product.slug}`}
                           className="focus:outline-none focus-visible:underline"

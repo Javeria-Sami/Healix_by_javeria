@@ -25,10 +25,10 @@
     overflow-x: hidden;
   }
 
-  /* Headings Defaults */
+  /* Headings Defaults - Healix Deep Green (#075B43) */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    color: var(--color-text-primary);
+    color: #075B43;
     letter-spacing: -0.02em;
     font-weight: var(--weight-bold);
     line-height: var(--leading-tight);

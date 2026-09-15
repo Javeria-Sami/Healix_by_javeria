@@ -36,7 +36,7 @@ export default function PharmacyPage() {
             Verified Online Pharmacy & Health Store
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-tight max-w-4xl mx-auto font-heading">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#075B43] mb-6 leading-tight max-w-4xl mx-auto font-heading">
             Your Medicines, Delivered With Care
           </h1>
 
@@ -53,7 +53,7 @@ export default function PharmacyPage() {
                 <Link
                   key={term}
                   to={`${ROUTES.PHARMACY_SEARCH}?q=${encodeURIComponent(term)}`}
-                  className="px-2.5 py-1 bg-white hover:bg-neutral-100 border border-border rounded-lg text-text-primary hover:text-primary transition-colors shadow-2xs"
+                  className="px-2.5 py-1 bg-white hover:bg-neutral-100 border border-border rounded-lg text-[#075B43] hover:text-[#0D7657] transition-colors shadow-2xs font-medium"
                 >
                   {term}
                 </Link>
@@ -65,13 +65,13 @@ export default function PharmacyPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               to={ROUTES.PHARMACY_PRESCRIPTION}
-              className="px-6 py-3.5 bg-primary hover:bg-primary-hover text-white font-bold rounded-2xl transition-all shadow-md"
+              className="px-6 py-3.5 bg-[#075B43] hover:bg-[#064C38] text-white font-bold rounded-2xl transition-all shadow-md"
             >
               Upload Prescription
             </Link>
             <Link
               to={ROUTES.PHARMACY_CATEGORIES}
-              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-semibold rounded-2xl border border-border shadow-xs transition-all"
+              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-[#075B43] font-semibold rounded-2xl border border-border shadow-xs transition-all"
             >
               All Categories
             </Link>
@@ -80,9 +80,9 @@ export default function PharmacyPage() {
       </section>
 
       {/* Safety Notice Bar */}
-      <div className="bg-amber-50/90 border-y border-amber-200/70 px-4 py-3">
-        <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 text-xs md:text-sm text-amber-900 text-center font-medium">
-          <svg className="w-4 h-4 text-amber-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+      <div className="bg-[#F1F8F4] border-y border-[#DCEBE4] px-4 py-3">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 text-xs md:text-sm text-[#075B43] text-center font-medium">
+          <svg className="w-4 h-4 text-[#075B43] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
           </svg>
           <span>
@@ -100,8 +100,8 @@ export default function PharmacyPage() {
           <div className="flex items-center justify-between mb-6">
             <div>
               <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#98CF2D]" />
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#075B43] tracking-tight">
                   Featured Healthcare Products
                 </h2>
               </div>
@@ -111,7 +111,7 @@ export default function PharmacyPage() {
             </div>
             <Link
               to={ROUTES.PHARMACY_MEDICINES}
-              className="text-sm font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1 group"
+              className="text-sm font-semibold text-[#075B43] hover:text-[#0D7657] flex items-center gap-1 group"
             >
               Browse Catalog
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -129,14 +129,14 @@ export default function PharmacyPage() {
         <section className="p-6 sm:p-8 bg-white rounded-3xl border border-neutral-200/70 shadow-sm">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">No Prescription Needed</span>
-              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight mt-0.5">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#0D7657]">No Prescription Needed</span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight mt-0.5">
                 Pain Relief, Fever & Daily Care
               </h2>
             </div>
             <Link
               to="/pharmacy/category/pain-fever-otc"
-              className="text-xs sm:text-sm font-semibold text-primary-600 hover:text-primary-700"
+              className="text-xs sm:text-sm font-semibold text-[#075B43] hover:text-[#0D7657]"
             >
               View All OTC Products →
             </Link>
@@ -153,14 +153,14 @@ export default function PharmacyPage() {
         <section className="p-6 sm:p-8 bg-white rounded-3xl border border-neutral-200/70 shadow-sm">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-600">Daily Health & Immunity</span>
-              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight mt-0.5">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#0D7657]">Daily Health & Immunity</span>
+              <h2 className="text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight mt-0.5">
                 Vitamins, Minerals & Supplements
               </h2>
             </div>
             <Link
               to="/pharmacy/category/wellness-vitamins"
-              className="text-xs sm:text-sm font-semibold text-primary-600 hover:text-primary-700"
+              className="text-xs sm:text-sm font-semibold text-[#075B43] hover:text-[#0D7657]"
             >
               View All Vitamins →
             </Link>
@@ -174,10 +174,10 @@ export default function PharmacyPage() {
         </section>
 
         {/* 7. HOW IT WORKS (3 Simple Steps) */}
-        <section className="bg-neutral-100/70 rounded-3xl p-8 md:p-12 border border-neutral-200/60">
+        <section className="bg-[#F1F8F4] rounded-3xl p-8 md:p-12 border border-[#DCEBE4]">
           <div className="text-center max-w-xl mx-auto mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-primary-600">Simplicity & Clarity</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 mt-1">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#075B43]">Simplicity & Clarity</span>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#075B43] mt-1">
               How Healix Pharmacy Works
             </h2>
             <p className="text-sm text-neutral-600 mt-2">
@@ -186,31 +186,31 @@ export default function PharmacyPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-2xl border border-neutral-200/60 shadow-sm relative">
-              <div className="w-10 h-10 rounded-xl bg-primary-100 text-primary-700 font-extrabold text-sm flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-2xl border border-[#DCEBE4] shadow-sm relative">
+              <div className="w-10 h-10 rounded-xl bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] font-extrabold text-sm flex items-center justify-center mb-4">
                 01
               </div>
-              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Search or Upload</h3>
+              <h3 className="text-lg font-bold text-[#075B43] mb-1.5">Search or Upload</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Find your required medicines via search, A–Z catalog, or upload a clear photo/PDF of your doctor's prescription.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-neutral-200/60 shadow-sm relative">
-              <div className="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 font-extrabold text-sm flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-2xl border border-[#DCEBE4] shadow-sm relative">
+              <div className="w-10 h-10 rounded-xl bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] font-extrabold text-sm flex items-center justify-center mb-4">
                 02
               </div>
-              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Review & Verify</h3>
+              <h3 className="text-lg font-bold text-[#075B43] mb-1.5">Review & Verify</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Check item strength, dosage, pack size, and transparent pricing. Licensed pharmacists verify prescription orders before packing.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-neutral-200/60 shadow-sm relative">
-              <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-4">
+            <div className="bg-white p-6 rounded-2xl border border-[#DCEBE4] shadow-sm relative">
+              <div className="w-10 h-10 rounded-xl bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] font-extrabold text-sm flex items-center justify-center mb-4">
                 03
               </div>
-              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Fast Doorstep Delivery</h3>
+              <h3 className="text-lg font-bold text-[#075B43] mb-1.5">Fast Doorstep Delivery</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Confirm your order with transparent checkout. Receive prompt doorstep delivery in secure, temperature-controlled packaging.
               </p>

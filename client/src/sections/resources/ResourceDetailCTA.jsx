@@ -8,7 +8,7 @@ export function ResourceDetailCTA() {
     <section className="max-w-3xl mx-auto pt-8 pb-12 border-t border-neutral-100">
       <div className="bg-[#F1F8F4] border border-[#DCEBE4] rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xs">
         <div className="space-y-1.5 text-center sm:text-left">
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-neutral-900">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
             Have Questions on These Clinical Markers?
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 max-w-xl">

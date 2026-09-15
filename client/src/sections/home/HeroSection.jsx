@@ -251,7 +251,7 @@ export function HeroSection() {
                 </div>
 
                 {/* Main Headline (Single Semantic H1 on Homepage) */}
-                <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] font-extrabold text-neutral-900 leading-[1.12] tracking-tight">
+                <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] font-extrabold text-[#075B43] leading-[1.12] tracking-tight">
                   {currentSlide.titleMain} <br />
                   <span className={clsx('font-serif italic font-normal', currentSlide.accentColor)}>
                     {currentSlide.titleAccent}
@@ -273,7 +273,7 @@ export function HeroSection() {
                           <IconComp className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
                         </div>
                         <div className="leading-tight text-left">
-                          <span className="block text-xs sm:text-sm font-bold text-neutral-900">
+                          <span className="block text-xs sm:text-sm font-bold text-[#075B43]">
                             {item.title}
                           </span>
                           <span className="block text-[11px] sm:text-xs text-neutral-500">

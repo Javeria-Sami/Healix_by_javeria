@@ -125,7 +125,7 @@ export function MedicineCard({
             <span className="text-[11px] font-mono">{medicine.packSize}</span>
           </div>
 
-          <h3 className="font-heading font-bold text-base text-text-primary group-hover:text-primary transition-colors leading-snug">
+          <h3 className="font-heading font-bold text-base text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
             <Link
               to={`/pharmacy/medicine/${medicine.slug}`}
               className="focus:outline-none focus-visible:underline"
@@ -143,7 +143,7 @@ export function MedicineCard({
         <div className="pt-3 border-t border-border/70 space-y-3">
           <div className="flex items-baseline justify-between">
             <div className="flex items-baseline gap-2">
-              <span className="font-heading font-extrabold text-lg text-text-primary">
+              <span className="font-heading font-extrabold text-lg text-[#075B43]">
                 Rs. {medicine.price.toFixed(2)}
               </span>
               {hasDiscount && (

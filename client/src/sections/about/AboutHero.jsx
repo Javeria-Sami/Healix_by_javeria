@@ -35,9 +35,9 @@ export function AboutHero() {
           </div>
 
           {/* Primary Page Heading (H1) */}
-          <h1 id="about-hero-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-text-primary tracking-tight leading-[1.12] text-center">
+          <h1 id="about-hero-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075B43] tracking-tight leading-[1.12] text-center">
             Dedicated to Proactive & <br />
-            <span className="font-editorial italic font-normal text-primary">
+            <span className="font-editorial italic font-normal text-[#0D7657]">
               Human-Centered Medicine
             </span>
           </h1>

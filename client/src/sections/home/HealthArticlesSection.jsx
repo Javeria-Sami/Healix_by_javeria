@@ -52,7 +52,7 @@ export function HealthArticlesSection() {
 
           <h2
             id="health-articles-heading"
-            className="font-heading text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+            className="font-heading text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-[#075B43] tracking-tight leading-tight"
           >
             Helpful Reads for Better Health
           </h2>
@@ -88,7 +88,7 @@ export function HealthArticlesSection() {
                 </span>
 
                 <div className="flex items-center justify-between gap-3 pt-0.5">
-                  <h3 className="font-heading text-sm sm:text-base font-bold text-neutral-900 group-hover:text-[#075B43] transition-colors leading-snug">
+                  <h3 className="font-heading text-sm sm:text-base font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
                     <Link
                       to={`/resources/${article.slug}`}
                       className="focus:outline-none focus-visible:underline after:absolute after:inset-0"

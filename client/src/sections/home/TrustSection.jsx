@@ -28,10 +28,10 @@ export function TrustSection() {
           {/* Primary Centered Heading with Established Serif/Italic Accent */}
           <h2
             id="mission-heading"
-            className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-neutral-900 tracking-tight leading-[1.12]"
+            className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-[#075B43] tracking-tight leading-[1.12]"
           >
             Healthcare,{' '}
-            <span className="font-serif italic font-normal text-[#075B43] block sm:inline">
+            <span className="font-serif italic font-normal text-[#0D7657] block sm:inline">
               Made Simpler.
             </span>
           </h2>

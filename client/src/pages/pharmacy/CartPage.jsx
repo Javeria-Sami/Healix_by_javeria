@@ -21,17 +21,17 @@ export default function CartPage() {
     return (
       <div className="min-h-screen bg-neutral-50/60 py-20 px-4">
         <div className="max-w-md mx-auto bg-white p-8 sm:p-12 rounded-3xl border border-neutral-200/80 shadow-sm text-center">
-          <div className="w-20 h-20 mx-auto rounded-3xl bg-primary-50 text-primary-600 flex items-center justify-center text-4xl mb-4">
+          <div className="w-20 h-20 mx-auto rounded-3xl bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] flex items-center justify-center text-4xl mb-4">
             🛒
           </div>
-          <h1 className="text-2xl font-bold text-neutral-900 mb-2">Your Pharmacy Cart is Empty</h1>
+          <h1 className="text-2xl font-bold text-[#075B43] mb-2">Your Pharmacy Cart is Empty</h1>
           <p className="text-sm text-neutral-500 mb-8 leading-relaxed">
             You haven't added any medicines or healthcare products to your cart yet.
           </p>
           <div className="space-y-3">
             <Link
               to={ROUTES.PHARMACY_MEDICINES}
-              className="block w-full py-3.5 px-6 rounded-2xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-sm transition-colors shadow-md shadow-primary-600/20"
+              className="block w-full py-3.5 px-6 rounded-2xl bg-[#075B43] hover:bg-[#064C38] text-white font-bold text-sm transition-colors shadow-md"
             >
               Browse Medicines Catalog
             </Link>
@@ -57,12 +57,12 @@ export default function CartPage() {
             <span>/</span>
             <Link to={ROUTES.PHARMACY} className="hover:text-primary-600 transition-colors">Pharmacy</Link>
             <span>/</span>
-            <span className="text-neutral-900 font-semibold" aria-current="page">Shopping Cart</span>
+            <span className="text-[#075B43] font-semibold" aria-current="page">Shopping Cart</span>
           </nav>
 
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] tracking-tight">
                 Review Your Cart
               </h1>
               <p className="text-sm text-neutral-500 mt-1">
@@ -113,7 +113,7 @@ export default function CartPage() {
                         <div className="flex items-center gap-2 mb-1">
                           <Link
                             to={`/pharmacy/medicine/${item.slug}`}
-                            className="font-bold text-sm sm:text-base text-neutral-900 hover:text-primary-600 transition-colors truncate"
+                            className="font-bold text-sm sm:text-base text-[#075B43] hover:text-[#0D7657] transition-colors truncate"
                           >
                             {item.name}
                           </Link>
@@ -144,7 +144,7 @@ export default function CartPage() {
                         >
                           −
                         </button>
-                        <span className="w-8 text-center text-xs font-bold text-neutral-900">
+                        <span className="w-8 text-center text-xs font-bold text-[#075B43]">
                           {item.quantity}
                         </span>
                         <button
@@ -159,7 +159,7 @@ export default function CartPage() {
 
                       {/* Line Subtotal */}
                       <div className="text-right min-w-[70px]">
-                        <div className="font-extrabold text-sm sm:text-base text-neutral-900">
+                        <div className="font-extrabold text-sm sm:text-base text-[#075B43]">
                           Rs. {itemTotal.toFixed(2)}
                         </div>
                       </div>
@@ -184,7 +184,7 @@ export default function CartPage() {
             <div className="flex items-center justify-between pt-2">
               <Link
                 to={ROUTES.PHARMACY_MEDICINES}
-                className="text-xs sm:text-sm font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1"
+                className="text-xs sm:text-sm font-semibold text-[#075B43] hover:text-[#0D7657] flex items-center gap-1"
               >
                 ← Continue Shopping
               </Link>
@@ -194,7 +194,7 @@ export default function CartPage() {
           {/* Order Summary Card */}
           <div className="lg:col-span-4">
             <div className="bg-white rounded-3xl p-6 border border-neutral-200/80 shadow-sm space-y-5 sticky top-24">
-              <h2 className="text-lg font-bold text-neutral-900 pb-3 border-b border-neutral-100">
+              <h2 className="text-lg font-bold text-[#075B43] pb-3 border-b border-neutral-100">
                 Order Summary
               </h2>
 
@@ -205,7 +205,7 @@ export default function CartPage() {
                 </div>
 
                 {cartDiscount > 0 && (
-                  <div className="flex items-center justify-between text-emerald-600">
+                  <div className="flex items-center justify-between text-[#0D7657]">
                     <span>Special Savings</span>
                     <span className="font-semibold">-Rs. {cartDiscount.toFixed(2)}</span>
                   </div>
@@ -215,14 +215,14 @@ export default function CartPage() {
                   <div>
                     <span>Delivery Fee</span>
                     {cartSubtotal >= 40 && (
-                      <span className="text-[10px] block text-emerald-600 font-bold">
+                      <span className="text-[10px] block text-[#0D7657] font-bold">
                         Eligible for Free Delivery (Rs. 40+)
                       </span>
                     )}
                   </div>
                   <span className="font-semibold text-neutral-900">
                     {cartDeliveryFee === 0 ? (
-                      <span className="text-emerald-600 font-bold">FREE</span>
+                      <span className="text-[#0D7657] font-bold">FREE</span>
                     ) : (
                       `Rs. ${cartDeliveryFee.toFixed(2)}`
                     )}
@@ -231,7 +231,7 @@ export default function CartPage() {
 
                 <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-base font-extrabold text-neutral-900">
                   <span>Total Amount</span>
-                  <span className="text-xl text-primary-900">Rs. {cartTotal.toFixed(2)}</span>
+                  <span className="text-xl text-[#075B43]">Rs. {cartTotal.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -239,7 +239,7 @@ export default function CartPage() {
                 <button
                   type="button"
                   onClick={() => navigate(ROUTES.PHARMACY_CHECKOUT)}
-                  className="w-full py-3.5 px-6 rounded-2xl bg-primary-600 hover:bg-primary-700 text-white font-bold text-base transition-all shadow-md shadow-primary-600/20 active:scale-[0.98]"
+                  className="w-full py-3.5 px-6 rounded-2xl bg-[#075B43] hover:bg-[#064C38] text-white font-bold text-base transition-all shadow-md active:scale-[0.98]"
                 >
                   Continue to Checkout →
                 </button>
