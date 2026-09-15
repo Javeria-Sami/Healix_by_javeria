@@ -46,7 +46,7 @@ export function ResourcesGrid({ articles, onResetFilters }) {
             </div>
 
             {/* Content Body */}
-            <div className="p-6 space-y-3">
+            <div className="p-4 sm:p-5 space-y-2.5">
               <div className="flex items-center justify-between text-xs text-text-muted">
                 <div className="flex items-center gap-1">
                   <Clock className="w-3.5 h-3.5 text-primary" />
@@ -58,20 +58,16 @@ export function ResourcesGrid({ articles, onResetFilters }) {
                 </div>
               </div>
 
-              <h3 className="font-heading text-lg font-bold text-text-primary group-hover:text-primary transition-colors leading-snug line-clamp-2">
-                <Link to={`/resources/${article.slug}`}>
+              <h3 className="font-heading text-base font-bold text-text-primary group-hover:text-primary transition-colors leading-snug line-clamp-2">
+                <Link to={`/resources/${article.slug}`} className="focus:outline-none focus-visible:underline">
                   {article.title}
                 </Link>
               </h3>
-
-              <p className="text-xs text-text-secondary leading-relaxed line-clamp-3">
-                {article.excerpt}
-              </p>
             </div>
           </div>
 
           {/* Card Footer */}
-          <div className="p-6 pt-0 border-t border-border/40 mt-auto flex items-center justify-between">
+          <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-3 border-t border-border/40 mt-auto flex items-center justify-between">
             <div className="flex items-center gap-1.5 text-xs text-text-muted font-medium truncate max-w-[60%]">
               <User className="w-3.5 h-3.5 text-primary flex-shrink-0" />
               <span className="truncate">{article.author}</span>
