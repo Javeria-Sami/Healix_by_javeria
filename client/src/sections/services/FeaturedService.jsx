@@ -27,7 +27,7 @@ export function FeaturedService({ service }) {
               </Badge>
             </div>
 
-            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075A46] tracking-tight">
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075C49] tracking-tight">
               {service.title}
             </h2>
 
@@ -76,7 +76,7 @@ export function FeaturedService({ service }) {
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#075A46]">Clinical Assessment Profile</h3>
+                    <h3 className="text-sm font-bold text-[#075C49]">Clinical Assessment Profile</h3>
                     <p className="text-[11px] text-text-muted">Multi-System Longevity Screen</p>
                   </div>
                 </div>

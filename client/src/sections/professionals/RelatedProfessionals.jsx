@@ -51,7 +51,7 @@ export function RelatedProfessionals({ currentId, relatedIds = [] }) {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="font-heading text-lg font-bold text-[#075A46] mb-1 group-hover:text-primary transition-colors">
+                  <h3 className="font-heading text-lg font-bold text-[#075C49] mb-1 group-hover:text-primary transition-colors">
                     <Link to={`/professionals/${prof.slug}`} className="focus:outline-none focus-visible:underline">
                       {prof.name}
                     </Link>

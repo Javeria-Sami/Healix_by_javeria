@@ -58,7 +58,7 @@ export function ResourcesGrid({ articles, onResetFilters }) {
                 </div>
               </div>
 
-              <h3 className="font-heading text-base font-bold text-[#075A46] group-hover:text-primary transition-colors leading-snug line-clamp-2">
+              <h3 className="font-heading text-base font-bold text-[#075C49] group-hover:text-primary transition-colors leading-snug line-clamp-2">
                 <Link to={`/resources/${article.slug}`} className="focus:outline-none focus-visible:underline">
                   {article.title}
                 </Link>

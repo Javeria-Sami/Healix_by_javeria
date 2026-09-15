@@ -46,7 +46,7 @@ export default function PharmacyDropdown({ isOpen, onClose, triggerRef }) {
                   <IconComponent className="w-4 h-4" />
                 </div>
                 <div>
-                  <h2 className="text-xs font-bold text-[#075A46] uppercase tracking-wider">
+                  <h2 className="text-xs font-bold text-[#075C49] uppercase tracking-wider">
                     {section.title}
                   </h2>
                   <p className="text-[11px] text-neutral-600 line-clamp-1">

@@ -6,8 +6,8 @@ export function ResourceContentBody({ article }) {
     <article className="max-w-3xl mx-auto space-y-10">
       {/* 1. Key Takeaways Callout Box */}
       {article.keyTakeaways && article.keyTakeaways.length > 0 && (
-        <div className="p-5 sm:p-6 bg-[#EAF4EF] rounded-2xl border border-[#D8E7E0] space-y-3.5 shadow-2xs">
-          <div className="flex items-center gap-2 text-[#075A46] font-bold text-xs uppercase tracking-wider">
+        <div className="p-5 sm:p-6 bg-[#F5F8F6] rounded-2xl border border-[#DCE8E3] space-y-3.5 shadow-2xs">
+          <div className="flex items-center gap-2 text-[#075C49] font-bold text-xs uppercase tracking-wider">
             <Sparkles className="w-4 h-4 flex-shrink-0" />
             <h2 className="font-heading">
               Key Clinical Takeaways
@@ -16,7 +16,7 @@ export function ResourceContentBody({ article }) {
           <div className="space-y-2.5">
             {article.keyTakeaways.map((takeaway, idx) => (
               <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-800 font-medium leading-relaxed">
-                <CheckCircle2 className="w-4 h-4 text-[#075A46] flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#075C49] flex-shrink-0 mt-0.5" />
                 <span>{takeaway}</span>
               </div>
             ))}

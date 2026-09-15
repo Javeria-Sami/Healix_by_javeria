@@ -112,7 +112,7 @@ export default function MedicineSearchInput({
           aria-autocomplete="list"
           aria-controls="medicine-search-results"
           aria-expanded={isOpen}
-          className="w-full pl-12 pr-32 py-3.5 bg-white rounded-2xl border border-neutral-200/90 shadow-sm text-neutral-900 placeholder:text-neutral-400 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-[#075A46]/20 focus:border-[#075A46] transition-all duration-200"
+          className="w-full pl-12 pr-32 py-3.5 bg-white rounded-2xl border border-neutral-200/90 shadow-sm text-neutral-900 placeholder:text-neutral-400 text-sm md:text-base focus:outline-none focus:ring-2 focus:ring-[#075C49]/20 focus:border-[#075C49] transition-all duration-200"
         />
 
         {/* Right Action Group (Clear Button + Search Button) */}
@@ -125,7 +125,7 @@ export default function MedicineSearchInput({
                 setIsOpen(false);
               }}
               aria-label="Clear search"
-              className="p-1.5 text-neutral-400 hover:text-neutral-700 hover:bg-neutral-100 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075A46] cursor-pointer"
+              className="p-1.5 text-neutral-400 hover:text-neutral-700 hover:bg-neutral-100 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] cursor-pointer"
             >
               <X className="w-4 h-4 stroke-[2]" aria-hidden="true" />
             </button>
@@ -133,7 +133,7 @@ export default function MedicineSearchInput({
 
           <button
             type="submit"
-            className="px-4 sm:px-5 py-2 sm:py-2.5 bg-[#075A46] hover:bg-[#054837] text-white text-sm font-bold rounded-xl transition-all shadow-xs hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075A46] cursor-pointer"
+            className="px-4 sm:px-5 py-2 sm:py-2.5 bg-[#075C49] hover:bg-[#054839] text-white text-sm font-bold rounded-xl transition-all shadow-xs hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] cursor-pointer"
           >
             Search
           </button>
@@ -149,7 +149,7 @@ export default function MedicineSearchInput({
         >
           {suggestions.length > 0 ? (
             <div>
-              <div className="px-4 py-2.5 bg-[#F4F8F5] text-[11px] font-bold text-[#075A46] tracking-[0.15em] uppercase border-b border-[#D8E7E0]/60 text-left">
+              <div className="px-4 py-2.5 bg-[#F4F8F5] text-[11px] font-bold text-[#075C49] tracking-[0.15em] uppercase border-b border-[#DCE8E3]/60 text-left">
                 Matching Products
               </div>
               <ul className="py-1">
@@ -165,11 +165,11 @@ export default function MedicineSearchInput({
                     }}
                     onMouseEnter={() => setSelectedIndex(idx)}
                     className={`px-4 py-2.5 flex items-center justify-between cursor-pointer transition-colors ${
-                      selectedIndex === idx ? 'bg-[#EAF4EF] text-[#075A46]' : 'hover:bg-neutral-50'
+                      selectedIndex === idx ? 'bg-[#F5F8F6] text-[#075C49]' : 'hover:bg-neutral-50'
                     }`}
                   >
                     <div className="flex items-center gap-3 min-w-0 text-left">
-                      <div className="w-8 h-8 rounded-lg bg-[#EAF5EF] text-[#075A46] flex items-center justify-center flex-shrink-0">
+                      <div className="w-8 h-8 rounded-lg bg-[#EAF5EF] text-[#075C49] flex items-center justify-center flex-shrink-0">
                         <Pill className="w-4 h-4 stroke-[2]" aria-hidden="true" />
                       </div>
                       <div className="truncate">
@@ -182,7 +182,7 @@ export default function MedicineSearchInput({
                       </div>
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0 ml-3">
-                      <span className="font-bold text-sm text-[#075A46]">
+                      <span className="font-bold text-sm text-[#075C49]">
                         Rs. {item.price.toFixed(2)}
                       </span>
                       {item.prescriptionRequired && (
@@ -194,11 +194,11 @@ export default function MedicineSearchInput({
                   </li>
                 ))}
               </ul>
-              <div className="p-2.5 bg-[#F4F8F5] border-t border-[#D8E7E0]/60 text-center">
+              <div className="p-2.5 bg-[#F4F8F5] border-t border-[#DCE8E3]/60 text-center">
                 <button
                   type="button"
                   onClick={() => handleSearchSubmit()}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075A46] hover:text-[#054837] transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075C49] hover:text-[#054839] transition-colors cursor-pointer"
                 >
                   <span>View all results for "{query}"</span>
                   <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
@@ -211,7 +211,7 @@ export default function MedicineSearchInput({
               <button
                 type="button"
                 onClick={() => handleSearchSubmit()}
-                className="inline-flex items-center gap-1 text-xs font-bold text-[#075A46] hover:underline cursor-pointer"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#075C49] hover:underline cursor-pointer"
               >
                 <span>Search all catalog records</span>
                 <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
@@ -231,7 +231,7 @@ export default function MedicineSearchInput({
                       setQuery(term);
                       handleSearchSubmit(term);
                     }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-100 hover:bg-[#EAF5EF] hover:text-[#075A46] text-neutral-700 rounded-full text-xs font-medium transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-100 hover:bg-[#EAF5EF] hover:text-[#075C49] text-neutral-700 rounded-full text-xs font-medium transition-colors cursor-pointer"
                   >
                     <Clock className="w-3 h-3 text-neutral-400" aria-hidden="true" />
                     <span>{term}</span>

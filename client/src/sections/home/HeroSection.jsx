@@ -21,17 +21,17 @@ export const HERO_SLIDES = [
   {
     id: 'pharmacy',
     eyebrow: 'PHARMACY',
-    eyebrowColor: 'text-[#0E745B]',
+    eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Reliable Medicines',
     titleAccent: 'for a Healthier You',
-    accentColor: 'text-[#075A46]',
+    accentColor: 'text-[#075C49]',
     description:
       'Get genuine medicines from trusted brands, delivered to your doorstep — because your health matters.',
     ctaText: 'Order Medicines Now',
     ctaLink: ROUTES.PHARMACY,
     subjectImage: '/images/hero_subject_1.png',
     subjectAlt: 'Happy customer receiving genuine Healix medicine delivery with sealed medications',
-    bgGradient: 'from-[#F7FAF8] via-[#EAF4EF] to-[#EAF5EF]',
+    bgGradient: 'from-[#F5F8F6] via-[#F5F8F6] to-[#EAF5EF]',
     archColors: ['bg-[#E2F3EB]/55', 'bg-[#D3ECE0]/65', 'bg-[#C2E6D5]/75'],
     features: [
       {
@@ -54,17 +54,17 @@ export const HERO_SLIDES = [
   {
     id: 'lab-tests',
     eyebrow: 'LAB TESTS',
-    eyebrowColor: 'text-[#0E745B]',
+    eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Accurate Lab Tests',
     titleAccent: 'for a Healthier Tomorrow',
-    accentColor: 'text-[#075A46]',
+    accentColor: 'text-[#075C49]',
     description:
       'Book lab tests from trusted labs with home sampling or visit a nearby collection center — fast, easy and reliable.',
     ctaText: 'Book a Lab Test Now',
     ctaLink: ROUTES.LAB_TESTS,
     subjectImage: '/images/hero_subject_2.png',
     subjectAlt: 'Certified phlebotomist and clinical laboratory diagnostic testing with certified labs',
-    bgGradient: 'from-[#FCFBF7] via-[#F7FAF8] to-[#EAF4EF]',
+    bgGradient: 'from-[#FCFBF7] via-[#F5F8F6] to-[#F5F8F6]',
     archColors: ['bg-[#E2F3EB]/55', 'bg-[#D3ECE0]/65', 'bg-[#C2E6D5]/75'],
     features: [
       {
@@ -87,17 +87,17 @@ export const HERO_SLIDES = [
   {
     id: 'health-partner',
     eyebrow: 'YOUR HEALTH PARTNER',
-    eyebrowColor: 'text-[#0E745B]',
+    eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Healthcare,',
     titleAccent: 'Made Simpler',
-    accentColor: 'text-[#075A46]',
+    accentColor: 'text-[#075C49]',
     description:
       'Find medicines, book lab tests, and manage everyday healthcare needs — all in one place.',
     ctaText: 'Explore Healix',
     ctaLink: ROUTES.PHARMACY,
     subjectImage: '/images/hero_subject_3.png',
     subjectAlt: 'Smiling clinical physician and healthcare partner ready to provide dedicated family care',
-    bgGradient: 'from-[#FCFBF7] via-[#F7FAF8] to-[#EEF7F3]',
+    bgGradient: 'from-[#FCFBF7] via-[#F5F8F6] to-[#EEF7F3]',
     archColors: ['bg-[#E5EFE4]/55', 'bg-[#D6EBE0]/65', 'bg-[#C5E5D5]/75'],
     features: [
       {
@@ -221,7 +221,7 @@ export function HeroSection() {
             type="button"
             onClick={prevSlide}
             aria-label="Previous promotional slide"
-            className="absolute left-2.5 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-neutral-800 hover:text-[#075A46] shadow-soft-md hover:shadow-soft-lg border border-healix-border/90 flex items-center justify-center transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group/btn"
+            className="absolute left-2.5 sm:left-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-neutral-800 hover:text-[#075C49] shadow-soft-md hover:shadow-soft-lg border border-healix-border/90 flex items-center justify-center transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group/btn"
           >
             <ChevronLeft className="w-4 h-4 sm:w-6 sm:h-6 transition-transform group-hover/btn:-translate-x-0.5" />
           </button>
@@ -231,7 +231,7 @@ export function HeroSection() {
             type="button"
             onClick={nextSlide}
             aria-label="Next promotional slide"
-            className="absolute right-2.5 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-neutral-800 hover:text-[#075A46] shadow-soft-md hover:shadow-soft-lg border border-healix-border/90 flex items-center justify-center transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group/btn"
+            className="absolute right-2.5 sm:right-4 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-neutral-800 hover:text-[#075C49] shadow-soft-md hover:shadow-soft-lg border border-healix-border/90 flex items-center justify-center transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group/btn"
           >
             <ChevronRight className="w-4 h-4 sm:w-6 sm:h-6 transition-transform group-hover/btn:translate-x-0.5" />
           </button>
@@ -269,7 +269,7 @@ export function HeroSection() {
                     const IconComp = item.icon;
                     return (
                       <div key={item.title} className="flex items-center gap-2.5">
-                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#EAF4EF] text-[#075A46] flex items-center justify-center flex-shrink-0 shadow-2xs border border-healix-border/60">
+                        <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#F5F8F6] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs border border-healix-border/60">
                           <IconComp className="w-4 h-4 sm:w-5 sm:h-5" aria-hidden="true" />
                         </div>
                         <div className="leading-tight text-left">
@@ -289,7 +289,7 @@ export function HeroSection() {
                 <div className="pt-2">
                   <Link
                     to={currentSlide.ctaLink}
-                    className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl bg-[#075A46] hover:bg-[#054837] text-white text-sm sm:text-base font-bold shadow-soft-sm hover:shadow-soft-md transition-all active:scale-[0.99] group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    className="inline-flex items-center justify-center gap-2.5 px-6 sm:px-7 py-3 sm:py-3.5 rounded-xl bg-[#075C49] hover:bg-[#054839] text-white text-sm sm:text-base font-bold shadow-soft-sm hover:shadow-soft-md transition-all active:scale-[0.99] group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                   >
                     <span>{currentSlide.ctaText}</span>
                     <ArrowRight className="w-4 h-4 sm:w-4.5 sm:h-4.5 transition-transform group-hover:translate-x-1" />
@@ -333,7 +333,7 @@ export function HeroSection() {
                   className={clsx(
                     'transition-all duration-300 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer',
                     isActive
-                      ? 'w-6 h-2 bg-[#075A46]'
+                      ? 'w-6 h-2 bg-[#075C49]'
                       : 'w-2 h-2 bg-neutral-300 hover:bg-neutral-400'
                   )}
                 />

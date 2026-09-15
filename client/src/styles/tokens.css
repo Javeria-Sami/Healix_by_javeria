@@ -1,67 +1,71 @@
 /**
  * Healix Global Design System Tokens
  * Source of truth for brand colors, typography scale, spacing, surfaces, elevation, borders, radius, z-index, and motion.
- * Rooted in the official Healix logo: Deep Green (#075A46), Secondary Green (#0E745B), Lime Accent (#94D126).
+ * Rooted in the official Healix logo: Deep Green (#075C49), Secondary Green (#0C6F58), Lime Accent (#8FD21F).
  */
 
 :root {
   /* ==========================================================================
-     1. BRAND PALETTE TOKENS (Matched to Healix Reference Theme)
+     1. BRAND PALETTE TOKENS (Healix Healthcare Design System)
      ========================================================================== */
-  --healix-green: #075A46;
-  --healix-green-dark: #0E745B;
-  --healix-lime: #94D126;
-  --healix-offwhite: #F7FAF8;
-  --healix-soft: #EAF4EF;
-  --healix-pale: #EAF4EF;
-  --healix-text: #10231E;
-  --healix-border: #D8E7E0;
+  --healix-green: #075C49;
+  --healix-green-dark: #054839;
+  --healix-lime: #8FD21F;
+  --healix-bg: #FFFFFF;
+  --healix-surface: #F5F8F6;
+  --healix-offwhite: #F5F8F6;
+  --healix-soft: #F5F8F6;
+  --healix-pale: #F5F8F6;
+  --healix-text: #10231F;
+  --healix-text-secondary: #38544C;
+  --healix-text-muted: #6C7C76;
+  --healix-border: #DCE8E3;
 
-  /* Primary Deep Green - Brand Authority (#075A46) */
-  --healix-primary-50: #EAF4EF;
-  --healix-primary-100: #D8E7E0;
-  --healix-primary-200: #B4D5C7;
-  --healix-primary-300: #7CBBA4;
-  --healix-primary-400: #3E9B7E;
-  --healix-primary-500: #1C8768;
-  --healix-primary-600: #0E745B; /* Secondary Healix Green */
-  --healix-primary-700: #075A46; /* Primary Deep Green */
-  --healix-primary-800: #054837;
-  --healix-primary-900: #04382B;
+  /* Primary Deep Green - Brand Authority (#075C49) */
+  --healix-primary-50: #F5F8F6;
+  --healix-primary-100: #DCE8E3;
+  --healix-primary-200: #BAD4CA;
+  --healix-primary-300: #88B7A5;
+  --healix-primary-400: #4B9880;
+  --healix-primary-500: #1B8369;
+  --healix-primary-600: #0C6F58;
+  --healix-primary-700: #075C49; /* Primary Deep Green */
+  --healix-primary-800: #054839;
+  --healix-primary-900: #04372B;
   --healix-primary-950: #02231B;
 
-  /* Secondary Healix Green (#0E745B) */
-  --healix-secondary-50: #F7FAF8;
-  --healix-secondary-100: #EAF4EF;
-  --healix-secondary-200: #D8E7E0;
-  --healix-secondary-300: #B4D5C7;
-  --healix-secondary-400: #7CBBA4;
-  --healix-secondary-500: #0E745B;
+  /* Secondary Healix Green */
+  --healix-secondary-50: #F5F8F6;
+  --healix-secondary-100: #E6EFEA;
+  --healix-secondary-200: #DCE8E3;
+  --healix-secondary-300: #BAD4CA;
+  --healix-secondary-400: #88B7A5;
+  --healix-secondary-500: #0C6F58;
 
-  /* Healix Lime Accent (#94D126) */
-  --healix-accent-100: #F5FCE8;
-  --healix-accent-200: #E7F8C4;
-  --healix-accent-300: #C7EE6D;
-  --healix-accent-500: #94D126; /* Brand Lime Accent */
-  --healix-accent-600: #81B81F;
-  --healix-accent-700: #689518;
+  /* Healix Lime Accent (#8FD21F) */
+  --healix-accent-100: #F4FCE7;
+  --healix-accent-200: #E5F8C1;
+  --healix-accent-300: #C2EE65;
+  --healix-accent-500: #8FD21F; /* Brand Lime Accent */
+  --healix-accent-600: #7CB919;
+  --healix-accent-700: #649613;
 
   /* Supporting Light Palette & Neutrals */
   --healix-neutral-0: #FFFFFF;     /* Pure White */
   --healix-neutral-25: #FCFBF7;    /* Warm White */
-  --healix-neutral-50: #F7FAF8;    /* Clean Offwhite */
-  --healix-neutral-100: #EAF4EF;   /* Soft Mint */
-  --healix-neutral-200: #D8E7E0;   /* Clean Sage Border */
-  --healix-neutral-300: #B8CCC3;
-  --healix-neutral-400: #64748B;   /* Muted Slate Text */
-  --healix-neutral-600: #475569;   /* Secondary Text */
-  --healix-neutral-800: #1E293B;
-  --healix-neutral-900: #10231E;   /* Dark Primary Text */
+  --healix-neutral-50: #F5F8F6;    /* Healthcare Off-White */
+  --healix-neutral-100: #E6EFEA;   /* Soft Healthcare Tint */
+  --healix-neutral-200: #DCE8E3;   /* Light Green-Gray Border */
+  --healix-neutral-300: #BAD4CA;
+  --healix-neutral-400: #6C7C76;   /* Muted Text */
+  --healix-neutral-600: #38544C;   /* Secondary Text */
+  --healix-neutral-800: #1C332C;
+  --healix-neutral-900: #10231F;   /* Dark Primary Text */
 
   /* Feedback & Status */
-  --healix-success-light: #EAF4EF;
-  --healix-success: #0E745B;
-  --healix-success-dark: #075A46;
+  --healix-success-light: #F5F8F6;
+  --healix-success: #0C6F58;
+  --healix-success-dark: #075C49;
 
   --healix-warning-light: #FEF9E7;
   --healix-warning: #C27803;
@@ -71,9 +75,9 @@
   --healix-error: #C53030;
   --healix-error-dark: #7F1D1D;
 
-  --healix-info-light: #EAF4EF;
-  --healix-info: #0E745B;
-  --healix-info-dark: #075A46;
+  --healix-info-light: #F5F8F6;
+  --healix-info: #0C6F58;
+  --healix-info-dark: #075C49;
 
   /* ==========================================================================
      2. SEMANTIC COLOR TOKENS
@@ -96,12 +100,12 @@
   --color-background: var(--healix-neutral-0);
   --color-surface: var(--healix-neutral-0);
   --color-surface-muted: var(--healix-neutral-50);
-  --color-surface-soft: var(--healix-neutral-100);
+  --color-surface-soft: var(--healix-neutral-50);
   --color-surface-warm: var(--healix-neutral-25);
   --color-surface-elevated: var(--healix-neutral-0);
   --color-surface-dark: var(--healix-primary-700);
-  --color-input-bg: #F4F8F5;
-  --color-input-bg-focus: #F7FAF8;
+  --color-input-bg: #F5F8F6;
+  --color-input-bg-focus: #FFFFFF;
 
   --color-text-primary: var(--healix-neutral-900);
   --color-text-secondary: var(--healix-neutral-600);
@@ -111,8 +115,9 @@
   --color-text-accent: var(--healix-accent-500);
 
   --color-border: var(--healix-neutral-200);
-  --color-border-subtle: #EAF3EF;
+  --color-border-subtle: #E6EFEA;
   --color-border-strong: var(--healix-neutral-300);
+  --color-border-focus: var(--healix-primary-700);
   --color-border-focus: var(--healix-primary-700);
 
   --color-status-success: var(--healix-success);

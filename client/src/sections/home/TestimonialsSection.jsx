@@ -41,7 +41,7 @@ export function TestimonialsSection() {
 
               <div className="pt-6 border-t border-border mt-6 flex items-center justify-between">
                 <div>
-                  <h4 className="font-heading font-bold text-sm text-[#075A46]">
+                  <h4 className="font-heading font-bold text-sm text-[#075C49]">
                     {item.author}
                   </h4>
                   <p className="text-xs text-text-muted">

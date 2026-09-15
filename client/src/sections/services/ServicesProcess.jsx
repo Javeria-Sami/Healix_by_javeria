@@ -63,7 +63,7 @@ export function ServicesProcess() {
                     </div>
                   </div>
 
-                  <h3 className="font-heading text-lg font-bold text-[#075A46] mb-2.5">
+                  <h3 className="font-heading text-lg font-bold text-[#075C49] mb-2.5">
                     {step.title}
                   </h3>
 

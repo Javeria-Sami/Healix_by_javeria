@@ -200,8 +200,8 @@ export default function PharmacySearchPage() {
             </div>
 
             {/* Need Help / Prescription Card */}
-            <div className="bg-[#EAF4EF] border border-[#D8E7E0] p-5 sm:p-6 rounded-[24px] space-y-3.5 shadow-soft-xs text-left relative overflow-hidden">
-              <div className="w-10 h-10 rounded-xl bg-[#EAF5EF] text-[#075A46] flex items-center justify-center shadow-2xs">
+            <div className="bg-[#F5F8F6] border border-[#DCE8E3] p-5 sm:p-6 rounded-[24px] space-y-3.5 shadow-soft-xs text-left relative overflow-hidden">
+              <div className="w-10 h-10 rounded-xl bg-[#EAF5EF] text-[#075C49] flex items-center justify-center shadow-2xs">
                 <FileText className="w-5 h-5 stroke-[2]" aria-hidden="true" />
               </div>
               <div className="space-y-1">
@@ -214,7 +214,7 @@ export default function PharmacySearchPage() {
               </div>
               <Link
                 to={ROUTES.PHARMACY_PRESCRIPTION}
-                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#075A46] hover:bg-[#054837] text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs hover:shadow-sm group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075A46]"
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#075C49] hover:bg-[#054839] text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs hover:shadow-sm group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49]"
               >
                 <span>Upload Prescription</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />

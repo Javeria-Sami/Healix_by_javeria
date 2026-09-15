@@ -34,7 +34,7 @@ export function PortfolioHero() {
             </Badge>
           </div>
 
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075A46] tracking-tight leading-[1.15]">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075C49] tracking-tight leading-[1.15]">
             Clinical Deployments & <br />
             <span className="font-serif italic font-normal text-primary">
               Healthcare Case Studies

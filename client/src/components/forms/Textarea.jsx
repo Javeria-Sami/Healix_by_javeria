@@ -53,7 +53,7 @@ export const Textarea = forwardRef(function Textarea(
             'w-full px-4 py-3 rounded-healix-md border bg-[var(--color-input-bg,#F4F8F5)] text-sm text-text-primary placeholder:text-text-muted transition-colors duration-150 focus:outline-none resize-none',
             hasError
               ? 'border-status-error bg-status-error-bg/20 focus:ring-1 focus:ring-status-error text-status-error'
-              : 'border-border hover:border-healix-muted/40 focus:border-primary focus:ring-1 focus:ring-primary focus:bg-[var(--color-input-bg-focus,#F7FAF8)]',
+              : 'border-border hover:border-healix-muted/40 focus:border-primary focus:ring-1 focus:ring-primary focus:bg-[var(--color-input-bg-focus,#F5F8F6)]',
             disabled && 'opacity-50 cursor-not-allowed bg-surface-muted',
             textareaClassName
           )}

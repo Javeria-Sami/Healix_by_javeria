@@ -21,7 +21,7 @@ export function NotFoundPage() {
 
           <div className="space-y-2">
             <div className="text-xs font-mono font-bold uppercase tracking-widest text-primary">Error 404</div>
-            <h1 className="font-heading text-3xl font-extrabold text-[#075A46]">
+            <h1 className="font-heading text-3xl font-extrabold text-[#075C49]">
               Page Not Located
             </h1>
             <p className="text-sm text-text-secondary leading-relaxed">

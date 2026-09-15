@@ -9,7 +9,7 @@ export function PortfolioDetailCTA() {
     <section className="pt-8 pb-12 border-t border-border/60">
       <div className="bg-surface border border-border rounded-healix-2xl p-6 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-soft-sm">
         <div className="space-y-2 text-center sm:text-left">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075A46]">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075C49]">
             Explore a Tailored Initiative for Your Team
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary max-w-xl">

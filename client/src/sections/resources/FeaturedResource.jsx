@@ -59,7 +59,7 @@ export function FeaturedResource({ article }) {
               </div>
             </div>
 
-            <h2 className="hidden lg:block font-heading text-2xl lg:text-3xl font-extrabold text-[#075A46] leading-snug">
+            <h2 className="hidden lg:block font-heading text-2xl lg:text-3xl font-extrabold text-[#075C49] leading-snug">
               {article.title}
             </h2>
 

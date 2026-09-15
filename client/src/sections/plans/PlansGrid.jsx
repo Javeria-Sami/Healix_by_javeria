@@ -44,7 +44,7 @@ export function PlansGrid({ plans, annualBilling }) {
                     </Badge>
                   </div>
 
-                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#075A46] mb-2">
+                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#075C49] mb-2">
                     {plan.name}
                   </h2>
 
@@ -54,7 +54,7 @@ export function PlansGrid({ plans, annualBilling }) {
 
                   {/* Price Block */}
                   <div className="py-6 border-y border-border/60 mb-6 space-y-1">
-                    <div className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075A46]">
+                    <div className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075C49]">
                       {annualBilling ? plan.priceAnnual : plan.priceMonthly}
                     </div>
                     <p className="text-xs text-text-muted">

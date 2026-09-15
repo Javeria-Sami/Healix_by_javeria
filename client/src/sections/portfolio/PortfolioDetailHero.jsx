@@ -30,7 +30,7 @@ export function PortfolioDetailHero({ project }) {
           </div>
         </div>
 
-        <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075A46] tracking-tight leading-[1.2]">
+        <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075C49] tracking-tight leading-[1.2]">
           {project.title}
         </h1>
 
@@ -44,7 +44,7 @@ export function PortfolioDetailHero({ project }) {
             <span className="text-[11px] font-semibold text-text-muted uppercase tracking-wider block mb-1">
               Client Profile
             </span>
-            <span className="text-xs font-bold text-[#075A46] flex items-center gap-1.5">
+            <span className="text-xs font-bold text-[#075C49] flex items-center gap-1.5">
               <Building2 className="w-3.5 h-3.5 text-primary flex-shrink-0" />
               {project.clientType}
             </span>
@@ -54,7 +54,7 @@ export function PortfolioDetailHero({ project }) {
             <span className="text-[11px] font-semibold text-text-muted uppercase tracking-wider block mb-1">
               Clinical Discipline
             </span>
-            <span className="text-xs font-bold text-[#075A46] flex items-center gap-1.5">
+            <span className="text-xs font-bold text-[#075C49] flex items-center gap-1.5">
               <Stethoscope className="w-3.5 h-3.5 text-primary flex-shrink-0" />
               {project.category}
             </span>
@@ -64,7 +64,7 @@ export function PortfolioDetailHero({ project }) {
             <span className="text-[11px] font-semibold text-text-muted uppercase tracking-wider block mb-1">
               Governance Protocol
             </span>
-            <span className="text-xs font-bold text-[#075A46] flex items-center gap-1.5">
+            <span className="text-xs font-bold text-[#075C49] flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-primary flex-shrink-0" />
               Board-Certified Oversight
             </span>

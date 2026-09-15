@@ -17,14 +17,14 @@ export function RelatedResources({ currentArticleId, relatedArticleIds }) {
     <section className="max-w-3xl mx-auto space-y-5 pt-8 border-t border-neutral-100">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <BookOpen className="w-5 h-5 text-[#075A46]" />
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075A46]">
+          <BookOpen className="w-5 h-5 text-[#075C49]" />
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075C49]">
             Related Clinical Articles & Insights
           </h2>
         </div>
         <Link
           to="/resources"
-          className="text-xs font-bold text-[#075A46] hover:text-[#054837] hover:underline"
+          className="text-xs font-bold text-[#075C49] hover:text-[#054839] hover:underline"
         >
           View All Resources
         </Link>
@@ -34,20 +34,20 @@ export function RelatedResources({ currentArticleId, relatedArticleIds }) {
         {related.map((item) => (
           <div
             key={item.id}
-            className="p-5 rounded-2xl border border-neutral-200/80 bg-white hover:border-[#075A46]/40 hover:shadow-xs transition-all flex flex-col justify-between"
+            className="p-5 rounded-2xl border border-neutral-200/80 bg-white hover:border-[#075C49]/40 hover:shadow-xs transition-all flex flex-col justify-between"
           >
             <div className="space-y-2 text-left">
               <div className="flex items-center justify-between text-xs">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#EAF4EF] text-[#075A46] text-[10px] font-bold uppercase tracking-wider">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#F5F8F6] text-[#075C49] text-[10px] font-bold uppercase tracking-wider">
                   {item.category}
                 </span>
                 <span className="text-xs text-neutral-500 flex items-center gap-1 font-medium">
-                  <Clock className="w-3.5 h-3.5 text-[#075A46]" />
+                  <Clock className="w-3.5 h-3.5 text-[#075C49]" />
                   {item.readTime}
                 </span>
               </div>
-              <h3 className="font-heading text-sm font-bold text-[#075A46] leading-snug line-clamp-2">
-                <Link to={`/resources/${item.slug}`} className="hover:text-[#075A46] transition-colors">
+              <h3 className="font-heading text-sm font-bold text-[#075C49] leading-snug line-clamp-2">
+                <Link to={`/resources/${item.slug}`} className="hover:text-[#075C49] transition-colors">
                   {item.title}
                 </Link>
               </h3>
@@ -57,7 +57,7 @@ export function RelatedResources({ currentArticleId, relatedArticleIds }) {
               <span className="text-[11px] text-neutral-500 truncate max-w-[60%] font-medium">{item.author}</span>
               <Link
                 to={`/resources/${item.slug}`}
-                className="inline-flex items-center gap-1 text-xs font-bold text-[#075A46] hover:text-[#054837] transition-colors flex-shrink-0"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#075C49] hover:text-[#054839] transition-colors flex-shrink-0"
               >
                 <span>Read Review</span>
                 <ArrowRight className="w-3.5 h-3.5" />

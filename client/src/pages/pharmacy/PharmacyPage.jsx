@@ -26,7 +26,7 @@ export default function PharmacyPage() {
   return (
     <div className="min-h-screen bg-neutral-50/50 pb-20">
       {/* 1. HERO SECTION */}
-      <section className="relative bg-[#F4F8F5] border-b border-[#D8E7E0]/60 text-text-primary pt-14 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#F4F8F5] border-b border-[#DCE8E3]/60 text-text-primary pt-14 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Glow ambient decorations */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-64 bg-primary/5 blur-3xl rounded-full pointer-events-none" />
 

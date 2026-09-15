@@ -38,11 +38,11 @@ export default function LabTestsDropdown({ isOpen, onClose, triggerRef }) {
             <div key={col.id} className="flex flex-col">
               {/* Column Header */}
               <div className="flex items-center gap-2.5 pb-3.5 mb-3 border-b border-healix-border/50">
-                <div className="w-8 h-8 rounded-lg bg-[#EAF4EF] flex items-center justify-center text-[#075A46]">
+                <div className="w-8 h-8 rounded-lg bg-[#F5F8F6] flex items-center justify-center text-[#075C49]">
                   <IconComponent className="w-4 h-4" />
                 </div>
                 <div>
-                  <h2 className="text-xs font-bold text-[#075A46] uppercase tracking-wider">
+                  <h2 className="text-xs font-bold text-[#075C49] uppercase tracking-wider">
                     {col.title}
                   </h2>
                   <p className="text-[11px] text-neutral-600">
@@ -58,12 +58,12 @@ export default function LabTestsDropdown({ isOpen, onClose, triggerRef }) {
                     <Link
                       to={item.href}
                       onClick={onClose}
-                      className="group flex items-center justify-between px-3 py-1.5 rounded-lg text-sm text-neutral-700 hover:text-[#075A46] hover:bg-[#EAF4EF] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                      className="group flex items-center justify-between px-3 py-1.5 rounded-lg text-sm text-neutral-700 hover:text-[#075C49] hover:bg-[#F5F8F6] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                     >
                       <span className="font-normal group-hover:font-medium transition-all">
                         {item.name}
                       </span>
-                      <ChevronRight className="w-3.5 h-3.5 text-neutral-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 text-[#075A46] transition-all" />
+                      <ChevronRight className="w-3.5 h-3.5 text-neutral-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 text-[#075C49] transition-all" />
                     </Link>
                   </li>
                 ))}
@@ -74,14 +74,14 @@ export default function LabTestsDropdown({ isOpen, onClose, triggerRef }) {
       </div>
 
       {/* All Lab Tests Footer */}
-      <div className="mt-6 pt-4 border-t border-healix-border/50 flex items-center justify-between bg-[#F7FAF8] -mx-6 -mb-6 sm:-mx-8 sm:-mb-8 px-6 sm:px-8 py-3.5 rounded-b-2xl">
+      <div className="mt-6 pt-4 border-t border-healix-border/50 flex items-center justify-between bg-[#F5F8F6] -mx-6 -mb-6 sm:-mx-8 sm:-mb-8 px-6 sm:px-8 py-3.5 rounded-b-2xl">
         <span className="text-xs text-neutral-600 font-medium">
           Accredited pathology, home blood sampling & fast digital test reports
         </span>
         <Link
           to={LAB_TESTS_NAV.viewAll.href}
           onClick={onClose}
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075A46] hover:text-[#054837] hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-2 py-1 transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075C49] hover:text-[#054839] hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded px-2 py-1 transition-colors"
         >
           <span>{LAB_TESTS_NAV.viewAll.label}</span>
           <ArrowRight className="w-3.5 h-3.5" />

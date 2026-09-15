@@ -42,7 +42,7 @@ export function ServiceDetailHero({ service }) {
               )}
             </div>
 
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075A46] tracking-tight leading-[1.15]">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075C49] tracking-tight leading-[1.15]">
               {service.title}
             </h1>
 

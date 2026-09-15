@@ -92,7 +92,7 @@ export function Modal({
 
         {title && (
           <div className="mb-4 pr-8">
-            <h2 id="healix-modal-title" className="font-heading font-bold text-xl text-[#075A46]">
+            <h2 id="healix-modal-title" className="font-heading font-bold text-xl text-[#075C49]">
               {title}
             </h2>
             {description && (

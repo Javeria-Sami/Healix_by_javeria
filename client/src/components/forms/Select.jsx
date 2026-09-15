@@ -53,7 +53,7 @@ export const Select = forwardRef(function Select(
             'w-full px-4 py-2.5 rounded-healix-md border bg-[var(--color-input-bg,#F4F8F5)] text-sm text-text-primary appearance-none pr-10 transition-colors duration-150 focus:outline-none cursor-pointer',
             hasError
               ? 'border-status-error bg-status-error-bg/20 focus:ring-1 focus:ring-status-error text-status-error'
-              : 'border-border hover:border-healix-muted/40 focus:border-primary focus:ring-1 focus:ring-primary focus:bg-[var(--color-input-bg-focus,#F7FAF8)]',
+              : 'border-border hover:border-healix-muted/40 focus:border-primary focus:ring-1 focus:ring-primary focus:bg-[var(--color-input-bg-focus,#F5F8F6)]',
             disabled && 'opacity-50 cursor-not-allowed bg-surface-muted',
             selectClassName
           )}

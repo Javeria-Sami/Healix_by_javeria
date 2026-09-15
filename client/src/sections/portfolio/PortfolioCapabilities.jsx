@@ -45,7 +45,7 @@ export function PortfolioCapabilities() {
               <div className="w-10 h-10 rounded-healix-md bg-primary-light flex items-center justify-center text-primary">
                 <Icon className="w-5 h-5" />
               </div>
-              <h3 className="font-heading text-base font-bold text-[#075A46]">
+              <h3 className="font-heading text-base font-bold text-[#075C49]">
                 {cap.title}
               </h3>
               <p className="text-xs text-text-secondary leading-relaxed">

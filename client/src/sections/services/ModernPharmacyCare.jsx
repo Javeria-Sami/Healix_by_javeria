@@ -53,7 +53,7 @@ export function ModernPharmacyCare() {
     <section
       id="modern-pharmacy-care"
       aria-label="Modern Pharmacy Care"
-      className="pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20 bg-white border-b border-[#D8E7E0]/60 relative overflow-hidden"
+      className="pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20 bg-white border-b border-[#DCE8E3]/60 relative overflow-hidden"
     >
       <Container>
         {/* ============================================================
@@ -88,7 +88,7 @@ export function ModernPharmacyCare() {
           {/* ============================================================
               LEFT CARD: Prescription Care, Made Simpler (Full Background Image)
               ============================================================ */}
-          <article className="lg:col-span-7 bg-[#EAF4EF] border border-[#D8E7E0] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 group min-h-[380px] sm:min-h-[400px]">
+          <article className="lg:col-span-7 bg-[#F5F8F6] border border-[#DCE8E3] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 lg:p-10 flex flex-col justify-between relative overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 group min-h-[380px] sm:min-h-[400px]">
             {/* Full Background Photography Layer */}
             <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden">
               <img
@@ -99,7 +99,7 @@ export function ModernPharmacyCare() {
               />
               {/* Subtle Gradient Mask: Ensures high text contrast on the left while seamlessly revealing the bottle and mint background on the right */}
               <div
-                className="absolute inset-0 bg-gradient-to-r from-[#EAF4EF] via-[#EAF4EF]/85 sm:via-[#EAF4EF]/75 to-transparent w-full sm:w-[65%] lg:w-[60%] pointer-events-none"
+                className="absolute inset-0 bg-gradient-to-r from-[#F5F8F6] via-[#F5F8F6]/85 sm:via-[#F5F8F6]/75 to-transparent w-full sm:w-[65%] lg:w-[60%] pointer-events-none"
                 aria-hidden="true"
               />
             </div>
@@ -107,7 +107,7 @@ export function ModernPharmacyCare() {
             {/* Content Container (Left-aligned, clear text over soft background) */}
             <div className="relative z-10 space-y-4 max-w-full xs:max-w-[62%] sm:max-w-[58%] text-left">
               {/* Pill Icon Badge */}
-              <div className="w-11 h-11 rounded-2xl bg-[#075A46] text-white flex items-center justify-center shadow-xs">
+              <div className="w-11 h-11 rounded-2xl bg-[#075C49] text-white flex items-center justify-center shadow-xs">
                 <Pill className="w-5 h-5 stroke-[2]" aria-hidden="true" />
               </div>
 
@@ -128,7 +128,7 @@ export function ModernPharmacyCare() {
               <div className="pt-3">
                 <Link
                   to={ROUTES.PHARMACY}
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-full bg-[#075A46] hover:bg-[#054837] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075A46] focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-full bg-[#075C49] hover:bg-[#054839] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] focus-visible:ring-offset-2"
                 >
                   <span>Explore Pharmacy Services</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true" />
@@ -137,8 +137,8 @@ export function ModernPharmacyCare() {
             </div>
 
             {/* Bottom/Floating Trust Chip */}
-            <div className="mt-6 pt-4 border-t border-[#D8E7E0]/80 flex items-center gap-2 text-xs font-semibold text-[#075A46] relative z-10">
-              <ShieldCheck className="w-4 h-4 text-[#075A46]" aria-hidden="true" />
+            <div className="mt-6 pt-4 border-t border-[#DCE8E3]/80 flex items-center gap-2 text-xs font-semibold text-[#075C49] relative z-10">
+              <ShieldCheck className="w-4 h-4 text-[#075C49]" aria-hidden="true" />
               <span>Safe • Authentic • Reliable</span>
             </div>
           </article>
@@ -146,15 +146,15 @@ export function ModernPharmacyCare() {
           {/* ============================================================
               RIGHT CARD: What We Offer (5 Interactive Service Rows)
               ============================================================ */}
-          <article className="lg:col-span-5 bg-white border border-[#D8E7E0] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-soft-xs hover:shadow-soft-sm transition-all duration-300">
+          <article className="lg:col-span-5 bg-white border border-[#DCE8E3] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-soft-xs hover:shadow-soft-sm transition-all duration-300">
             {/* Header: Title & Action Link */}
-            <div className="flex items-center justify-between pb-4 border-b border-[#D8E7E0]/60">
+            <div className="flex items-center justify-between pb-4 border-b border-[#DCE8E3]/60">
               <h3 className="font-heading text-xl sm:text-2xl font-bold text-neutral-900">
                 What We Offer
               </h3>
               <Link
                 to={ROUTES.PHARMACY_CATEGORIES}
-                className="inline-flex items-center gap-1 text-xs font-bold text-[#075A46] hover:text-[#054837] transition-colors group/link"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#075C49] hover:text-[#054839] transition-colors group/link"
               >
                 <span>More Than Medicines</span>
                 <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/link:translate-x-1" aria-hidden="true" />
@@ -162,20 +162,20 @@ export function ModernPharmacyCare() {
             </div>
 
             {/* List of 5 Offerings */}
-            <div className="py-2 divide-y divide-[#D8E7E0]/40">
+            <div className="py-2 divide-y divide-[#DCE8E3]/40">
               {PHARMACY_OFFERINGS.map((item) => {
                 const Icon = item.icon;
                 return (
                   <Link
                     key={item.id}
                     to={item.link}
-                    className="group/item flex items-start gap-3.5 py-3 sm:py-3.5 first:pt-2 last:pb-0 text-left transition-colors rounded-xl px-1 hover:bg-[#EAF4EF]/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075A46]"
+                    className="group/item flex items-start gap-3.5 py-3 sm:py-3.5 first:pt-2 last:pb-0 text-left transition-colors rounded-xl px-1 hover:bg-[#F5F8F6]/50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49]"
                   >
-                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#EAF5EF] text-[#075A46] flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover/item:scale-105">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#EAF5EF] text-[#075C49] flex items-center justify-center flex-shrink-0 transition-transform duration-200 group-hover/item:scale-105">
                       <Icon className="w-4 h-4 sm:w-5 sm:h-5 stroke-[1.75]" aria-hidden="true" />
                     </div>
                     <div className="space-y-0.5 min-w-0">
-                      <h4 className="font-heading text-xs sm:text-sm font-bold text-neutral-900 group-hover/item:text-[#075A46] transition-colors">
+                      <h4 className="font-heading text-xs sm:text-sm font-bold text-neutral-900 group-hover/item:text-[#075C49] transition-colors">
                         {item.title}
                       </h4>
                       <p className="font-body text-[11px] sm:text-xs text-neutral-500 leading-snug">

@@ -49,7 +49,7 @@ export function PlansTransparency() {
                     <Icon className="w-5 h-5" />
                   </div>
 
-                  <h3 className="font-heading text-lg font-bold text-[#075A46] mb-3">
+                  <h3 className="font-heading text-lg font-bold text-[#075C49] mb-3">
                     {item.title}
                   </h3>
 
