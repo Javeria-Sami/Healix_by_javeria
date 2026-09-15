@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes.js';
 import { Container } from '../../components/common/Container.jsx';
 import { Breadcrumb } from '../../components/common/Breadcrumb.jsx';
 import { Badge } from '../../components/common/Badge.jsx';
-import { Button } from '../../components/common/Button.jsx';
 import { Sparkles, ArrowRight, ShieldCheck, HeartPulse, Stethoscope } from 'lucide-react';
 
 export function AboutHero() {
@@ -49,14 +49,13 @@ export function AboutHero() {
 
           {/* Action Group */}
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2 w-full sm:w-auto">
-            <Button
+            <Link
               to={ROUTES.SERVICES}
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#075C49] hover:bg-[#054839] text-[#8FD21F] text-sm sm:text-base font-extrabold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all active:scale-[0.99] group cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F]"
             >
-              Explore Clinical Programs
-            </Button>
+              <span>Explore Clinical Programs</span>
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 group-hover:translate-x-1 text-[#8FD21F]" />
+            </Link>
           </div>
         </div>
       </Container>
