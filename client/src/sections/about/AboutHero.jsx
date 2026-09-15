@@ -3,8 +3,7 @@ import { ROUTES } from '../../constants/routes.js';
 import { Container } from '../../components/common/Container.jsx';
 import { Breadcrumb } from '../../components/common/Breadcrumb.jsx';
 import { Badge } from '../../components/common/Badge.jsx';
-import { Button } from '../../components/common/Button.jsx';
-import { Sparkles, ArrowRight, ShieldCheck, HeartPulse, Stethoscope } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export function AboutHero() {
   const breadcrumbItems = [
@@ -46,27 +45,6 @@ export function AboutHero() {
           <p className="font-body text-base sm:text-lg text-text-secondary leading-relaxed max-w-2xl text-center mx-auto">
             Healix was established on the conviction that modern healthcare must evolve from reactive disease management to proactive longevity protection. We combine diagnostic accuracy with dedicated physician stewardship.
           </p>
-
-          {/* Action Group */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2 w-full sm:w-auto">
-            <Button
-              to={ROUTES.PROFESSIONALS}
-              variant="primary"
-              size="lg"
-              iconTrailing={ArrowRight}
-              className="w-full sm:w-auto shadow-soft-md"
-            >
-              Meet Medical Specialists
-            </Button>
-            <Button
-              to={ROUTES.SERVICES}
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto"
-            >
-              Explore Clinical Programs
-            </Button>
-          </div>
         </div>
       </Container>
     </section>
