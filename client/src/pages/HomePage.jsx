@@ -3,6 +3,7 @@ import { SEO } from '../components/common/SEO.jsx';
 import { generateOrganizationSchema, generateWebSiteSchema } from '../utils/structuredData.js';
 import {
   HeroSection,
+  PrimaryServicesSection,
   TrustSection,
   WideRangeMedicinesSection,
   HealthArticlesSection,
@@ -25,13 +26,16 @@ export function HomePage() {
       {/* 01: Homepage Hero Experience */}
       <HeroSection />
 
-      {/* 02: Mission / Brand Purpose */}
+      {/* 02: Our Services / How Can We Help You? */}
+      <PrimaryServicesSection />
+
+      {/* 03: Mission / Brand Purpose */}
       <TrustSection />
 
-      {/* 03: Wide Range of Medicines / Pharmacy Discovery */}
+      {/* 04: Wide Range of Medicines / Pharmacy Discovery */}
       <WideRangeMedicinesSection />
 
-      {/* 04: Health Articles / News & Articles */}
+      {/* 05: Health Articles / News & Articles */}
       <HealthArticlesSection />
     </div>
   );

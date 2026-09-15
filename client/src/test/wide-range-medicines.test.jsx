@@ -117,10 +117,13 @@ describe('Section 4 — Wide Range of Medicines / Pharmacy Discovery Experience'
     // Section 1: Hero
     expect(screen.getByRole('region', { name: /featured healthcare promotions/i })).toBeInTheDocument();
 
-    // Section 2: Our Mission
+    // Section 2: Our Services
+    expect(screen.getByRole('region', { name: /our services/i })).toBeInTheDocument();
+
+    // Section 3: Our Mission
     expect(screen.getByRole('region', { name: /our mission — why healix/i })).toBeInTheDocument();
 
-    // Section 3: Wide Range of Medicines
+    // Section 4: Wide Range of Medicines
     expect(screen.getByRole('region', { name: /wide range of medicines/i })).toBeInTheDocument();
   });
 });

@@ -2,14 +2,14 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
-import { PrimaryServicesSection, PHARMACY_SERVICES } from '../sections/home/PrimaryServicesSection.jsx';
+import { PrimaryServicesSection } from '../sections/home/PrimaryServicesSection.jsx';
 import { HomePage } from '../pages/HomePage.jsx';
 import { PharmacyProvider } from '../context/PharmacyContext.jsx';
 
 const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true };
 
-describe('Section 2 — Simple Pharmacy Care, Built Around You / Pharmacy Services', () => {
-  it('renders section landmark with semantic H2 heading, eyebrow and reassuring description', () => {
+describe('Section 2 — How Can We Help You? / Our Services Experience', () => {
+  it('renders section landmark with semantic H2 heading, eyebrow and description', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
@@ -18,20 +18,20 @@ describe('Section 2 — Simple Pharmacy Care, Built Around You / Pharmacy Servic
       </MemoryRouter>
     );
 
-    const section = screen.getByRole('region', { name: /pharmacy services/i });
+    const section = screen.getByRole('region', { name: /our services/i });
     expect(section).toBeInTheDocument();
 
-    expect(screen.getByText(/pharmacy services/i)).toBeInTheDocument();
+    expect(screen.getByText(/our services/i)).toBeInTheDocument();
 
-    const h2 = screen.getByRole('heading', { level: 2, name: /simple pharmacy care,\s*built around you/i });
+    const h2 = screen.getByRole('heading', { level: 2, name: /how can we help\s*you\?/i });
     expect(h2).toBeInTheDocument();
 
     expect(
-      screen.getByText(/trusted medicines, clear guidance, and convenient support when you need it\./i)
+      screen.getByText(/quick, reliable and convenient healthcare services — all in one place\./i)
     ).toBeInTheDocument();
   });
 
-  it('renders all 4 concise pharmacy service items with numbers, titles, and descriptions', () => {
+  it('renders both Pharmacy and Diagnostics service cards with authentic features and imagery', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
@@ -40,30 +40,24 @@ describe('Section 2 — Simple Pharmacy Care, Built Around You / Pharmacy Servic
       </MemoryRouter>
     );
 
-    expect(PHARMACY_SERVICES).toHaveLength(4);
+    // Card 1: Pharmacy / Order Medicines
+    expect(screen.getByText(/pharmacy/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: /order medicines/i })).toBeInTheDocument();
+    expect(screen.getByText(/get genuine medicines from trusted brands, delivered to your doorstep\./i)).toBeInTheDocument();
+    expect(screen.getByText(/genuine products/i)).toBeInTheDocument();
+    expect(screen.getByText(/fast delivery/i)).toBeInTheDocument();
+    expect(screen.getByText(/care you can trust/i)).toBeInTheDocument();
 
-    // 01 Prescription Medicines
-    expect(screen.getByText('01')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 3, name: /prescription medicines/i })).toBeInTheDocument();
-    expect(screen.getByText(/verified medicines with trusted pharmacist support\./i)).toBeInTheDocument();
-
-    // 02 Everyday Health
-    expect(screen.getByText('02')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 3, name: /everyday health/i })).toBeInTheDocument();
-    expect(screen.getByText(/otc medicines, vitamins, and essential wellness products\./i)).toBeInTheDocument();
-
-    // 03 Pharmacist Guidance
-    expect(screen.getByText('03')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 3, name: /pharmacist guidance/i })).toBeInTheDocument();
-    expect(screen.getByText(/clear, practical advice for safer medication use\./i)).toBeInTheDocument();
-
-    // 04 Easy Ordering
-    expect(screen.getByText('04')).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 3, name: /easy ordering/i })).toBeInTheDocument();
-    expect(screen.getByText(/simple ordering with convenient doorstep delivery\./i)).toBeInTheDocument();
+    // Card 2: Diagnostics / Book Lab Tests
+    expect(screen.getByText(/diagnostics/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: /book lab tests/i })).toBeInTheDocument();
+    expect(screen.getByText(/home-sampling & in-lab bookings at your convenience\./i)).toBeInTheDocument();
+    expect(screen.getByText(/accurate results/i)).toBeInTheDocument();
+    expect(screen.getByText(/home collection/i)).toBeInTheDocument();
+    expect(screen.getByText(/easy scheduling/i)).toBeInTheDocument();
   });
 
-  it('renders primary CTA button and service card navigation links connecting to valid destinations', () => {
+  it('renders interactive CTA buttons linking to pharmacy and diagnostics', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
@@ -72,35 +66,29 @@ describe('Section 2 — Simple Pharmacy Care, Built Around You / Pharmacy Servic
       </MemoryRouter>
     );
 
-    // Primary CTA
-    const primaryCta = screen.getByRole('link', { name: /explore pharmacy/i });
-    expect(primaryCta).toHaveAttribute('href', '/pharmacy');
+    // Pharmacy CTA
+    const orderBtn = screen.getByRole('link', { name: /order medicines/i });
+    expect(orderBtn).toHaveAttribute('href', '/pharmacy');
 
-    // Service card links
-    const prescriptionCard = screen.getByRole('link', { name: /prescription medicines/i });
-    expect(prescriptionCard).toHaveAttribute('href', '/pharmacy/prescription');
-
-    const everydayHealthCard = screen.getByRole('link', { name: /everyday health/i });
-    expect(everydayHealthCard).toHaveAttribute('href', '/pharmacy/categories');
-
-    const guidanceCard = screen.getByRole('link', { name: /pharmacist guidance/i });
-    expect(guidanceCard).toHaveAttribute('href', '/contact');
-
-    const easyOrderingCard = screen.getByRole('link', { name: /easy ordering/i });
-    expect(easyOrderingCard).toHaveAttribute('href', '/pharmacy/medicines');
+    // Diagnostics CTA
+    const labBtn = screen.getByRole('link', { name: /book a lab test/i });
+    expect(labBtn).toHaveAttribute('href', '/lab-tests');
   });
 
-  it('renders standalone PrimaryServicesSection component with required sections', () => {
+  it('renders seamlessly as Section 2 directly following the Hero on HomePage', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
-          <PrimaryServicesSection />
+          <HomePage />
         </PharmacyProvider>
       </MemoryRouter>
     );
 
-    expect(screen.getByRole('region', { name: /pharmacy services/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: /simple pharmacy care,\s*built around you/i })).toBeInTheDocument();
+    // Section 1: Hero
+    expect(screen.getByRole('region', { name: /featured healthcare promotions/i })).toBeInTheDocument();
+
+    // Section 2: Our Services
+    expect(screen.getByRole('region', { name: /our services/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 2, name: /how can we help\s*you\?/i })).toBeInTheDocument();
   });
 });
-

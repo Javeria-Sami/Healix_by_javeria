@@ -52,7 +52,7 @@ describe('Section 3 — Mission / Brand Purpose Experience', () => {
     expect(link).toHaveAttribute('href', '/about');
   });
 
-  it('renders in sequence directly after Hero on the HomePage', () => {
+  it('renders in sequence directly after Section 2 on the HomePage', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
@@ -64,7 +64,10 @@ describe('Section 3 — Mission / Brand Purpose Experience', () => {
     // Section 1: Hero
     expect(screen.getByRole('region', { name: /featured healthcare promotions/i })).toBeInTheDocument();
 
-    // Section 2: Our Mission
+    // Section 2: Our Services
+    expect(screen.getByRole('region', { name: /our services/i })).toBeInTheDocument();
+
+    // Section 3: Our Mission
     expect(screen.getByRole('region', { name: /our mission — why healix/i })).toBeInTheDocument();
   });
 });
