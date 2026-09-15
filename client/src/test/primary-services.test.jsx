@@ -90,19 +90,15 @@ describe('Section 2 — Simple Pharmacy Care, Built Around You / Pharmacy Servic
     expect(easyOrderingCard).toHaveAttribute('href', '/pharmacy/medicines');
   });
 
-  it('renders seamlessly as Section 2 directly following the Hero on HomePage', () => {
+  it('renders standalone PrimaryServicesSection component with required sections', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
-          <HomePage />
+          <PrimaryServicesSection />
         </PharmacyProvider>
       </MemoryRouter>
     );
 
-    // Section 1: Hero
-    expect(screen.getByRole('region', { name: /featured healthcare promotions/i })).toBeInTheDocument();
-
-    // Section 2: Primary Services
     expect(screen.getByRole('region', { name: /pharmacy services/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: /simple pharmacy care,\s*built around you/i })).toBeInTheDocument();
   });

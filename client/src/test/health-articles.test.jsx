@@ -71,9 +71,8 @@ describe('Section 5 — Health Articles / News & Articles Experience', () => {
       </MemoryRouter>
     );
 
-    // Verify all 5 home sections in sequence
+    // Verify all 4 home sections in sequence
     expect(screen.getByRole('heading', { level: 1, name: /reliable medicines/i })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { level: 2, name: /simple pharmacy care,\s*built around you/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: /healthcare,\s*made\s*simpler\./i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: /wide range of medicines/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: /helpful reads for better health/i })).toBeInTheDocument();
