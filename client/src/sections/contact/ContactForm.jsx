@@ -313,25 +313,23 @@ export function ContactForm() {
               <span>Protected under strict data security controls</span>
             </div>
 
-            <Button
+            <button
               type="submit"
-              variant="primary"
-              size="md"
               disabled={status.state === 'submitting'}
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#075C49] hover:bg-[#054839] active:bg-[#04362b] text-[#8FD21F] font-bold text-sm sm:text-base shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all duration-200 select-none outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed group"
             >
               {status.state === 'submitting' ? (
                 <>
-                  <Loader2 className="w-4 h-4 animate-spin mr-2" />
+                  <Loader2 className="w-4 h-4 animate-spin text-[#8FD21F]" />
                   <span>Submitting Inquiry...</span>
                 </>
               ) : (
                 <>
                   <span>Submit Consultation Request</span>
-                  <Send className="w-4 h-4 ml-2" />
+                  <ArrowRight className="w-4 h-4 text-[#8FD21F] transition-transform duration-200 group-hover:translate-x-0.5" />
                 </>
               )}
-            </Button>
+            </button>
           </div>
         </form>
       )}
