@@ -111,7 +111,7 @@ describe('Healix Navigation & Header Architecture Tests', () => {
 
       expect(screen.queryByRole('link', { name: /^home$/i })).toBeNull();
       expect(screen.getByRole('link', { name: /^about$/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /pharmacy/i })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: /^pharmacy$/i })).toBeInTheDocument();
       expect(screen.getByRole('link', { name: /^services$/i })).toBeInTheDocument();
       expect(screen.getByRole('link', { name: /^insights$/i })).toBeInTheDocument();
       expect(screen.getByRole('link', { name: /^contact$/i })).toBeInTheDocument();

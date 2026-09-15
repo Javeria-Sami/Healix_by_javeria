@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import clsx from 'clsx';
 import { ROUTES } from '../../constants/routes.js';
-import { PHARMACY_NAV } from '../../data/navigation.js';
 import { usePharmacy } from '../../context/PharmacyContext.jsx';
 import {
-  ChevronDown,
   ArrowRight,
   Pill,
   Sparkles,
@@ -22,10 +20,6 @@ export function MobileMenu({ isOpen, onClose, triggerRef }) {
   const location = useLocation();
   const drawerRef = useRef(null);
   const { cartCount } = usePharmacy();
-
-  // Accordion states
-  const [pharmacyOpen, setPharmacyOpen] = useState(true);
-  const [openPharmacySection, setOpenPharmacySection] = useState('medications');
 
   useEffect(() => {
     if (isOpen) {
@@ -59,12 +53,6 @@ export function MobileMenu({ isOpen, onClose, triggerRef }) {
     location.pathname.startsWith('/resources') ||
     location.pathname.startsWith('/blog');
   const isContactActive = location.pathname === ROUTES.CONTACT;
-
-  const sectionIcons = {
-    'medications': Pill,
-    'wellness-beauty': Sparkles,
-    'devices-injectables': HeartPulse,
-  };
 
   return (
     <div
@@ -100,88 +88,24 @@ export function MobileMenu({ isOpen, onClose, triggerRef }) {
           {isAboutActive && <span className="text-xs text-primary font-bold uppercase tracking-wider">Current</span>}
         </Link>
 
-        {/* 2. Pharmacy (Expandable Accordion) */}
-        <div className="rounded-xl border border-neutral-200/80 overflow-hidden bg-neutral-50/50">
-          <button
-            type="button"
-            onClick={() => setPharmacyOpen((prev) => !prev)}
-            aria-expanded={pharmacyOpen}
-            className={clsx(
-              'min-h-[48px] w-full flex items-center justify-between px-4 py-3.5 text-base font-semibold transition-colors',
-              isPharmacyActive ? 'text-primary bg-primary-50/80 font-bold' : 'text-neutral-900 hover:bg-neutral-100/70'
-            )}
-          >
-            <span className="flex items-center gap-2.5">
-              <Pill className="w-5 h-5 text-primary" />
-              <span>Pharmacy</span>
-            </span>
-            <ChevronDown
-              className={clsx(
-                'w-5 h-5 text-neutral-500 transition-transform duration-200',
-                pharmacyOpen && 'rotate-180 text-primary'
-              )}
-            />
-          </button>
-
-          {pharmacyOpen && (
-            <div className="p-2 space-y-2 bg-white border-t border-neutral-200/60 animate-in slide-in-from-top-2 duration-150">
-              {PHARMACY_NAV.sections.map((section) => {
-                const IconComponent = sectionIcons[section.id] || Pill;
-                const isSectionOpen = openPharmacySection === section.id;
-                return (
-                  <div key={section.id} className="rounded-lg border border-neutral-100 overflow-hidden">
-                    <button
-                      type="button"
-                      onClick={() => setOpenPharmacySection(isSectionOpen ? null : section.id)}
-                      aria-expanded={isSectionOpen}
-                      className="min-h-[44px] w-full flex items-center justify-between px-3.5 py-2.5 text-sm font-bold text-neutral-800 bg-neutral-50/80 hover:bg-neutral-100/80 transition-colors"
-                    >
-                      <span className="flex items-center gap-2">
-                        <IconComponent className="w-4 h-4 text-primary" />
-                        <span>{section.title}</span>
-                      </span>
-                      <ChevronDown
-                        className={clsx(
-                          'w-4 h-4 text-neutral-400 transition-transform duration-200',
-                          isSectionOpen && 'rotate-180 text-primary'
-                        )}
-                      />
-                    </button>
-
-                    {isSectionOpen && (
-                      <ul className="p-2 space-y-1 bg-white border-t border-neutral-100" role="list">
-                        {section.categories.map((cat) => (
-                          <li key={cat.slug}>
-                            <Link
-                              to={cat.href}
-                              onClick={onClose}
-                              className="min-h-[42px] flex items-center justify-between px-3 py-2 rounded-md text-sm text-neutral-700 hover:text-primary hover:bg-primary-50/50 transition-colors"
-                            >
-                              <span>{cat.name}</span>
-                              <ArrowRight className="w-3.5 h-3.5 text-neutral-300" />
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                );
-              })}
-
-              {/* View All Categories Link */}
-              <div className="pt-2">
-                <Link
-                  to={PHARMACY_NAV.viewAll.href}
-                  onClick={onClose}
-                  className="min-h-[44px] flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-bold text-primary bg-primary-50 hover:bg-primary-100 transition-colors"
-                >
-                  <span>{PHARMACY_NAV.viewAll.label}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
-            </div>
+        {/* 2. Pharmacy */}
+        <Link
+          to={ROUTES.PHARMACY}
+          onClick={onClose}
+          aria-current={isPharmacyActive ? 'page' : undefined}
+          className={clsx(
+            'min-h-[48px] flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold transition-all duration-150',
+            isPharmacyActive
+              ? 'text-primary bg-primary-50 font-bold border-l-4 border-primary pl-3'
+              : 'text-neutral-800 hover:text-neutral-900 hover:bg-neutral-50'
           )}
-        </div>
+        >
+          <span className="flex items-center gap-2.5">
+            <Pill className="w-5 h-5 text-primary" />
+            <span>Pharmacy</span>
+          </span>
+          {isPharmacyActive && <span className="text-xs text-primary font-bold uppercase tracking-wider">Current</span>}
+        </Link>
 
         {/* 3. Services */}
         <Link
