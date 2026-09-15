@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from '../../components/common/Container.jsx';
 import { Breadcrumb } from '../../components/common/Breadcrumb.jsx';
 import { ROUTES } from '../../constants/routes.js';
-import { Pill, UserCheck, Truck, Heart, FileText, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Pill, UserCheck, Truck, Heart, FileText, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
 
 export const PHARMACY_OFFERINGS = [
   {
@@ -53,8 +53,18 @@ export function ModernPharmacyCare() {
     <section
       id="modern-pharmacy-care"
       aria-label="Modern Pharmacy Care"
-      className="pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20 bg-white border-b border-[#DCE8E3]/60 relative overflow-hidden"
+      className="pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20 bg-[#F4F8F5] border-b border-[#DCE8E3]/60 relative overflow-hidden"
     >
+      {/* Background ambient lighting glows */}
+      <div
+        className="absolute top-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl pointer-events-none -z-10"
+        aria-hidden="true"
+      />
+
       <Container>
         {/* ============================================================
             BREADCRUMB & SECTION HEADER (Left-Aligned Group)
@@ -65,17 +75,22 @@ export function ModernPharmacyCare() {
             <Breadcrumb items={breadcrumbItems} />
           </div>
 
-          <div className="space-y-2 text-left">
-            <span className="text-xs font-semibold tracking-[0.18em] text-[#075C46] uppercase block font-sans">
-              PRIMARY SERVICE
-            </span>
+          <div className="space-y-3 text-left">
+            {/* Category Eyebrow Badge */}
+            <div className="inline-flex items-center">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#EAF5EF] text-[#075C49] text-xs font-bold uppercase tracking-wider border border-[#DCE8E3]">
+                <Sparkles className="w-3.5 h-3.5 text-[#8FD21F]" aria-hidden="true" />
+                Primary Healthcare Services
+              </span>
+            </div>
+
             <h1
               id="modern-pharmacy-heading"
-              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075C49] tracking-tight leading-tight"
+              className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075C49] tracking-tight leading-[1.15]"
             >
-              Modern Pharmacy <span className="text-[#8FD21F]">Care</span>
+              Modern Pharmacy <span className="font-editorial italic font-normal text-[#8FD21F]">Care</span>
             </h1>
-            <p className="font-body text-sm sm:text-base text-[#42554E] max-w-xl leading-relaxed pt-1">
+            <p className="font-body text-sm sm:text-base text-text-secondary max-w-2xl leading-relaxed pt-1">
               Safe, convenient, and personalized pharmacy support to help you and your family live healthier, every day.
             </p>
           </div>
@@ -117,7 +132,7 @@ export function ModernPharmacyCare() {
                 </span>
                 <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[32px] font-extrabold text-[#075C49] tracking-tight leading-tight">
                   Prescription Care, <br />
-                  <span className="text-[#8FD21F]">Made Simpler</span>
+                  <span className="font-editorial italic font-normal text-[#8FD21F]">Made Simpler</span>
                 </h3>
                 <p className="font-body text-xs sm:text-sm text-neutral-600 leading-relaxed pt-1">
                   From prescription refills to expert guidance, we make it easy to access the medicines you need with confidence and care.
@@ -128,10 +143,10 @@ export function ModernPharmacyCare() {
               <div className="pt-3">
                 <Link
                   to={ROUTES.PHARMACY}
-                  className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-extrabold text-xs sm:text-sm shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] focus-visible:ring-offset-2"
+                  className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#075C49] hover:bg-[#054839] text-[#8FD21F] text-xs sm:text-sm font-extrabold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all active:scale-[0.99] group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] focus-visible:ring-offset-2"
                 >
                   <span>Explore Pharmacy Services</span>
-                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1 text-[#10231E]" aria-hidden="true" />
+                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1 text-[#8FD21F]" aria-hidden="true" />
                 </Link>
               </div>
             </div>
