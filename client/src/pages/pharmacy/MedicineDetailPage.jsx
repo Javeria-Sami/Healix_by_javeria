@@ -190,11 +190,11 @@ export default function MedicineDetailPage() {
             {/* Pricing Presentation */}
             <div className="flex items-baseline gap-3 mb-6">
               <div className="text-3xl sm:text-4xl font-extrabold text-neutral-900">
-                ${medicine.price.toFixed(2)}
+                Rs. {medicine.price.toFixed(2)}
               </div>
               {medicine.compareAtPrice && medicine.compareAtPrice > medicine.price && (
                 <div className="text-lg text-neutral-400 line-through font-medium">
-                  ${medicine.compareAtPrice.toFixed(2)}
+                  Rs. {medicine.compareAtPrice.toFixed(2)}
                 </div>
               )}
               {medicine.discountPercentage > 0 && (

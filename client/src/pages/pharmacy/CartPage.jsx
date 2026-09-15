@@ -127,7 +127,7 @@ export default function CartPage() {
                           {item.genericName} • {item.strength} • {item.packSize}
                         </p>
                         <div className="text-xs font-semibold text-neutral-700 mt-1">
-                          ${item.price.toFixed(2)} each
+                          Rs. {item.price.toFixed(2)} each
                         </div>
                       </div>
                     </div>
@@ -160,7 +160,7 @@ export default function CartPage() {
                       {/* Line Subtotal */}
                       <div className="text-right min-w-[70px]">
                         <div className="font-extrabold text-sm sm:text-base text-neutral-900">
-                          ${itemTotal.toFixed(2)}
+                          Rs. {itemTotal.toFixed(2)}
                         </div>
                       </div>
 
@@ -201,13 +201,13 @@ export default function CartPage() {
               <div className="space-y-3 text-sm">
                 <div className="flex items-center justify-between text-neutral-600">
                   <span>Subtotal</span>
-                  <span className="font-semibold text-neutral-900">${cartSubtotal.toFixed(2)}</span>
+                  <span className="font-semibold text-neutral-900">Rs. {cartSubtotal.toFixed(2)}</span>
                 </div>
 
                 {cartDiscount > 0 && (
                   <div className="flex items-center justify-between text-emerald-600">
                     <span>Special Savings</span>
-                    <span className="font-semibold">-${cartDiscount.toFixed(2)}</span>
+                    <span className="font-semibold">-Rs. {cartDiscount.toFixed(2)}</span>
                   </div>
                 )}
 
@@ -216,7 +216,7 @@ export default function CartPage() {
                     <span>Delivery Fee</span>
                     {cartSubtotal >= 40 && (
                       <span className="text-[10px] block text-emerald-600 font-bold">
-                        Eligible for Free Delivery ($40+)
+                        Eligible for Free Delivery (Rs. 40+)
                       </span>
                     )}
                   </div>
@@ -224,14 +224,14 @@ export default function CartPage() {
                     {cartDeliveryFee === 0 ? (
                       <span className="text-emerald-600 font-bold">FREE</span>
                     ) : (
-                      `$${cartDeliveryFee.toFixed(2)}`
+                      `Rs. ${cartDeliveryFee.toFixed(2)}`
                     )}
                   </span>
                 </div>
 
                 <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-base font-extrabold text-neutral-900">
                   <span>Total Amount</span>
-                  <span className="text-xl text-primary-900">${cartTotal.toFixed(2)}</span>
+                  <span className="text-xl text-primary-900">Rs. {cartTotal.toFixed(2)}</span>
                 </div>
               </div>
 

@@ -71,54 +71,16 @@ export default function MedicineDirectoryPage() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-
-        {/* Results Controls & Filters */}
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-bold text-neutral-900">
-              {sortedMedicines.length} {sortedMedicines.length === 1 ? 'Product' : 'Products'} found
+        {/* Results Count Header */}
+        <div className="mb-6">
+          <span className="text-sm font-bold text-neutral-900">
+            {sortedMedicines.length} {sortedMedicines.length === 1 ? 'Product' : 'Products'} available
+          </span>
+          {selectedLetter && (
+            <span className="ml-3 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800 text-xs font-semibold">
+              Starting with "{selectedLetter}"
             </span>
-            {selectedLetter && (
-              <span className="px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800 text-xs font-semibold">
-                Starting with "{selectedLetter}"
-              </span>
-            )}
-          </div>
-
-          <div className="flex flex-wrap items-center gap-3">
-            {/* Form filter */}
-            <div className="flex items-center gap-1.5 text-xs">
-              <span className="text-neutral-500 font-medium">Form:</span>
-              <select
-                value={dosageFilter}
-                onChange={(e) => setDosageFilter(e.target.value)}
-                className="bg-white border border-neutral-200 rounded-xl px-2.5 py-1.5 text-neutral-700 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-primary-500/20"
-              >
-                <option value="ALL">All Forms</option>
-                <option value="TABLETS">Tablets</option>
-                <option value="CAPSULES">Capsules</option>
-                <option value="SYRUPS">Syrups / Liquid</option>
-                <option value="INHALERS">Inhalers</option>
-                <option value="DEVICES">Devices & Others</option>
-              </select>
-            </div>
-
-            {/* Sort Filter */}
-            <div className="flex items-center gap-1.5 text-xs">
-              <span className="text-neutral-500 font-medium">Sort by:</span>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="bg-white border border-neutral-200 rounded-xl px-2.5 py-1.5 text-neutral-700 text-xs font-medium focus:outline-none focus:ring-2 focus:ring-primary-500/20"
-              >
-                <option value="name-asc">Name: A to Z</option>
-                <option value="name-desc">Name: Z to A</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="discount">Highest Discount</option>
-              </select>
-            </div>
-          </div>
+          )}
         </div>
 
         {/* Product Cards Grid */}

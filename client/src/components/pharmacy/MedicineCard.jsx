@@ -144,11 +144,11 @@ export function MedicineCard({
           <div className="flex items-baseline justify-between">
             <div className="flex items-baseline gap-2">
               <span className="font-heading font-extrabold text-lg text-text-primary">
-                ${medicine.price.toFixed(2)}
+                Rs. {medicine.price.toFixed(2)}
               </span>
               {hasDiscount && (
                 <span className="text-xs text-text-muted line-through">
-                  ${medicine.compareAtPrice.toFixed(2)}
+                  Rs. {medicine.compareAtPrice.toFixed(2)}
                 </span>
               )}
             </div>

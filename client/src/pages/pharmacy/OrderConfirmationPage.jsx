@@ -122,7 +122,7 @@ export default function OrderConfirmationPage() {
                     <div className="text-[11px] text-neutral-400">{item.strength} • {item.dosageForm}</div>
                   </div>
                   <div className="font-bold text-neutral-900 text-sm">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    Rs. {(item.price * item.quantity).toFixed(2)}
                   </div>
                 </div>
               ))}
@@ -131,7 +131,7 @@ export default function OrderConfirmationPage() {
 
           <div className="pt-2 flex justify-between items-center text-base font-extrabold text-neutral-900 border-t border-neutral-100">
             <span>Total Paid / Payable</span>
-            <span className="text-xl text-primary-900">${displayTotal.toFixed(2)}</span>
+            <span className="text-xl text-primary-900">Rs. {displayTotal.toFixed(2)}</span>
           </div>
         </div>
 

@@ -395,7 +395,7 @@ export default function CheckoutPage() {
                         <div className="text-[11px] text-neutral-400">{item.strength} • {item.dosageForm}</div>
                       </div>
                       <div className="font-bold text-neutral-900 text-sm">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        Rs. {(item.price * item.quantity).toFixed(2)}
                       </div>
                     </div>
                   ))}
@@ -561,7 +561,7 @@ export default function CheckoutPage() {
                     type="submit"
                     className="px-8 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-base transition-all shadow-md shadow-emerald-600/20 active:scale-[0.98]"
                   >
-                    Confirm & Place Order (${cartTotal.toFixed(2)})
+                    Confirm & Place Order (Rs. {cartTotal.toFixed(2)})
                   </button>
                 </div>
               </form>
@@ -577,23 +577,23 @@ export default function CheckoutPage() {
               <div className="space-y-2.5 text-xs">
                 <div className="flex justify-between text-neutral-600">
                   <span>Subtotal</span>
-                  <span className="font-semibold text-neutral-900">${cartSubtotal.toFixed(2)}</span>
+                  <span className="font-semibold text-neutral-900">Rs. {cartSubtotal.toFixed(2)}</span>
                 </div>
                 {cartDiscount > 0 && (
                   <div className="flex justify-between text-emerald-600">
                     <span>Discount</span>
-                    <span className="font-semibold">-${cartDiscount.toFixed(2)}</span>
+                    <span className="font-semibold">-Rs. {cartDiscount.toFixed(2)}</span>
                   </div>
                 )}
                 <div className="flex justify-between text-neutral-600">
                   <span>Delivery</span>
                   <span className="font-semibold text-neutral-900">
-                    {cartDeliveryFee === 0 ? 'FREE' : `$${cartDeliveryFee.toFixed(2)}`}
+                    {cartDeliveryFee === 0 ? 'FREE' : `Rs. ${cartDeliveryFee.toFixed(2)}`}
                   </span>
                 </div>
                 <div className="pt-2 border-t border-neutral-100 flex justify-between text-sm font-extrabold text-neutral-900">
                   <span>Total Payable</span>
-                  <span className="text-base text-primary-900">${cartTotal.toFixed(2)}</span>
+                  <span className="text-base text-primary-900">Rs. {cartTotal.toFixed(2)}</span>
                 </div>
               </div>
 
