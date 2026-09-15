@@ -9,7 +9,7 @@ const variantMap = {
   secondary:
     'bg-secondary border border-primary text-primary hover:bg-primary-soft active:bg-primary-light focus-visible:ring-primary',
   accent:
-    'bg-[#98CF2D] text-[#17221E] hover:bg-[#88BC25] font-bold shadow-soft-sm focus-visible:ring-[#98CF2D]',
+    'bg-[#94D126] text-[#10231E] hover:bg-[#81B81F] font-bold shadow-soft-sm focus-visible:ring-[#94D126]',
   outline:
     'border border-border bg-surface text-text-primary hover:bg-surface-muted hover:border-primary/60 focus-visible:ring-primary',
   ghost:

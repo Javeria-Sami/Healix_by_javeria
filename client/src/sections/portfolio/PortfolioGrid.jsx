@@ -58,7 +58,7 @@ export function PortfolioGrid({ projects, onResetFilters }) {
                 </div>
               </div>
 
-              <h3 className="font-heading text-xl font-bold text-[#075B43] group-hover:text-primary transition-colors leading-snug">
+              <h3 className="font-heading text-xl font-bold text-[#075A46] group-hover:text-primary transition-colors leading-snug">
                 <Link to={`/portfolio/${project.slug}`}>
                   {project.title}
                 </Link>

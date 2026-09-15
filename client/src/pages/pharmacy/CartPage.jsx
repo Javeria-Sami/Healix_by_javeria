@@ -24,7 +24,7 @@ export default function CartPage() {
           <div className="w-20 h-20 mx-auto rounded-3xl bg-primary-50 text-primary-600 flex items-center justify-center text-4xl mb-4">
             🛒
           </div>
-          <h1 className="text-2xl font-bold text-[#075B43] mb-2 font-heading">Your Pharmacy Cart is Empty</h1>
+          <h1 className="text-2xl font-bold text-neutral-900 mb-2">Your Pharmacy Cart is Empty</h1>
           <p className="text-sm text-neutral-500 mb-8 leading-relaxed">
             You haven't added any medicines or healthcare products to your cart yet.
           </p>
@@ -62,7 +62,7 @@ export default function CartPage() {
 
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] tracking-tight font-heading">
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
                 Review Your Cart
               </h1>
               <p className="text-sm text-neutral-500 mt-1">
@@ -113,7 +113,7 @@ export default function CartPage() {
                         <div className="flex items-center gap-2 mb-1">
                           <Link
                             to={`/pharmacy/medicine/${item.slug}`}
-                            className="font-bold text-sm sm:text-base text-[#075B43] hover:text-[#064C38] transition-colors truncate"
+                            className="font-bold text-sm sm:text-base text-neutral-900 hover:text-primary-600 transition-colors truncate"
                           >
                             {item.name}
                           </Link>
@@ -144,7 +144,7 @@ export default function CartPage() {
                         >
                           −
                         </button>
-                        <span className="w-8 text-center text-xs font-bold text-[#075B43]">
+                        <span className="w-8 text-center text-xs font-bold text-neutral-900">
                           {item.quantity}
                         </span>
                         <button
@@ -159,7 +159,7 @@ export default function CartPage() {
 
                       {/* Line Subtotal */}
                       <div className="text-right min-w-[70px]">
-                        <div className="font-extrabold text-sm sm:text-base text-[#075B43]">
+                        <div className="font-extrabold text-sm sm:text-base text-neutral-900">
                           Rs. {itemTotal.toFixed(2)}
                         </div>
                       </div>
@@ -194,7 +194,7 @@ export default function CartPage() {
           {/* Order Summary Card */}
           <div className="lg:col-span-4">
             <div className="bg-white rounded-3xl p-6 border border-neutral-200/80 shadow-sm space-y-5 sticky top-24">
-              <h2 className="text-lg font-bold text-[#075B43] pb-3 border-b border-neutral-100 font-heading">
+              <h2 className="text-lg font-bold text-neutral-900 pb-3 border-b border-neutral-100">
                 Order Summary
               </h2>
 
@@ -229,7 +229,7 @@ export default function CartPage() {
                   </span>
                 </div>
 
-                <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-base font-extrabold text-[#075B43]">
+                <div className="pt-3 border-t border-neutral-100 flex items-center justify-between text-base font-extrabold text-neutral-900">
                   <span>Total Amount</span>
                   <span className="text-xl text-primary-900">Rs. {cartTotal.toFixed(2)}</span>
                 </div>

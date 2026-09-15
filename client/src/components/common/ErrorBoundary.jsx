@@ -28,7 +28,7 @@ export class ErrorBoundary extends Component {
             <div className="w-12 h-12 rounded-full bg-red-50 text-status-error flex items-center justify-center mx-auto mb-4">
               <AlertTriangle className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold text-[#075B43] mb-2">Something went wrong</h2>
+            <h2 className="text-2xl font-bold text-[#075A46] mb-2">Something went wrong</h2>
             <p className="text-text-secondary text-sm mb-6">
               We encountered an unexpected presentation error. Our technical monitoring team has been notified.
             </p>

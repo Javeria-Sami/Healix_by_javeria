@@ -8,9 +8,9 @@ export function AboutCTA() {
   return (
     <section className="py-12 md:py-20 bg-background" aria-labelledby="about-cta-heading">
       <Container>
-        <div className="bg-[#075B43] rounded-3xl px-6 py-12 sm:px-12 sm:py-16 md:py-20 text-center text-white shadow-xl relative overflow-hidden border border-[#0D7657]/40">
+        <div className="bg-[#075A46] rounded-3xl px-6 py-12 sm:px-12 sm:py-16 md:py-20 text-center text-white shadow-xl relative overflow-hidden border border-[#0E745B]/40">
           {/* Eyebrow */}
-          <div className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#98CF2D] mb-3 sm:mb-4">
+          <div className="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-[#94D126] mb-3 sm:mb-4">
             Looking Ahead
           </div>
 
@@ -23,7 +23,7 @@ export function AboutCTA() {
           </h2>
 
           {/* Subtitle */}
-          <p className="font-body text-sm sm:text-base md:text-lg text-[#DCEBE4] max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="font-body text-sm sm:text-base md:text-lg text-[#D8E7E0] max-w-2xl mx-auto leading-relaxed mb-8">
             While our platform delivers verified medicines and daily care essentials today, we are actively developing broader diagnostic and proactive wellness solutions for tomorrow.
           </p>
 
@@ -31,7 +31,7 @@ export function AboutCTA() {
           <div className="flex justify-center">
             <Link
               to={ROUTES.CONTACT}
-              className="inline-flex items-center gap-2 bg-[#98CF2D] hover:bg-[#86BE22] text-[#075B43] font-bold text-sm sm:text-base px-8 py-3.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#98CF2D] focus-visible:ring-offset-2"
+              className="inline-flex items-center gap-2 bg-[#94D126] hover:bg-[#86BE22] text-[#075A46] font-bold text-sm sm:text-base px-8 py-3.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#94D126] focus-visible:ring-offset-2"
             >
               <span>Get in Touch with Healix</span>
               <ArrowRight className="w-4 h-4" />

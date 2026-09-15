@@ -22,7 +22,7 @@ export function FinalCTA() {
             </Badge>
           </div>
 
-          <h2 id="final-cta-heading" className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075B43] tracking-tight leading-tight">
+          <h2 id="final-cta-heading" className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075A46] tracking-tight leading-tight">
             Ready to Take Control of <br />
             <span className="font-editorial italic font-normal text-primary">
               Your Healthspan & Longevity?

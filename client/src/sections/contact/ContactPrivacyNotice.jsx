@@ -7,7 +7,7 @@ import { ROUTES } from '../../constants/routes.js';
 export function ContactPrivacyNotice() {
   return (
     <Card className="p-6 border border-border/80 bg-surface/60 space-y-3">
-      <div className="flex items-center gap-2 text-[#075B43] font-bold text-xs">
+      <div className="flex items-center gap-2 text-[#075A46] font-bold text-xs">
         <ShieldCheck className="w-4 h-4 text-primary flex-shrink-0" />
         <span>Medical Communication & Privacy Notice</span>
       </div>

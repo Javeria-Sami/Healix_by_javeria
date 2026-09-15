@@ -30,7 +30,7 @@ export function ServiceInclusions({ inclusions = [] }) {
                   <span className="w-8 h-8 rounded-full bg-primary-light text-primary flex items-center justify-center font-mono text-xs font-bold">
                     0{idx + 1}
                   </span>
-                  <h3 className="font-heading text-lg font-bold text-[#075B43]">
+                  <h3 className="font-heading text-lg font-bold text-[#075A46]">
                     {inclusion.title}
                   </h3>
                 </div>

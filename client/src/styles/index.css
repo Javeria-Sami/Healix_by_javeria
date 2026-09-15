@@ -26,10 +26,9 @@
   }
 
   /* Headings Defaults */
-  h1, h2, h3, h4, h5, h6,
-  .font-heading {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    color: #075B43;
+    color: var(--color-text-primary);
     letter-spacing: -0.02em;
     font-weight: var(--weight-bold);
     line-height: var(--leading-tight);
@@ -69,7 +68,6 @@
     line-height: var(--leading-tight);
     letter-spacing: -0.03em;
     font-weight: var(--weight-extrabold);
-    color: #075B43;
   }
 
   .font-h1 {
@@ -78,7 +76,6 @@
     line-height: var(--leading-tight);
     letter-spacing: -0.025em;
     font-weight: var(--weight-extrabold);
-    color: #075B43;
   }
 
   .font-h2 {
@@ -87,7 +84,6 @@
     line-height: var(--leading-snug);
     letter-spacing: -0.02em;
     font-weight: var(--weight-bold);
-    color: #075B43;
   }
 
   .font-h3 {
@@ -96,7 +92,6 @@
     line-height: var(--leading-snug);
     letter-spacing: -0.015em;
     font-weight: var(--weight-bold);
-    color: #075B43;
   }
 
   .font-h4 {
@@ -105,7 +100,6 @@
     line-height: var(--leading-snug);
     letter-spacing: -0.01em;
     font-weight: var(--weight-semibold);
-    color: #075B43;
   }
 
   .font-body-lg {

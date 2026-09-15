@@ -14,7 +14,7 @@ export function StorySection() {
               The Founding Problem
             </Badge>
 
-            <h2 id="story-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075B43] leading-tight">
+            <h2 id="story-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075A46] leading-tight">
               Why We Built Healix: <br />
               <span className="font-editorial italic font-normal text-primary">
                 Closing the Preventative Healthcare Gap
@@ -28,7 +28,7 @@ export function StorySection() {
 
           {/* Right Column: Dark Healix Clinical Paradigm Shift Panel (~45% width) */}
           <div className="lg:col-span-5">
-            <div className="bg-[#075B43] rounded-2xl p-6 sm:p-8 shadow-xl space-y-5 text-left border border-[#0D7657]/40 text-white">
+            <div className="bg-[#075A46] rounded-2xl p-6 sm:p-8 shadow-xl space-y-5 text-left border border-[#0E745B]/40 text-white">
               <div className="border-b border-white/15 pb-3.5">
                 <h3 className="font-heading font-bold text-base tracking-wide text-white">
                   The Clinical Paradigm Shift
@@ -48,9 +48,9 @@ export function StorySection() {
                 </div>
 
                 {/* Healix Preventative Standard Block */}
-                <div className="p-4 rounded-xl bg-white/10 border border-[#98CF2D]/30 space-y-1.5 transition-colors shadow-soft-xs">
-                  <div className="flex items-center gap-2 text-xs font-bold text-[#98CF2D]">
-                    <CheckCircle2 className="w-4 h-4 text-[#98CF2D] flex-shrink-0" aria-hidden="true" />
+                <div className="p-4 rounded-xl bg-white/10 border border-[#94D126]/30 space-y-1.5 transition-colors shadow-soft-xs">
+                  <div className="flex items-center gap-2 text-xs font-bold text-[#94D126]">
+                    <CheckCircle2 className="w-4 h-4 text-[#94D126] flex-shrink-0" aria-hidden="true" />
                     <span className="tracking-wide">Healix Preventative Standard</span>
                   </div>
                   <p className="text-xs text-white/90 leading-relaxed font-normal">
@@ -62,10 +62,10 @@ export function StorySection() {
               {/* Bottom Concluding Statement */}
               <div className="pt-3.5 flex items-center justify-between text-xs text-white/70 border-t border-white/15">
                 <span className="flex items-center gap-1.5 text-white/85">
-                  <HeartPulse className="w-4 h-4 text-[#98CF2D]" aria-hidden="true" />
+                  <HeartPulse className="w-4 h-4 text-[#94D126]" aria-hidden="true" />
                   Prevention Focused
                 </span>
-                <span className="font-semibold text-[#98CF2D] tracking-wide">
+                <span className="font-semibold text-[#94D126] tracking-wide">
                   Physician Guided
                 </span>
               </div>

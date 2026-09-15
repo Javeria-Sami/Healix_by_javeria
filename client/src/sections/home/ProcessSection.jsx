@@ -59,7 +59,7 @@ export function ProcessSection() {
                     </div>
                   </div>
 
-                  <h3 className="font-heading font-bold text-base text-[#075B43] mb-2">
+                  <h3 className="font-heading font-bold text-base text-[#075A46] mb-2">
                     {step.title}
                   </h3>
                   <p className="text-xs text-text-secondary leading-relaxed">

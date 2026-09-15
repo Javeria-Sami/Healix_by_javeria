@@ -48,7 +48,7 @@ export function LegalPage({ type = 'privacy' }) {
             </div>
             <div>
               <div className="text-xs font-semibold uppercase tracking-wider text-text-muted">Regulatory & Compliance</div>
-              <h1 className="font-heading text-3xl font-extrabold text-[#075B43]">{currentTitle}</h1>
+              <h1 className="font-heading text-3xl font-extrabold text-[#075A46]">{currentTitle}</h1>
             </div>
           </div>
 
@@ -57,17 +57,17 @@ export function LegalPage({ type = 'privacy' }) {
               Last Updated: January 15, 2026
             </p>
 
-            <h2 className="font-heading text-lg font-bold text-[#075B43] pt-2">1. Health Information Privacy & Safeguards</h2>
+            <h2 className="font-heading text-lg font-bold text-[#075A46] pt-2">1. Health Information Privacy & Safeguards</h2>
             <p>
               Healix maintains rigorous administrative, physical, and technical safeguards for user information. As a public web platform, general inquiries are intended for introductory coordination; enrolled patients communicate and access clinical data through isolated, secure portal environments.
             </p>
 
-            <h2 className="font-heading text-lg font-bold text-[#075B43] pt-2">2. Digital Telehealth & Service Scope</h2>
+            <h2 className="font-heading text-lg font-bold text-[#075A46] pt-2">2. Digital Telehealth & Service Scope</h2>
             <p>
               Informational materials and diagnostic screening summaries provided through this platform do not constitute emergency medical advice. If you are experiencing a medical emergency, call 911 immediately.
             </p>
 
-            <h2 className="font-heading text-lg font-bold text-[#075B43] pt-2">3. Data Security & Storage</h2>
+            <h2 className="font-heading text-lg font-bold text-[#075A46] pt-2">3. Data Security & Storage</h2>
             <p>
               All patient portal communications, consultation requests, and clinical notes are transmitted via TLS 1.3 encryption and stored within dedicated, audited healthcare cloud infrastructure.
             </p>

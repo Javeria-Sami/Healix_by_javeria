@@ -77,7 +77,7 @@ export function ServicesGrid({ services, activeCategory, onResetFilter }) {
                   </div>
 
                   {/* Title & Tagline */}
-                  <h2 className="font-heading text-xl font-bold text-[#075B43] mb-2.5 group-hover:text-primary transition-colors">
+                  <h2 className="font-heading text-xl font-bold text-[#075A46] mb-2.5 group-hover:text-primary transition-colors">
                     <Link to={`/services/${service.slug}`} className="focus:outline-none focus-visible:underline">
                       {service.title}
                     </Link>

@@ -54,7 +54,7 @@ export function ProfessionalsStandards() {
                     <Icon className="w-5 h-5" />
                   </div>
 
-                  <h3 className="font-heading text-base font-bold text-[#075B43] mb-2">
+                  <h3 className="font-heading text-base font-bold text-[#075A46] mb-2">
                     {std.title}
                   </h3>
 

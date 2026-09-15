@@ -59,7 +59,7 @@ export default function CategoryDetailPage() {
       <div className="min-h-screen bg-neutral-50 py-16 px-4 text-center">
         <div className="max-w-md mx-auto bg-white p-8 rounded-3xl border border-neutral-200/80 shadow-sm">
           <div className="text-4xl mb-4">📂</div>
-          <h1 className="text-xl font-bold text-[#075B43] mb-2">Category Not Found</h1>
+          <h1 className="text-xl font-bold text-neutral-900 mb-2">Category Not Found</h1>
           <p className="text-sm text-neutral-500 mb-6">
             The requested pharmacy department does not exist in our catalog.
           </p>
@@ -95,7 +95,7 @@ export default function CategoryDetailPage() {
                 {categoryObj.icon}
               </div>
               <div>
-                <h1 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] tracking-tight">
+                <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
                   {categoryObj.name}
                 </h1>
                 <p className="text-sm text-neutral-500 mt-1 max-w-xl">
@@ -113,7 +113,7 @@ export default function CategoryDetailPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         {/* Controls Bar */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6 bg-white p-4 rounded-2xl border border-neutral-200/70 shadow-sm">
-          <div className="text-sm font-bold text-[#075B43]">
+          <div className="text-sm font-bold text-neutral-900">
             {sortedMedicines.length} {sortedMedicines.length === 1 ? 'Product' : 'Products'} available
           </div>
 
@@ -162,7 +162,7 @@ export default function CategoryDetailPage() {
             <div className="w-16 h-16 mx-auto rounded-2xl bg-neutral-100 flex items-center justify-center text-3xl mb-4">
               📦
             </div>
-            <h2 className="text-lg font-bold text-[#075B43] mb-1">
+            <h2 className="text-lg font-bold text-neutral-900 mb-1">
               No products match these filters
             </h2>
             <p className="text-sm text-neutral-500 mb-6">

@@ -9,7 +9,7 @@ export function PortfolioCaseNarrative({ project }) {
       <Card className="p-6 sm:p-8 space-y-4 border border-border bg-surface">
         <div className="flex items-center gap-2.5 text-status-warning">
           <AlertCircle className="w-5 h-5 flex-shrink-0" />
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075A46]">
             The Healthcare & Diagnostic Challenge
           </h2>
         </div>
@@ -22,7 +22,7 @@ export function PortfolioCaseNarrative({ project }) {
       <Card className="p-6 sm:p-8 space-y-4 border border-border bg-surface">
         <div className="flex items-center gap-2.5 text-primary">
           <Compass className="w-5 h-5 flex-shrink-0" />
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075A46]">
             Healix Clinical & Engineering Approach
           </h2>
         </div>
@@ -35,7 +35,7 @@ export function PortfolioCaseNarrative({ project }) {
       <Card className="p-6 sm:p-8 space-y-4 border border-border bg-surface">
         <div className="flex items-center gap-2.5 text-accent">
           <CheckCircle className="w-5 h-5 flex-shrink-0" />
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075A46]">
             Deployed Clinical Solution & Architecture
           </h2>
         </div>

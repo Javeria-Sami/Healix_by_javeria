@@ -120,7 +120,7 @@ export function PortfolioDetailPage() {
           {/* Strategic Overview & Action Sidebar */}
           <div className="lg:col-span-4 space-y-6">
             <Card className="p-6 border border-border bg-surface space-y-6 sticky top-24">
-              <h3 className="font-heading text-base font-bold text-[#075B43] border-b border-border/60 pb-3">
+              <h3 className="font-heading text-base font-bold text-[#075A46] border-b border-border/60 pb-3">
                 Initiative Architecture
               </h3>
 

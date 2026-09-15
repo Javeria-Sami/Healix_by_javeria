@@ -13,7 +13,7 @@ export function AboutHero() {
   ];
 
   return (
-    <section className="pt-6 pb-16 md:pt-10 md:pb-24 bg-[#F4F8F5] border-b border-[#DCEBE4]/60 relative overflow-hidden text-center" aria-labelledby="about-hero-heading">
+    <section className="pt-6 pb-16 md:pt-10 md:pb-24 bg-[#F4F8F5] border-b border-[#D8E7E0]/60 relative overflow-hidden text-center" aria-labelledby="about-hero-heading">
       {/* Background ambient lighting */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[32rem] h-[32rem] bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10"
@@ -35,7 +35,7 @@ export function AboutHero() {
           </div>
 
           {/* Primary Page Heading (H1) */}
-          <h1 id="about-hero-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075B43] tracking-tight leading-[1.12] text-center">
+          <h1 id="about-hero-heading" className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075A46] tracking-tight leading-[1.12] text-center">
             Dedicated to Proactive & <br />
             <span className="font-editorial italic font-normal text-primary">
               Human-Centered Medicine

@@ -174,7 +174,7 @@ export function ContactForm() {
   return (
     <Card className="p-6 sm:p-10 border border-border bg-surface">
       <div className="border-b border-border/60 pb-6 mb-8">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#075B43]">
+        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-[#075A46]">
           Request Consultation
         </h2>
         <p className="text-xs text-text-secondary mt-1 leading-relaxed">
@@ -189,7 +189,7 @@ export function ContactForm() {
           </div>
 
           <div className="space-y-2">
-            <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
+            <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#075A46]">
               Consultation Inquiry Received
             </h3>
             <p className="text-xs sm:text-sm text-text-secondary max-w-md mx-auto leading-relaxed">

@@ -22,7 +22,7 @@ export default function MedicineDetailPage() {
       <div className="min-h-screen bg-neutral-50 py-20 px-4 text-center">
         <div className="max-w-md mx-auto bg-white p-8 rounded-3xl border border-neutral-200/80 shadow-sm">
           <div className="text-4xl mb-4">💊</div>
-          <h1 className="text-2xl font-bold text-[#075B43] mb-2">Medicine Not Found</h1>
+          <h1 className="text-2xl font-bold text-neutral-900 mb-2">Medicine Not Found</h1>
           <p className="text-sm text-neutral-500 mb-6">
             We couldn't locate the medicine you requested in our active directory.
           </p>
@@ -163,33 +163,33 @@ export default function MedicineDetailPage() {
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#075B43] tracking-tight mb-2 font-heading">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-neutral-900 tracking-tight mb-2">
               {medicine.name}
             </h1>
 
             <div className="text-sm font-medium text-neutral-600 mb-4">
-              Active Ingredient: <span className="font-semibold text-[#075B43]">{medicine.genericName}</span>
+              Active Ingredient: <span className="font-semibold text-neutral-900">{medicine.genericName}</span>
             </div>
 
             {/* Quick Specs Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 py-3.5 px-4 bg-neutral-50 rounded-2xl border border-neutral-200/60 mb-6 text-xs">
               <div>
                 <span className="text-neutral-400 block font-medium">Strength</span>
-                <span className="text-[#075B43] font-semibold text-sm">{medicine.strength}</span>
+                <span className="text-neutral-900 font-semibold text-sm">{medicine.strength}</span>
               </div>
               <div>
                 <span className="text-neutral-400 block font-medium">Dosage Form</span>
-                <span className="text-[#075B43] font-semibold text-sm">{medicine.dosageForm}</span>
+                <span className="text-neutral-900 font-semibold text-sm">{medicine.dosageForm}</span>
               </div>
               <div className="col-span-2 sm:col-span-1">
                 <span className="text-neutral-400 block font-medium">Pack Size</span>
-                <span className="text-[#075B43] font-semibold text-sm">{medicine.packSize}</span>
+                <span className="text-neutral-900 font-semibold text-sm">{medicine.packSize}</span>
               </div>
             </div>
 
             {/* Pricing Presentation */}
             <div className="flex items-baseline gap-3 mb-6">
-              <div className="text-3xl sm:text-4xl font-extrabold text-[#075B43] font-heading">
+              <div className="text-3xl sm:text-4xl font-extrabold text-neutral-900">
                 Rs. {medicine.price.toFixed(2)}
               </div>
               {medicine.compareAtPrice && medicine.compareAtPrice > medicine.price && (
@@ -246,7 +246,7 @@ export default function MedicineDetailPage() {
                     >
                       −
                     </button>
-                    <span className="w-12 text-center text-base font-bold text-[#075B43]" aria-label={`Quantity: ${quantity}`}>
+                    <span className="w-12 text-center text-base font-bold text-neutral-900" aria-label={`Quantity: ${quantity}`}>
                       {quantity}
                     </span>
                     <button
@@ -283,7 +283,7 @@ export default function MedicineDetailPage() {
                         <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                         </svg>
-                        Add to Cart • Rs. {(medicine.price * quantity).toFixed(2)}
+                        Add to Cart • ${(medicine.price * quantity).toFixed(2)}
                       </>
                     )}
                   </button>
@@ -325,8 +325,8 @@ export default function MedicineDetailPage() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-6 py-4 text-xs sm:text-sm font-bold border-b-2 whitespace-nowrap transition-colors ${
                   activeTab === tab.id
-                    ? 'border-primary-600 text-[#075B43] bg-white'
-                    : 'border-transparent text-neutral-500 hover:text-[#075B43] hover:bg-white/50'
+                    ? 'border-primary-600 text-primary-600 bg-white'
+                    : 'border-transparent text-neutral-500 hover:text-neutral-800 hover:bg-white/50'
                 }`}
               >
                 {tab.label}
@@ -339,16 +339,16 @@ export default function MedicineDetailPage() {
             {activeTab === 'overview' && (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-base font-bold text-[#075B43] mb-2 font-heading">Description</h3>
+                  <h3 className="text-base font-bold text-neutral-900 mb-2">Description</h3>
                   <p>{medicine.description}</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-neutral-100">
                   <div>
-                    <h4 className="font-bold text-[#075B43] text-xs uppercase tracking-wider mb-1 font-heading">Active Ingredients</h4>
+                    <h4 className="font-bold text-neutral-900 text-xs uppercase tracking-wider mb-1">Active Ingredients</h4>
                     <p className="text-sm font-medium text-neutral-800">{medicine.ingredients}</p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#075B43] text-xs uppercase tracking-wider mb-1 font-heading">Manufacturer</h4>
+                    <h4 className="font-bold text-neutral-900 text-xs uppercase tracking-wider mb-1">Manufacturer</h4>
                     <p className="text-sm font-medium text-neutral-800">{medicine.manufacturer}</p>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ export default function MedicineDetailPage() {
 
             {activeTab === 'usage' && (
               <div className="space-y-4">
-                <h3 className="text-base font-bold text-[#075B43] mb-2 font-heading">Usage & Administration</h3>
+                <h3 className="text-base font-bold text-neutral-900 mb-2">Usage & Administration</h3>
                 <p>{medicine.usageInformation}</p>
                 <div className="p-4 bg-primary-50/60 rounded-2xl border border-primary-200/60 text-xs text-primary-900">
                   📌 <strong>Guidance:</strong> Follow the exact dosage prescribed by your medical practitioner. Do not exceed the stated dose without clinical approval.
@@ -367,7 +367,7 @@ export default function MedicineDetailPage() {
 
             {activeTab === 'storage' && (
               <div className="space-y-4">
-                <h3 className="text-base font-bold text-[#075B43] mb-2 font-heading">Storage Instructions</h3>
+                <h3 className="text-base font-bold text-neutral-900 mb-2">Storage Instructions</h3>
                 <p>{medicine.storageInformation}</p>
                 <p className="text-xs text-neutral-500">
                   Keep all medicines out of reach and sight of children. Do not use after the expiration date printed on the pack.
@@ -377,7 +377,7 @@ export default function MedicineDetailPage() {
 
             {activeTab === 'warnings' && (
               <div className="space-y-4">
-                <h3 className="text-base font-bold text-[#075B43] mb-2 font-heading">Safety Warnings & Precautions</h3>
+                <h3 className="text-base font-bold text-neutral-900 mb-2">Safety Warnings & Precautions</h3>
                 <p className="text-red-700 bg-red-50 p-4 rounded-2xl border border-red-200/70 font-medium">
                   ⚠️ {medicine.warnings}
                 </p>
@@ -390,12 +390,12 @@ export default function MedicineDetailPage() {
 
             {activeTab === 'faq' && (
               <div className="space-y-4">
-                <h3 className="text-base font-bold text-[#075B43] mb-2 font-heading">Frequently Asked Questions</h3>
+                <h3 className="text-base font-bold text-neutral-900 mb-2">Frequently Asked Questions</h3>
                 {medicine.faqs && medicine.faqs.length > 0 ? (
                   <div className="space-y-3">
                     {medicine.faqs.map((faq, i) => (
                       <div key={i} className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/60">
-                        <h4 className="font-bold text-[#075B43] text-sm mb-1 font-heading">{faq.q}</h4>
+                        <h4 className="font-bold text-neutral-900 text-sm mb-1">{faq.q}</h4>
                         <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">{faq.a}</p>
                       </div>
                     ))}
@@ -412,7 +412,7 @@ export default function MedicineDetailPage() {
         {relatedProducts.length > 0 && (
           <section>
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight font-heading">
+              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">
                 Related Products in {medicine.category.replace(/-/g, ' ')}
               </h2>
               <Link

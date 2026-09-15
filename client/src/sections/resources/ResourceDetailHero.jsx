@@ -22,22 +22,22 @@ export function ResourceDetailHero({ article }) {
         {/* Article Meta Header */}
         <div className="space-y-4">
           <div className="flex flex-wrap items-center gap-3 text-xs font-semibold">
-            <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#F1F8F4] text-[#075B43] border border-[#DCEBE4] tracking-wide">
+            <span className="inline-flex items-center px-3 py-1 rounded-full bg-[#EAF4EF] text-[#075A46] border border-[#D8E7E0] tracking-wide">
               {article.category}
             </span>
             <span className="text-neutral-300">•</span>
             <div className="flex items-center gap-1.5 text-neutral-500 font-medium">
-              <Clock className="w-3.5 h-3.5 text-[#075B43]" />
+              <Clock className="w-3.5 h-3.5 text-[#075A46]" />
               <span>{article.readTime}</span>
             </div>
             <span className="text-neutral-300">•</span>
             <div className="flex items-center gap-1.5 text-neutral-500 font-medium">
-              <Calendar className="w-3.5 h-3.5 text-[#075B43]" />
+              <Calendar className="w-3.5 h-3.5 text-[#075A46]" />
               <span>{article.publishedDate}</span>
             </div>
           </div>
 
-          <h1 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#075B43] tracking-tight leading-[1.18]">
+          <h1 className="font-heading text-2xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-900 tracking-tight leading-[1.18]">
             {article.title}
           </h1>
 
@@ -50,13 +50,13 @@ export function ResourceDetailHero({ article }) {
           {/* Author Strip */}
           <div className="pt-4 flex items-center justify-between gap-4 border-t border-neutral-100">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#F1F8F4] border border-[#DCEBE4] text-[#075B43] flex items-center justify-center font-bold text-sm flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-[#EAF4EF] border border-[#D8E7E0] text-[#075A46] flex items-center justify-center font-bold text-sm flex-shrink-0">
                 <User className="w-5 h-5 stroke-[2]" />
               </div>
               <div>
-                <div className="font-bold text-sm text-[#075B43]">
+                <div className="font-bold text-sm text-neutral-900">
                   {article.authorSlug ? (
-                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#064C38] transition-colors">
+                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#075A46] transition-colors">
                       {article.author}
                     </Link>
                   ) : (
@@ -69,7 +69,7 @@ export function ResourceDetailHero({ article }) {
 
             <Link
               to={ROUTES.RESOURCES}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075B43] hover:text-[#064C38] px-3 py-1.5 rounded-xl hover:bg-[#F1F8F4] transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#075A46] hover:text-[#054837] px-3 py-1.5 rounded-xl hover:bg-[#EAF4EF] transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>All Articles</span>

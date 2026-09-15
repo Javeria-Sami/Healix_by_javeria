@@ -6,9 +6,9 @@ import { ArrowRight, ArrowLeft } from 'lucide-react';
 export function ResourceDetailCTA() {
   return (
     <section className="max-w-3xl mx-auto pt-8 pb-12 border-t border-neutral-100">
-      <div className="bg-[#F1F8F4] border border-[#DCEBE4] rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xs">
+      <div className="bg-[#EAF4EF] border border-[#D8E7E0] rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xs">
         <div className="space-y-1.5 text-center sm:text-left">
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-neutral-900">
             Have Questions on These Clinical Markers?
           </h2>
           <p className="text-xs sm:text-sm text-neutral-600 max-w-xl">
@@ -26,7 +26,7 @@ export function ResourceDetailCTA() {
           </Link>
           <Link
             to={`${ROUTES.CONTACT}?type=Clinical%20Services%20Consultation`}
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#075B43] hover:bg-[#064C38] text-white text-xs font-bold transition-all shadow-xs hover:shadow-sm"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#075A46] hover:bg-[#054837] text-white text-xs font-bold transition-all shadow-xs hover:shadow-sm"
           >
             <span>Schedule Clinical Review</span>
             <ArrowRight className="w-3.5 h-3.5" />

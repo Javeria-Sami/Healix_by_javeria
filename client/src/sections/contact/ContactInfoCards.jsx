@@ -37,7 +37,7 @@ export function ContactInfoCards() {
     <div className="space-y-4">
       <Card className="p-6 sm:p-8 border border-border bg-surface space-y-6">
         <div className="border-b border-border/60 pb-3">
-          <h2 className="font-heading text-lg font-bold text-[#075B43] flex items-center gap-2">
+          <h2 className="font-heading text-lg font-bold text-[#075A46] flex items-center gap-2">
             <Building2 className="w-4 h-4 text-primary" />
             <span>Direct Clinical Channels</span>
           </h2>

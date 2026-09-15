@@ -1,48 +1,48 @@
 :root {
-  /* Healix Primary Palette - Deep Green (#075B43) */
-  --color-primary: #075B43;
-  --color-primary-hover: #064C38;
-  --color-primary-active: #04392A;
-  --color-primary-light: #DCEBE4;
-  --color-primary-soft: #F1F8F4;
+  /* Healix Primary Palette - Deep Green (#075A46) */
+  --color-primary: #075A46;
+  --color-primary-hover: #054837;
+  --color-primary-active: #04382B;
+  --color-primary-light: #D8E7E0;
+  --color-primary-soft: #EAF4EF;
 
-  /* Healix Secondary Palette - (#0D7657) & Lime (#98CF2D) */
-  --color-secondary: #0D7657;
-  --color-secondary-hover: #075B43;
-  --color-accent: #98CF2D;
-  --color-accent-hover: #88BC25;
-  --color-accent-soft: #F5FBE8;
+  /* Healix Secondary Palette - (#0E745B) & Lime (#94D126) */
+  --color-secondary: #0E745B;
+  --color-secondary-hover: #075A46;
+  --color-accent: #94D126;
+  --color-accent-hover: #81B81F;
+  --color-accent-soft: #F5FCE8;
 
-  /* Surfaces & Backgrounds (60/30/10 Rule) */
+  /* Surfaces & Backgrounds */
   --color-bg: #FFFFFF;
   --color-bg-warm: #FCFBF7;
-  --color-bg-soft: #F1F8F4;
-  --color-bg-subtle: #F7FBF8;
+  --color-bg-soft: #EAF4EF;
+  --color-bg-subtle: #F7FAF8;
   --color-surface: #FFFFFF;
-  --color-surface-muted: #F7FBF8;
-  --color-surface-soft: #F1F8F4;
-  --color-surface-dark: #075B43;
-  --color-input-bg: #F4F8F5;
-  --color-input-bg-focus: #F7FAF8;
+  --color-surface-muted: #F7FAF8;
+  --color-surface-soft: #EAF4EF;
+  --color-surface-dark: #075A46;
+  --color-input-bg: #F7FAF8;
+  --color-input-bg-focus: #FFFFFF;
 
   /* Typography Colors */
-  --color-text-primary: #17221E;
-  --color-text-secondary: #42554E;
-  --color-text-muted: #6F8D81;
-  --color-text-brand: #075B43;
-  --color-text-accent: #98CF2D;
+  --color-text-primary: #10231E;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-text-brand: #075A46;
+  --color-text-accent: #94D126;
   --color-text-inverse: #FFFFFF;
 
   /* Borders & Dividers */
-  --color-border: #DCEBE4;
-  --color-border-subtle: #EAF3EF;
-  --color-border-focus: #075B43;
+  --color-border: #D8E7E0;
+  --color-border-subtle: #EAF4EF;
+  --color-border-focus: #075A46;
 
   /* Feedback States */
-  --color-success: #0D7657;
+  --color-success: #0E745B;
   --color-warning: #C27803;
   --color-error: #C53030;
-  --color-info: #0D7657;
+  --color-info: #0E745B;
 
   /* Typography Families (Preserved Hierarchy) */
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;

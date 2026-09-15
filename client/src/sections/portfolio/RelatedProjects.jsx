@@ -20,7 +20,7 @@ export function RelatedProjects({ currentProjectId, relatedProjectIds }) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <FolderKanban className="w-5 h-5 text-primary" />
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075A46]">
             Related Case Studies
           </h2>
         </div>
@@ -43,7 +43,7 @@ export function RelatedProjects({ currentProjectId, relatedProjectIds }) {
                 <Badge variant="primary">{item.category}</Badge>
                 <span className="text-xs text-text-muted">{item.year}</span>
               </div>
-              <h3 className="font-heading text-lg font-bold text-[#075B43] leading-snug">
+              <h3 className="font-heading text-lg font-bold text-[#075A46] leading-snug">
                 <Link to={`/portfolio/${item.slug}`} className="hover:text-primary transition-colors">
                   {item.title}
                 </Link>

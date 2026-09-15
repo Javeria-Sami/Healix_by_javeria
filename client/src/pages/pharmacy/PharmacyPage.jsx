@@ -26,7 +26,7 @@ export default function PharmacyPage() {
   return (
     <div className="min-h-screen bg-neutral-50/50 pb-20">
       {/* 1. HERO SECTION */}
-      <section className="relative bg-[#F4F8F5] border-b border-[#DCEBE4]/60 text-text-primary pt-14 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-[#F4F8F5] border-b border-[#D8E7E0]/60 text-text-primary pt-14 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Glow ambient decorations */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-64 bg-primary/5 blur-3xl rounded-full pointer-events-none" />
 
@@ -36,7 +36,7 @@ export default function PharmacyPage() {
             Verified Online Pharmacy & Health Store
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#075B43] mb-6 leading-tight max-w-4xl mx-auto font-heading">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-tight max-w-4xl mx-auto font-heading">
             Your Medicines, Delivered With Care
           </h1>
 
@@ -70,36 +70,14 @@ export default function PharmacyPage() {
               Upload Prescription
             </Link>
             <Link
-              to={ROUTES.PHARMACY_MEDICINES}
-              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-bold rounded-2xl border border-border transition-all shadow-sm"
+              to={ROUTES.PHARMACY_CATEGORIES}
+              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-semibold rounded-2xl border border-border shadow-xs transition-all"
             >
-              View Full Directory
+              All Categories
             </Link>
           </div>
         </div>
       </section>
-
-      {/* Trust Highlight Ticker */}
-      <div className="bg-primary/5 border-b border-border py-4 px-4">
-        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-around gap-4 text-xs font-semibold text-text-secondary">
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#98CF2D]" />
-            100% Genuine Certified Medicines
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#98CF2D]" />
-            Licensed Clinical Pharmacists On Duty
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#98CF2D]" />
-            Prompt & Temperature-Controlled Delivery
-          </span>
-          <span className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#98CF2D]" />
-            Cold-Chain Integrity Guaranteed
-          </span>
-        </div>
-      </div>
 
       {/* Safety Notice Bar */}
       <div className="bg-amber-50/90 border-y border-amber-200/70 px-4 py-3">
@@ -123,7 +101,7 @@ export default function PharmacyPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-[#075B43] tracking-tight font-heading">
+                <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
                   Featured Healthcare Products
                 </h2>
               </div>
@@ -152,7 +130,7 @@ export default function PharmacyPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">No Prescription Needed</span>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight mt-0.5 font-heading">
+              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight mt-0.5">
                 Pain Relief, Fever & Daily Care
               </h2>
             </div>
@@ -176,7 +154,7 @@ export default function PharmacyPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-amber-600">Daily Health & Immunity</span>
-              <h2 className="text-xl sm:text-2xl font-bold text-[#075B43] tracking-tight mt-0.5 font-heading">
+              <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight mt-0.5">
                 Vitamins, Minerals & Supplements
               </h2>
             </div>
@@ -199,7 +177,7 @@ export default function PharmacyPage() {
         <section className="bg-neutral-100/70 rounded-3xl p-8 md:p-12 border border-neutral-200/60">
           <div className="text-center max-w-xl mx-auto mb-10">
             <span className="text-xs font-bold uppercase tracking-wider text-primary-600">Simplicity & Clarity</span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#075B43] mt-1 font-heading">
+            <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 mt-1">
               How Healix Pharmacy Works
             </h2>
             <p className="text-sm text-neutral-600 mt-2">
@@ -212,7 +190,7 @@ export default function PharmacyPage() {
               <div className="w-10 h-10 rounded-xl bg-primary-100 text-primary-700 font-extrabold text-sm flex items-center justify-center mb-4">
                 01
               </div>
-              <h3 className="text-lg font-bold text-[#075B43] mb-1.5 font-heading">Search or Upload</h3>
+              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Search or Upload</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Find your required medicines via search, A–Z catalog, or upload a clear photo/PDF of your doctor's prescription.
               </p>
@@ -222,7 +200,7 @@ export default function PharmacyPage() {
               <div className="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 font-extrabold text-sm flex items-center justify-center mb-4">
                 02
               </div>
-              <h3 className="text-lg font-bold text-[#075B43] mb-1.5 font-heading">Review & Verify</h3>
+              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Review & Verify</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Check item strength, dosage, pack size, and transparent pricing. Licensed pharmacists verify prescription orders before packing.
               </p>
@@ -232,7 +210,7 @@ export default function PharmacyPage() {
               <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 font-extrabold text-sm flex items-center justify-center mb-4">
                 03
               </div>
-              <h3 className="text-lg font-bold text-[#075B43] mb-1.5 font-heading">Fast Doorstep Delivery</h3>
+              <h3 className="text-lg font-bold text-neutral-900 mb-1.5">Fast Doorstep Delivery</h3>
               <p className="text-sm text-neutral-600 leading-relaxed">
                 Confirm your order with transparent checkout. Receive prompt doorstep delivery in secure, temperature-controlled packaging.
               </p>

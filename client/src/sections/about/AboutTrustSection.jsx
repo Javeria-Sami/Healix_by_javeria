@@ -33,7 +33,7 @@ export function AboutTrustSection() {
           <div className="text-xs font-semibold uppercase tracking-wider text-primary">
             Standards & Governance
           </div>
-          <h2 id="about-trust-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075B43]">
+          <h2 id="about-trust-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075A46]">
             Our Commitment to Clinical Trust & Compliance
           </h2>
           <p className="font-body text-sm sm:text-base text-text-secondary leading-relaxed">
@@ -52,7 +52,7 @@ export function AboutTrustSection() {
                 <div className="w-10 h-10 rounded-healix-md bg-primary-light text-primary flex items-center justify-center">
                   <Icon className="w-5 h-5" aria-hidden="true" />
                 </div>
-                <h3 className="font-heading font-bold text-sm text-[#075B43]">
+                <h3 className="font-heading font-bold text-sm text-[#075A46]">
                   {cred.title}
                 </h3>
                 <p className="text-xs text-text-secondary leading-relaxed">

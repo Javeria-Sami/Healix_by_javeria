@@ -73,7 +73,7 @@ export default function MedicineDirectoryPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         {/* Results Count Header */}
         <div className="mb-6">
-          <span className="text-sm font-bold text-[#075B43]">
+          <span className="text-sm font-bold text-neutral-900">
             {sortedMedicines.length} {sortedMedicines.length === 1 ? 'Product' : 'Products'} available
           </span>
           {selectedLetter && (
@@ -95,7 +95,7 @@ export default function MedicineDirectoryPage() {
             <div className="w-16 h-16 mx-auto rounded-2xl bg-neutral-100 flex items-center justify-center text-3xl mb-4">
               🔍
             </div>
-            <h2 className="text-lg font-bold text-[#075B43] mb-1 font-heading">
+            <h2 className="text-lg font-bold text-neutral-900 mb-1">
               No medicines found starting with "{selectedLetter}"
             </h2>
             <p className="text-sm text-neutral-500 mb-6">

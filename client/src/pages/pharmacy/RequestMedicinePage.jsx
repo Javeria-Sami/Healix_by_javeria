@@ -53,7 +53,7 @@ export default function RequestMedicinePage() {
             <span className="text-neutral-900 font-semibold" aria-current="page">Request Medicine</span>
           </nav>
 
-          <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075B43] tracking-tight font-heading">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
             Request an Unavailable Medicine
           </h1>
           <p className="text-sm text-neutral-500 mt-1 max-w-2xl">
@@ -70,7 +70,7 @@ export default function RequestMedicinePage() {
                 ✓
               </div>
               <div>
-                <h2 className="text-2xl font-extrabold text-[#075B43] mb-2 font-heading">Request Submitted!</h2>
+                <h2 className="text-2xl font-extrabold text-neutral-900 mb-2">Request Submitted!</h2>
                 <p className="text-sm text-neutral-600 max-w-md mx-auto leading-relaxed">
                   Thank you. We have logged your request for <strong className="text-neutral-900">{medicineName}</strong>. Our pharmacy procurement team will notify you at <strong className="text-neutral-900">{phone || email}</strong> once available.
                 </p>

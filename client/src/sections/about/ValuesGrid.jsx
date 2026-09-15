@@ -58,7 +58,7 @@ export function ValuesGrid() {
                 <div className="w-12 h-12 rounded-healix-md bg-primary-light text-primary flex items-center justify-center group-hover:scale-105 transition-transform">
                   <Icon className="w-6 h-6" aria-hidden="true" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-[#075B43]">
+                <h3 className="font-heading font-bold text-lg text-[#075A46]">
                   {val.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-text-secondary leading-relaxed">

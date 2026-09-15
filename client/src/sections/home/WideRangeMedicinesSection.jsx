@@ -58,16 +58,16 @@ export function WideRangeMedicinesSection() {
             ============================================================ */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-3 max-w-6xl mx-auto">
           <div className="space-y-1.5 text-left">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F1F8F4] border border-[#DCEBE4] shadow-2xs">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#98CF2D]" aria-hidden="true" />
-              <span className="text-[11px] font-bold tracking-[0.2em] text-[#075B43] uppercase">
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EAF4EF] border border-[#D8E7E0] shadow-2xs">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#94D126]" aria-hidden="true" />
+              <span className="text-[11px] font-bold tracking-[0.2em] text-[#075A46] uppercase">
                 PHARMACY
               </span>
             </div>
 
             <h2
               id="wide-range-medicines-heading"
-              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#075B43] tracking-tight leading-tight"
+              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-neutral-900 tracking-tight leading-tight"
             >
               Wide Range of Medicines
             </h2>
@@ -79,7 +79,7 @@ export function WideRangeMedicinesSection() {
 
           <Link
             to={ROUTES.PHARMACY}
-            className="hidden sm:inline-flex items-center gap-1.5 font-bold text-xs sm:text-sm text-[#075B43] hover:text-[#064C38] transition-colors group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm py-1 flex-shrink-0"
+            className="hidden sm:inline-flex items-center gap-1.5 font-bold text-xs sm:text-sm text-[#075A46] hover:text-[#054837] transition-colors group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm py-1 flex-shrink-0"
           >
             <span>View Online Pharmacy</span>
             <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -104,8 +104,8 @@ export function WideRangeMedicinesSection() {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
                   isActive
-                    ? 'bg-[#075B43] text-white shadow-2xs'
-                    : 'bg-[#F1F8F4] hover:bg-[#DCEBE4] text-neutral-700 border border-[#DCEBE4]'
+                    ? 'bg-[#075A46] text-white shadow-2xs'
+                    : 'bg-[#EAF4EF] hover:bg-[#D8E7E0] text-neutral-700 border border-[#D8E7E0]'
                 }`}
               >
                 {cat.label}
@@ -120,7 +120,7 @@ export function WideRangeMedicinesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-5 items-stretch max-w-6xl mx-auto">
           {/* 1. Large Featured Product Card (Light Healix Mint Theme) */}
           {featuredProduct && (
-            <div className="lg:col-span-6 flex flex-col justify-between bg-[#F1F8F4] rounded-xl sm:rounded-2xl border border-[#DCEBE4] hover:border-[#B7D9CA] shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 overflow-hidden group p-4 sm:p-5">
+            <div className="lg:col-span-6 flex flex-col justify-between bg-[#EAF4EF] rounded-xl sm:rounded-2xl border border-[#D8E7E0] hover:border-[#B7D9CA] shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 overflow-hidden group p-4 sm:p-5">
               {/* Product Pack Visual Container (Seamless on Mint Card Background) */}
               <div className="relative w-full h-44 sm:h-52 flex items-center justify-center p-2 mb-4 overflow-hidden">
                 {featuredProduct.prescriptionRequired && (
@@ -140,7 +140,7 @@ export function WideRangeMedicinesSection() {
               {/* Product Meta & Pricing */}
               <div className="space-y-3 text-left">
                 <div className="space-y-0.5">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] leading-snug">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-neutral-900 group-hover:text-[#075A46] transition-colors leading-snug">
                     <Link
                       to={`/pharmacy/medicine/${featuredProduct.slug}`}
                       className="focus:outline-none focus-visible:underline"
@@ -153,9 +153,9 @@ export function WideRangeMedicinesSection() {
                   </p>
                 </div>
 
-                <div className="flex items-center justify-between pt-2 border-t border-[#DCEBE4]">
+                <div className="flex items-center justify-between pt-2 border-t border-[#D8E7E0]">
                   <div className="flex items-baseline gap-2">
-                    <span className="font-heading font-extrabold text-base sm:text-lg text-[#075B43]">
+                    <span className="font-heading font-extrabold text-base sm:text-lg text-[#075A46]">
                       Rs. {featuredProduct.price.toFixed(2)}
                     </span>
                     {featuredProduct.compareAtPrice && (
@@ -170,8 +170,8 @@ export function WideRangeMedicinesSection() {
                     onClick={(e) => handleAddToCart(e, featuredProduct)}
                     className={`inline-flex items-center gap-1 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all duration-200 shadow-2xs focus:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer ${
                       addedId === featuredProduct.id
-                        ? 'bg-[#0D7657] text-white'
-                        : 'bg-[#075B43] hover:bg-[#064C38] text-white'
+                        ? 'bg-[#0E745B] text-white'
+                        : 'bg-[#075A46] hover:bg-[#054837] text-white'
                     }`}
                     aria-label={`Add ${featuredProduct.name} to cart`}
                   >
@@ -199,7 +199,7 @@ export function WideRangeMedicinesSection() {
               return (
                 <div
                   key={product.id}
-                  className="group relative flex flex-col justify-between bg-[#F1F8F4] rounded-xl border border-[#DCEBE4] hover:border-[#B7D9CA] shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 p-3.5 sm:p-4 overflow-hidden"
+                  className="group relative flex flex-col justify-between bg-[#EAF4EF] rounded-xl border border-[#D8E7E0] hover:border-[#B7D9CA] shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 p-3.5 sm:p-4 overflow-hidden"
                 >
                   {/* Product Pack Visual Container (Seamless on Mint Card Background) */}
                   <div className="relative w-full h-28 sm:h-32 flex items-center justify-center p-1.5 mb-3 overflow-hidden">
@@ -222,7 +222,7 @@ export function WideRangeMedicinesSection() {
                       className="absolute inset-0 bg-neutral-900/30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center p-2 z-20"
                       aria-label={`View details for ${product.name}`}
                     >
-                      <span className="px-3 py-1 rounded-md bg-white/95 text-[#075B43] font-bold text-[11px] shadow-sm transform translate-y-1 group-hover:translate-y-0 transition-transform">
+                      <span className="px-3 py-1 rounded-md bg-white/95 text-neutral-900 font-bold text-[11px] shadow-sm transform translate-y-1 group-hover:translate-y-0 transition-transform">
                         View Item
                       </span>
                     </Link>
@@ -231,7 +231,7 @@ export function WideRangeMedicinesSection() {
                   {/* Product Details & Price */}
                   <div className="space-y-2 text-left">
                     <div className="space-y-0.5">
-                      <h3 className="font-heading text-xs sm:text-sm font-bold text-[#075B43] line-clamp-1 leading-snug">
+                      <h3 className="font-heading text-xs sm:text-sm font-bold text-neutral-900 group-hover:text-[#075A46] transition-colors line-clamp-1 leading-snug">
                         <Link
                           to={`/pharmacy/medicine/${product.slug}`}
                           className="focus:outline-none focus-visible:underline"
@@ -244,9 +244,9 @@ export function WideRangeMedicinesSection() {
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-between pt-1.5 border-t border-[#DCEBE4]">
+                    <div className="flex items-center justify-between pt-1.5 border-t border-[#D8E7E0]">
                       <div className="flex items-baseline gap-1">
-                        <span className="font-heading font-extrabold text-xs sm:text-sm text-[#075B43]">
+                        <span className="font-heading font-extrabold text-xs sm:text-sm text-[#075A46]">
                           Rs. {product.price.toFixed(product.price % 1 === 0 ? 1 : 2)}
                         </span>
                         {product.compareAtPrice && (
@@ -261,8 +261,8 @@ export function WideRangeMedicinesSection() {
                         onClick={(e) => handleAddToCart(e, product)}
                         className={`p-1.5 rounded-lg text-xs font-bold transition-all shadow-2xs focus:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer ${
                           isItemAdded
-                            ? 'bg-[#0D7657] text-white'
-                            : 'bg-white hover:bg-[#075B43] text-neutral-700 hover:text-white border border-[#DCEBE4]'
+                            ? 'bg-[#0E745B] text-white'
+                            : 'bg-white hover:bg-[#075A46] text-neutral-700 hover:text-white border border-[#D8E7E0]'
                         }`}
                         aria-label={`Add ${product.name} to cart`}
                         title="Add to cart"
@@ -285,7 +285,7 @@ export function WideRangeMedicinesSection() {
         <div className="mt-6 text-center sm:hidden">
           <Link
             to={ROUTES.PHARMACY}
-            className="inline-flex items-center gap-1.5 font-bold text-xs text-[#075B43] hover:text-[#064C38] transition-colors py-2 px-3.5 rounded-lg bg-[#F1F8F4] border border-[#DCEBE4] shadow-2xs"
+            className="inline-flex items-center gap-1.5 font-bold text-xs text-[#075A46] hover:text-[#054837] transition-colors py-2 px-3.5 rounded-lg bg-[#EAF4EF] border border-[#D8E7E0] shadow-2xs"
           >
             <span>View Online Pharmacy</span>
             <ChevronRight className="w-3.5 h-3.5" />

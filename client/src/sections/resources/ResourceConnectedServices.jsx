@@ -12,8 +12,8 @@ export function ResourceConnectedServices({ serviceSlugs }) {
   return (
     <section className="max-w-3xl mx-auto space-y-5 pt-8 border-t border-neutral-100">
       <div className="flex items-center gap-2">
-        <Stethoscope className="w-5 h-5 text-[#075B43]" />
-        <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
+        <Stethoscope className="w-5 h-5 text-[#075A46]" />
+        <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075A46]">
           Related Diagnostic Services & Programs
         </h2>
       </div>
@@ -22,13 +22,13 @@ export function ResourceConnectedServices({ serviceSlugs }) {
         {connectedServices.map((service) => (
           <div
             key={service.id}
-            className="p-5 rounded-2xl border border-neutral-200/80 bg-white hover:border-[#075B43]/40 hover:shadow-xs transition-all flex flex-col justify-between"
+            className="p-5 rounded-2xl border border-neutral-200/80 bg-white hover:border-[#075A46]/40 hover:shadow-xs transition-all flex flex-col justify-between"
           >
             <div className="space-y-1.5 text-left">
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#F1F8F4] text-[#075B43] text-[10px] font-bold uppercase tracking-wider">
+              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#EAF4EF] text-[#075A46] text-[10px] font-bold uppercase tracking-wider">
                 {service.category}
               </span>
-              <h3 className="font-heading text-sm font-bold text-[#075B43] leading-snug">
+              <h3 className="font-heading text-sm font-bold text-[#075A46] leading-snug">
                 {service.title}
               </h3>
               <p className="text-xs text-neutral-500 line-clamp-2">
@@ -39,7 +39,7 @@ export function ResourceConnectedServices({ serviceSlugs }) {
             <div className="pt-3 border-t border-neutral-100 mt-4 text-left">
               <Link
                 to={`/services/${service.slug}`}
-                className="inline-flex items-center gap-1 text-xs font-bold text-[#075B43] hover:text-[#064C38] transition-colors"
+                className="inline-flex items-center gap-1 text-xs font-bold text-[#075A46] hover:text-[#054837] transition-colors"
               >
                 <span>Service Details</span>
                 <ArrowRight className="w-3.5 h-3.5" />

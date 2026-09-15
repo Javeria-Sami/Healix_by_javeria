@@ -81,7 +81,7 @@ export function LocationSelector({ className = '' }) {
           <span className="block text-[10px] font-medium text-neutral-400 mb-0.5">
             Deliver to
           </span>
-          <span className="block text-xs sm:text-sm font-bold text-[#075B43] group-hover:text-primary transition-colors">
+          <span className="block text-xs sm:text-sm font-bold text-[#075A46] group-hover:text-primary transition-colors">
             {selectedCity}
           </span>
         </div>
@@ -104,7 +104,7 @@ export function LocationSelector({ className = '' }) {
         >
           <div className="flex items-center justify-between pb-3 border-b border-neutral-100">
             <div>
-              <h3 className="text-sm font-bold text-[#075B43]">
+              <h3 className="text-sm font-bold text-[#075A46]">
                 Select Your City
               </h3>
               <p className="text-xs text-text-muted">

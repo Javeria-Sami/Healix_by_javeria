@@ -11,7 +11,7 @@ export function ResourcesHero() {
   ];
 
   return (
-    <section className="relative pt-8 pb-14 md:pt-12 md:pb-20 bg-[#F4F8F5] border-b border-[#DCEBE4]/60 overflow-hidden">
+    <section className="relative pt-8 pb-14 md:pt-12 md:pb-20 bg-[#F4F8F5] border-b border-[#D8E7E0]/60 overflow-hidden">
       <div 
         className="absolute top-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none -z-10" 
         aria-hidden="true" 
@@ -33,7 +33,7 @@ export function ResourcesHero() {
             </Badge>
           </div>
 
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075B43] tracking-tight leading-[1.15]">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075A46] tracking-tight leading-[1.15]">
             Physician Perspectives on <br />
             <span className="font-serif italic font-normal text-primary">
               Preventative Longevity
