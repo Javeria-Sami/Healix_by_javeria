@@ -224,27 +224,6 @@ export default function PharmacySearchPage() {
 
           {/* Search Results Column */}
           <div className="lg:col-span-3 space-y-6">
-            {/* Sorting Toolbar */}
-            <div className="flex items-center justify-between bg-white p-3.5 rounded-2xl border border-neutral-200/70 shadow-sm text-xs">
-              <span className="font-semibold text-neutral-700">
-                {sorted.length} {sorted.length === 1 ? 'item' : 'items'} found
-              </span>
-              <div className="flex items-center gap-2">
-                <span className="text-neutral-500">Sort by:</span>
-                <select
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
-                  className="bg-neutral-50 border border-neutral-200 rounded-xl px-2.5 py-1.5 font-medium text-neutral-800 focus:outline-none focus:ring-2 focus:ring-primary-500/20"
-                >
-                  <option value="relevance">Relevance</option>
-                  <option value="name-asc">Name: A to Z</option>
-                  <option value="price-asc">Price: Low to High</option>
-                  <option value="price-desc">Price: High to Low</option>
-                  <option value="discount">Highest Discount</option>
-                </select>
-              </div>
-            </div>
-
             {/* Products Grid or Empty State */}
             {sorted.length > 0 ? (
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
