@@ -88,7 +88,7 @@ export function HealthArticlesSection() {
                 </span>
 
                 <div className="flex items-center justify-between gap-3 pt-0.5">
-                  <h3 className="font-heading text-sm sm:text-base font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
+                  <h3 className="font-heading text-sm sm:text-base font-bold text-[#075B43] transition-colors leading-snug">
                     <Link
                       to={`/resources/${article.slug}`}
                       className="focus:outline-none focus-visible:underline after:absolute after:inset-0"

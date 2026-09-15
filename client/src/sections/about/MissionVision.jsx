@@ -16,7 +16,7 @@ export function MissionVision() {
               <div className="text-xs font-bold uppercase tracking-wider text-[#075B43]">
                 Our Purpose
               </div>
-              <h2 id="mission-heading" className="font-heading font-extrabold text-2xl sm:text-3xl text-text-primary tracking-tight">
+              <h2 id="mission-heading" className="font-heading font-extrabold text-2xl sm:text-3xl text-[#075B43] tracking-tight">
                 Our Mission
               </h2>
               <p className="font-body text-sm sm:text-base text-text-secondary leading-relaxed">
@@ -34,7 +34,7 @@ export function MissionVision() {
               <div className="text-xs font-bold uppercase tracking-wider text-[#075B43]">
                 Our Future
               </div>
-              <h2 id="vision-heading" className="font-heading font-extrabold text-2xl sm:text-3xl text-text-primary tracking-tight">
+              <h2 id="vision-heading" className="font-heading font-extrabold text-2xl sm:text-3xl text-[#075B43] tracking-tight">
                 Our Vision
               </h2>
               <p className="font-body text-sm sm:text-base text-text-secondary leading-relaxed">

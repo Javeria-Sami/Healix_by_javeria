@@ -14,7 +14,7 @@ export function StorySection() {
               The Founding Problem
             </Badge>
 
-            <h2 id="story-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-text-primary leading-tight">
+            <h2 id="story-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075B43] leading-tight">
               Why We Built Healix: <br />
               <span className="font-editorial italic font-normal text-primary">
                 Closing the Preventative Healthcare Gap

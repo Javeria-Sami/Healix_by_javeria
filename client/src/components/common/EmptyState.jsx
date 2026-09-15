@@ -21,7 +21,7 @@ export function EmptyState({
       </div>
 
       <div className="space-y-1">
-        <h3 className="font-heading font-bold text-lg text-text-primary">{title}</h3>
+        <h3 className="font-heading font-bold text-lg text-[#075B43]">{title}</h3>
         <p className="text-xs text-text-secondary leading-relaxed">{description}</p>
       </div>
 

@@ -42,7 +42,7 @@ export default function LabTestsDropdown({ isOpen, onClose, triggerRef }) {
                   <IconComponent className="w-4 h-4" />
                 </div>
                 <div>
-                  <h2 className="text-xs font-bold text-neutral-900 uppercase tracking-wider">
+                  <h2 className="text-xs font-bold text-[#075B43] uppercase tracking-wider">
                     {col.title}
                   </h2>
                   <p className="text-[11px] text-neutral-600">

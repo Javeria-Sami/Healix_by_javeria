@@ -44,7 +44,7 @@ export function Toast({
     >
       <Icon className={clsx('w-5 h-5 flex-shrink-0 mt-0.5', iconColorMap[type])} aria-hidden="true" />
       <div className="flex-grow pr-2">
-        {title && <h4 className="font-heading font-bold text-xs text-text-primary">{title}</h4>}
+        {title && <h4 className="font-heading font-bold text-xs text-[#075B43]">{title}</h4>}
         <p className="text-xs text-text-secondary mt-0.5 leading-relaxed">{message}</p>
       </div>
       {onDismiss && (

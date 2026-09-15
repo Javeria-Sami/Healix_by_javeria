@@ -56,7 +56,7 @@ export function ResourceDetailHero({ article }) {
               <div>
                 <div className="font-bold text-sm text-[#075B43]">
                   {article.authorSlug ? (
-                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#0D7657] transition-colors">
+                    <Link to={`/professionals/${article.authorSlug}`} className="hover:text-[#064C38] transition-colors">
                       {article.author}
                     </Link>
                   ) : (

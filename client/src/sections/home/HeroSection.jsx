@@ -253,7 +253,7 @@ export function HeroSection() {
                 {/* Main Headline (Single Semantic H1 on Homepage) */}
                 <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] font-extrabold text-[#075B43] leading-[1.12] tracking-tight">
                   {currentSlide.titleMain} <br />
-                  <span className={clsx('font-serif italic font-normal', currentSlide.accentColor)}>
+                  <span className={clsx('font-serif italic font-normal', currentSlide.accentColor || 'text-[#075B43]')}>
                     {currentSlide.titleAccent}
                   </span>
                 </h1>

@@ -62,7 +62,7 @@ export default function RequestMedicineModal({ isOpen, onClose, initialMedicineN
               💊
             </div>
             <div>
-              <h2 id="request-modal-title" className="text-lg font-bold text-neutral-900">
+              <h2 id="request-modal-title" className="text-lg font-bold text-[#075B43]">
                 Request Medicine / Product
               </h2>
               <p className="text-xs text-neutral-500">
@@ -89,7 +89,7 @@ export default function RequestMedicineModal({ isOpen, onClose, initialMedicineN
               <div className="w-14 h-14 mx-auto rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4 border border-emerald-200">
                 ✓
               </div>
-              <h3 className="text-lg font-bold text-neutral-900 mb-2">Request Received!</h3>
+              <h3 className="text-lg font-bold text-[#075B43] mb-2">Request Received!</h3>
               <p className="text-sm text-neutral-600 mb-6 max-w-sm mx-auto">
                 Thank you. Our procurement team has been notified. We will update you at{' '}
                 <span className="font-semibold text-neutral-900">{phone || email}</span> when{' '}

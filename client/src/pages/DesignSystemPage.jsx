@@ -77,7 +77,7 @@ export function DesignSystemPage() {
             <Sparkles className="w-3.5 h-3.5 text-primary" />
             <span>Internal Engineering Showcase — Phase 04</span>
           </div>
-          <h1 className="font-h1 text-text-primary">
+          <h1 className="font-h1 text-[#075B43]">
             Core Component System & <br />
             <span className="font-editorial italic font-normal text-primary">Reusable UI Primitives</span>
           </h1>
@@ -119,7 +119,7 @@ export function DesignSystemPage() {
             {/* Buttons Showcase */}
             <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-6">
               <div>
-                <h2 className="font-h3 text-text-primary mb-1">Button Component (All Variants & Sizes)</h2>
+                <h2 className="font-h3 text-[#075B43] mb-1">Button Component (All Variants & Sizes)</h2>
                 <p className="font-small text-text-secondary">
                   Accessible action buttons supporting leading/trailing icons, link polymorphism, loading, and disabled states.
                 </p>
@@ -183,7 +183,7 @@ export function DesignSystemPage() {
             {/* Badges Showcase */}
             <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-6">
               <div>
-                <h2 className="font-h3 text-text-primary mb-1">Badge Component (Status & Category Variants)</h2>
+                <h2 className="font-h3 text-[#075B43] mb-1">Badge Component (Status & Category Variants)</h2>
                 <p className="font-small text-text-secondary">
                   Accessible chips and metadata tags in pill and standard rounded forms.
                 </p>
@@ -210,7 +210,7 @@ export function DesignSystemPage() {
         {activeTab === 'cards' && (
           <div className="space-y-8 animate-in fade-in duration-200">
             <div>
-              <h2 className="font-h3 text-text-primary mb-1">Composable Card Primitives</h2>
+              <h2 className="font-h3 text-[#075B43] mb-1">Composable Card Primitives</h2>
               <p className="font-small text-text-secondary">
                 Cards built from <code>CardHeader</code>, <code>CardTitle</code>, <code>CardMedia</code>, <code>CardContent</code>, and <code>CardFooter</code>.
               </p>
@@ -250,7 +250,7 @@ export function DesignSystemPage() {
                   <CardDescription>Comprehensive ongoing physician access.</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-2xl font-bold font-heading text-text-primary mb-2">$189<span className="text-xs font-normal text-text-muted">/month</span></div>
+                  <div className="text-2xl font-bold font-heading text-[#075B43] mb-2">$189<span className="text-xs font-normal text-text-muted">/month</span></div>
                   <ul className="space-y-1 text-xs text-text-secondary">
                     <li>• Comprehensive metabolic profiling</li>
                     <li>• Priority physician consultations</li>
@@ -294,7 +294,7 @@ export function DesignSystemPage() {
           <div className="space-y-8 animate-in fade-in duration-200">
             <div className="max-w-2xl bg-surface border border-border rounded-healix-xl p-8 space-y-6">
               <div>
-                <h2 className="font-h3 text-text-primary mb-1">Accessible Form Controls</h2>
+                <h2 className="font-h3 text-[#075B43] mb-1">Accessible Form Controls</h2>
                 <p className="font-small text-text-secondary">
                   Complete programmatic association of labels, helper texts, error states, and keyboard accessibility.
                 </p>
@@ -366,7 +366,7 @@ export function DesignSystemPage() {
           <div className="space-y-12 animate-in fade-in duration-200">
             {/* Modal Trigger Demonstration */}
             <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-4 max-w-2xl">
-              <h2 className="font-h3 text-text-primary">Accessible Modal Dialog</h2>
+              <h2 className="font-h3 text-[#075B43]">Accessible Modal Dialog</h2>
               <p className="font-small text-text-secondary">
                 Features backdrop blur, focus trapping, Escape key dismissal, and body scroll locking.
               </p>
@@ -403,7 +403,7 @@ export function DesignSystemPage() {
             {/* Accordion Component */}
             <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-6 max-w-3xl">
               <div>
-                <h2 className="font-h3 text-text-primary mb-1">Accessible Accordion Primitive</h2>
+                <h2 className="font-h3 text-[#075B43] mb-1">Accessible Accordion Primitive</h2>
                 <p className="font-small text-text-secondary">
                   Uses semantic buttons, <code>aria-expanded</code>, <code>aria-controls</code>, and smooth height disclosure.
                 </p>
@@ -437,7 +437,7 @@ export function DesignSystemPage() {
             <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-6">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div>
-                  <h2 className="font-h3 text-text-primary mb-1">Toast Notifications</h2>
+                  <h2 className="font-h3 text-[#075B43] mb-1">Toast Notifications</h2>
                   <p className="font-small text-text-secondary">
                     Polite ARIA notifications for user feedback and state confirmations.
                   </p>
@@ -478,7 +478,7 @@ export function DesignSystemPage() {
             {/* Breadcrumb & EmptyState & Loader */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-6">
-                <h3 className="font-h4 text-text-primary">Breadcrumb & Loaders</h3>
+                <h3 className="font-h4 text-[#075B43]">Breadcrumb & Loaders</h3>
                 <Breadcrumb items={breadcrumbItems} />
                 <div className="flex items-center gap-8 pt-4 border-t border-border">
                   <Loader size="sm" label="Small loader" />
@@ -488,7 +488,7 @@ export function DesignSystemPage() {
               </div>
 
               <div className="bg-surface border border-border rounded-healix-xl p-8 space-y-4">
-                <h3 className="font-h4 text-text-primary">Empty State Primitive</h3>
+                <h3 className="font-h4 text-[#075B43]">Empty State Primitive</h3>
                 <EmptyState
                   icon={Compass}
                   title="No Test Results Pending"
@@ -509,7 +509,7 @@ export function DesignSystemPage() {
            ==================================================================== */}
         {activeTab === 'tokens' && (
           <div className="space-y-6 bg-surface border border-border rounded-healix-xl p-8">
-            <h2 className="font-h3 text-text-primary">Core Component System API Summary</h2>
+            <h2 className="font-h3 text-[#075B43]">Core Component System API Summary</h2>
             <p className="font-body text-text-secondary">
               All components consume semantic CSS variables defined in <code>tokens.css</code> and are fully exportable from <code>client/src/components/index.js</code>.
             </p>

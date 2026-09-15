@@ -83,7 +83,7 @@ export function PlansPreview() {
                   </CardHeader>
 
                   <div className="px-6 py-4 bg-surface-muted/60 border-y border-border my-2">
-                    <div className="font-heading font-extrabold text-2xl text-text-primary">
+                    <div className="font-heading font-extrabold text-2xl text-[#075B43]">
                       {displayPrice}
                     </div>
                     <p className="text-[11px] text-text-muted mt-0.5">
@@ -92,7 +92,7 @@ export function PlansPreview() {
                   </div>
 
                   <CardContent className="space-y-4 pt-4">
-                    <p className="text-xs font-bold text-text-primary">Plan Highlights:</p>
+                    <p className="text-xs font-bold text-[#075B43]">Plan Highlights:</p>
                     <ul className="space-y-2.5 text-xs text-text-secondary">
                       {plan.features.map((feat, idx) => (
                         <li key={idx} className="flex items-start gap-2">

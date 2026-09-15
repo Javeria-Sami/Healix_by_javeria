@@ -125,7 +125,7 @@ export function MedicineCard({
             <span className="text-[11px] font-mono">{medicine.packSize}</span>
           </div>
 
-          <h3 className="font-heading font-bold text-base text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
+          <h3 className="font-heading font-bold text-base text-[#075B43] hover:text-[#064C38] transition-colors leading-snug">
             <Link
               to={`/pharmacy/medicine/${medicine.slug}`}
               className="focus:outline-none focus-visible:underline"
@@ -186,7 +186,7 @@ export function MedicineCard({
                 >
                   <Minus className="w-3 h-3" />
                 </button>
-                <span className="w-6 text-center text-xs font-bold text-text-primary font-mono">
+                <span className="w-6 text-center text-xs font-bold text-[#075B43] font-mono">
                   {quantity}
                 </span>
                 <button

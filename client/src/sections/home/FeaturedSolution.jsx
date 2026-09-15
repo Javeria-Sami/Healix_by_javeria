@@ -31,7 +31,7 @@ export function FeaturedSolution() {
               <div className="flex items-center justify-between pb-4 border-b border-border">
                 <div className="flex items-center gap-2.5">
                   <Dna className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <span className="font-heading font-bold text-sm text-text-primary">
+                  <span className="font-heading font-bold text-sm text-[#075B43]">
                     Healix Longevity Roadmap
                   </span>
                 </div>
@@ -47,7 +47,7 @@ export function FeaturedSolution() {
                     01
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-xs text-text-primary">
+                    <h4 className="font-heading font-bold text-xs text-[#075B43]">
                       Baseline Cellular & Metabolic Audit
                     </h4>
                     <p className="text-xs text-text-secondary mt-0.5">
@@ -61,7 +61,7 @@ export function FeaturedSolution() {
                     02
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-xs text-text-primary">
+                    <h4 className="font-heading font-bold text-xs text-[#075B43]">
                       Cardiovascular Imaging & Rhythm Telemetry
                     </h4>
                     <p className="text-xs text-text-secondary mt-0.5">
@@ -75,7 +75,7 @@ export function FeaturedSolution() {
                     03
                   </div>
                   <div>
-                    <h4 className="font-heading font-bold text-xs text-text-primary">
+                    <h4 className="font-heading font-bold text-xs text-[#075B43]">
                       Physician-Led Longevity Blueprint
                     </h4>
                     <p className="text-xs text-text-secondary mt-0.5">
@@ -102,7 +102,7 @@ export function FeaturedSolution() {
               Flagship Clinical Offering
             </Badge>
 
-            <h2 id="featured-solution-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-text-primary leading-tight">
+            <h2 id="featured-solution-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075B43] leading-tight">
               The Longitudinal <br />
               <span className="font-editorial italic font-normal text-primary">Longevity Assessment</span>
             </h2>
@@ -116,7 +116,7 @@ export function FeaturedSolution() {
                 <div key={idx} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <h4 className="font-heading font-bold text-sm text-text-primary">{pillar.title}</h4>
+                    <h4 className="font-heading font-bold text-sm text-[#075B43]">{pillar.title}</h4>
                     <p className="text-xs text-text-secondary mt-0.5">{pillar.desc}</p>
                   </div>
                 </div>

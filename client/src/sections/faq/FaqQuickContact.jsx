@@ -14,7 +14,7 @@ export function FaqQuickContact() {
         </div>
 
         <div className="space-y-1">
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
             Still Have a Specific Clinical or Care Question?
           </h2>
           <p className="text-xs sm:text-sm text-text-secondary max-w-lg mx-auto leading-relaxed">

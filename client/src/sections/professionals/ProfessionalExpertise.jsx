@@ -16,7 +16,7 @@ export function ProfessionalExpertise({ focusAreas = [], qualifications = [] }) 
                 <CheckCircle2 className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-heading text-lg font-bold text-text-primary">
+                <h3 className="font-heading text-lg font-bold text-[#075B43]">
                   Clinical Focus & Sub-Specialties
                 </h3>
                 <p className="text-xs text-text-muted">Primary clinical research and patient care areas</p>
@@ -43,7 +43,7 @@ export function ProfessionalExpertise({ focusAreas = [], qualifications = [] }) 
                 <Award className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-heading text-lg font-bold text-text-primary">
+                <h3 className="font-heading text-lg font-bold text-[#075B43]">
                   Qualifications & Credentials
                 </h3>
                 <p className="text-xs text-text-muted">Verified medical education and board certifications</p>

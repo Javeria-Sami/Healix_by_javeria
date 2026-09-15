@@ -71,7 +71,7 @@ export function ModernPharmacyCare() {
             </span>
             <h1
               id="modern-pharmacy-heading"
-              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075B43] tracking-tight leading-tight"
             >
               Modern Pharmacy Care
             </h1>
@@ -112,10 +112,10 @@ export function ModernPharmacyCare() {
               </div>
 
               <div className="space-y-2 pt-1">
-                <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] text-neutral-600 uppercase block">
+                <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] text-[#075B43] uppercase block">
                   TRUSTED PHARMACY SUPPORT
                 </span>
-                <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[32px] font-extrabold text-neutral-900 tracking-tight leading-tight">
+                <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[32px] font-extrabold text-[#075B43] tracking-tight leading-tight">
                   Prescription Care, <br />
                   Made Simpler
                 </h3>
@@ -149,7 +149,7 @@ export function ModernPharmacyCare() {
           <article className="lg:col-span-5 bg-white border border-[#DCEBE4] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-soft-xs hover:shadow-soft-sm transition-all duration-300">
             {/* Header: Title & Action Link */}
             <div className="flex items-center justify-between pb-4 border-b border-[#DCEBE4]/60">
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-neutral-900">
+              <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
                 What We Offer
               </h3>
               <Link
@@ -175,7 +175,7 @@ export function ModernPharmacyCare() {
                       <Icon className="w-4 h-4 sm:w-5 sm:h-5 stroke-[1.75]" aria-hidden="true" />
                     </div>
                     <div className="space-y-0.5 min-w-0">
-                      <h4 className="font-heading text-xs sm:text-sm font-bold text-neutral-900 group-hover/item:text-[#075B43] transition-colors">
+                      <h4 className="font-heading text-xs sm:text-sm font-bold text-[#075B43] transition-colors">
                         {item.title}
                       </h4>
                       <p className="font-body text-[11px] sm:text-xs text-neutral-500 leading-snug">

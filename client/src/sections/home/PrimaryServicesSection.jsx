@@ -72,7 +72,7 @@ export function PrimaryServicesSection() {
               className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075B43] tracking-tight leading-[1.18]"
             >
               Simple Pharmacy Care, <br />
-              <span className="font-serif italic font-normal text-[#0D7657]">
+              <span className="font-serif italic font-normal text-[#075B43]">
                 Built Around You
               </span>
             </h2>
@@ -118,7 +118,7 @@ export function PrimaryServicesSection() {
                     </div>
 
                     {/* Service Title */}
-                    <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug mb-1.5">
+                    <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] transition-colors leading-snug mb-1.5">
                       {service.title}
                     </h3>
 

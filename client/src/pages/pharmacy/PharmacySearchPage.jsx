@@ -58,10 +58,10 @@ export default function PharmacySearchPage() {
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] tracking-tight">
                 {rawQuery ? (
                   <>
-                    Search Results for <span className="text-primary-600">"{rawQuery}"</span>
+                    Search Results for <span className="text-[#075B43]">"{rawQuery}"</span>
                   </>
                 ) : (
                   'All Healthcare Products'
@@ -85,7 +85,7 @@ export default function PharmacySearchPage() {
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white p-5 rounded-3xl border border-neutral-200/80 shadow-sm space-y-6">
               <div className="flex items-center justify-between pb-3 border-b border-neutral-100">
-                <span className="text-sm font-bold text-neutral-900">Filters</span>
+                <span className="text-sm font-bold text-[#075B43]">Filters</span>
                 {(categoryFilter !== 'ALL' || rxFilter !== 'ALL' || stockFilter !== 'ALL') && (
                   <button
                     type="button"
@@ -205,7 +205,7 @@ export default function PharmacySearchPage() {
                 <FileText className="w-5 h-5 stroke-[2]" aria-hidden="true" />
               </div>
               <div className="space-y-1">
-                <h3 className="font-heading text-sm sm:text-base font-bold text-neutral-900">
+                <h3 className="font-heading text-sm sm:text-base font-bold text-[#075B43]">
                   Can't find what you need?
                 </h3>
                 <p className="font-body text-xs sm:text-[13px] text-[#42554E] leading-relaxed">
@@ -236,7 +236,7 @@ export default function PharmacySearchPage() {
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-neutral-100 flex items-center justify-center text-3xl mb-4">
                   🔍
                 </div>
-                <h2 className="text-xl font-bold text-neutral-900 mb-2">
+                <h2 className="text-xl font-bold text-[#075B43] mb-2">
                   We couldn't find a medicine matching that search.
                 </h2>
                 <p className="text-sm text-neutral-500 max-w-md mx-auto mb-8">
@@ -249,21 +249,21 @@ export default function PharmacySearchPage() {
                     className="p-4 rounded-2xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-center transition-colors"
                   >
                     <span className="text-2xl block mb-1">📂</span>
-                    <span className="text-xs font-bold text-neutral-800 block">Browse Categories</span>
+                    <span className="text-xs font-bold text-[#075B43] block">Browse Categories</span>
                   </Link>
                   <Link
                     to={ROUTES.PHARMACY_MEDICINES}
                     className="p-4 rounded-2xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-center transition-colors"
                   >
                     <span className="text-2xl block mb-1">🔤</span>
-                    <span className="text-xs font-bold text-neutral-800 block">A–Z Directory</span>
+                    <span className="text-xs font-bold text-[#075B43] block">A–Z Directory</span>
                   </Link>
                   <Link
                     to={ROUTES.PHARMACY_PRESCRIPTION}
                     className="p-4 rounded-2xl bg-neutral-50 hover:bg-neutral-100 border border-neutral-200/80 text-center transition-colors"
                   >
                     <span className="text-2xl block mb-1">📋</span>
-                    <span className="text-xs font-bold text-neutral-800 block">Upload Prescription</span>
+                    <span className="text-xs font-bold text-[#075B43] block">Upload Prescription</span>
                   </Link>
                 </div>
               </div>

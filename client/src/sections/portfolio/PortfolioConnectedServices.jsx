@@ -15,7 +15,7 @@ export function PortfolioConnectedServices({ serviceSlugs }) {
     <section className="space-y-6">
       <div className="flex items-center gap-2">
         <Stethoscope className="w-5 h-5 text-primary" />
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
           Connected Clinical Services
         </h2>
       </div>
@@ -30,7 +30,7 @@ export function PortfolioConnectedServices({ serviceSlugs }) {
               <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
                 {service.category}
               </span>
-              <h3 className="font-heading text-sm font-bold text-text-primary leading-snug">
+              <h3 className="font-heading text-sm font-bold text-[#075B43] leading-snug">
                 {service.title}
               </h3>
               <p className="text-xs text-text-secondary line-clamp-2">

@@ -5,7 +5,7 @@ import { AlertCircle, ShieldCheck } from 'lucide-react';
 export function ResourcesDisclaimer({ className = '' }) {
   return (
     <Card className={`p-6 border border-border/80 bg-surface/60 space-y-2 text-text-secondary ${className}`}>
-      <div className="flex items-center gap-2 text-text-primary font-bold text-xs">
+      <div className="flex items-center gap-2 text-[#075B43] font-bold text-xs">
         <AlertCircle className="w-4 h-4 text-primary flex-shrink-0" />
         <span>Medical Information & Clinical Disclaimer</span>
       </div>

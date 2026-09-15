@@ -30,7 +30,7 @@ export function ServiceBenefits({ benefits = [] }) {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
 
-                <h3 className="font-heading text-lg font-bold text-text-primary mb-3">
+                <h3 className="font-heading text-lg font-bold text-[#075B43] mb-3">
                   {benefit.title}
                 </h3>
 

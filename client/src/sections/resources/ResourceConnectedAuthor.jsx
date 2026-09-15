@@ -26,7 +26,7 @@ export function ResourceConnectedAuthor({ authorSlug, authorName, authorRole }) 
             <span className="text-[10px] font-bold uppercase tracking-wider text-[#075B43]">
               Article Author & Clinical Lead
             </span>
-            <h3 className="font-heading text-base sm:text-lg font-bold text-neutral-900">
+            <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43]">
               {authorName}
             </h3>
             <p className="text-xs text-neutral-500">

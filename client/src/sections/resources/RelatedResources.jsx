@@ -18,7 +18,7 @@ export function RelatedResources({ currentArticleId, relatedArticleIds }) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <BookOpen className="w-5 h-5 text-[#075B43]" />
-          <h2 className="font-heading text-lg sm:text-xl font-bold text-neutral-900">
+          <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
             Related Clinical Articles & Insights
           </h2>
         </div>
@@ -46,7 +46,7 @@ export function RelatedResources({ currentArticleId, relatedArticleIds }) {
                   {item.readTime}
                 </span>
               </div>
-              <h3 className="font-heading text-sm font-bold text-neutral-900 leading-snug line-clamp-2">
+              <h3 className="font-heading text-sm font-bold text-[#075B43] leading-snug line-clamp-2">
                 <Link to={`/resources/${item.slug}`} className="hover:text-[#075B43] transition-colors">
                   {item.title}
                 </Link>

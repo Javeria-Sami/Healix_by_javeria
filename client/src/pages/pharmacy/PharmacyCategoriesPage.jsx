@@ -33,7 +33,7 @@ export default function PharmacyCategoriesPage() {
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
-              <h1 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
+              <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075B43] tracking-tight">
                 All Pharmacy Categories
               </h1>
               <p className="text-sm text-neutral-500 mt-1.5 max-w-xl">
@@ -61,7 +61,7 @@ export default function PharmacyCategoriesPage() {
                   <IconComponent className="w-6 h-6" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-neutral-900">
+                  <h2 className="text-xl font-bold text-[#075B43]">
                     {section.title}
                   </h2>
                   <p className="text-xs sm:text-sm text-neutral-500">
@@ -79,7 +79,7 @@ export default function PharmacyCategoriesPage() {
                     className="group p-4 rounded-2xl border border-neutral-100 hover:border-primary-300 hover:bg-neutral-50/80 transition-all duration-150 flex items-center justify-between"
                   >
                     <div>
-                      <h3 className="text-sm font-bold text-neutral-900 group-hover:text-primary-600 transition-colors">
+                      <h3 className="text-sm font-bold text-[#075B43] group-hover:text-primary-600 transition-colors">
                         {cat.name}
                       </h3>
                       <span className="text-[11px] text-neutral-400">

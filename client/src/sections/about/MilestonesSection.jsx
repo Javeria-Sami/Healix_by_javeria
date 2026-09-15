@@ -52,7 +52,7 @@ export function MilestonesSection() {
                 </div>
               </div>
 
-              <h3 className="font-heading font-bold text-base text-text-primary pt-1">
+              <h3 className="font-heading font-bold text-base text-[#075B43] pt-1">
                 {item.title}
               </h3>
 

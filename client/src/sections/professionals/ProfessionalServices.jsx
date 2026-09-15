@@ -43,7 +43,7 @@ export function ProfessionalServices({ serviceSlugs = [] }) {
                   )}
                 </div>
 
-                <h3 className="font-heading text-lg font-bold text-text-primary mb-2 group-hover:text-primary transition-colors">
+                <h3 className="font-heading text-lg font-bold text-[#075B43] mb-2 group-hover:text-primary transition-colors">
                   <Link to={`/services/${service.slug}`} className="focus:outline-none focus-visible:underline">
                     {service.title}
                   </Link>

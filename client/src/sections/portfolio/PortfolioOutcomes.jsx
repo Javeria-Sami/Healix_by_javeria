@@ -9,7 +9,7 @@ export function PortfolioOutcomes({ outcomes }) {
     <section className="space-y-6">
       <div className="flex items-center gap-2">
         <TrendingUp className="w-5 h-5 text-primary" />
-        <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary">
+        <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
           Key Outcomes & Measurable Impact
         </h2>
       </div>

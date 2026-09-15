@@ -55,7 +55,7 @@ export function ApproachSection() {
                     </div>
                   </div>
 
-                  <h3 className="font-heading font-bold text-xl text-text-primary pt-2">
+                  <h3 className="font-heading font-bold text-xl text-[#075B43] pt-2">
                     {pillar.title}
                   </h3>
 

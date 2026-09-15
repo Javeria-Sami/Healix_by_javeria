@@ -41,7 +41,7 @@ export default function OrderConfirmationPage() {
             <span>Order Confirmed</span> • Reference: {displayId}
           </div>
 
-          <h1 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight mb-3">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075B43] tracking-tight mb-3 font-heading">
             Your Order Has Been Received
           </h1>
 
@@ -52,7 +52,7 @@ export default function OrderConfirmationPage() {
 
         {/* What Happens Next (HCI Principle: System Status) */}
         <div className="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200/80 shadow-sm">
-          <h2 className="text-base sm:text-lg font-bold text-neutral-900 mb-6 flex items-center gap-2">
+          <h2 className="text-base sm:text-lg font-bold text-[#075B43] mb-6 flex items-center gap-2 font-heading">
             <span>🧭</span> What Happens Next?
           </h2>
 
@@ -61,7 +61,7 @@ export default function OrderConfirmationPage() {
               <div className="w-7 h-7 rounded-lg bg-primary-100 text-primary-700 font-bold text-xs flex items-center justify-center mb-3">
                 1
               </div>
-              <h3 className="font-bold text-sm text-neutral-900 mb-1">Pharmacist Check</h3>
+              <h3 className="font-bold text-sm text-[#075B43] mb-1 font-heading">Pharmacist Check</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Our pharmacist reviews prescription medicines, dosages, and interactions.
               </p>
@@ -71,7 +71,7 @@ export default function OrderConfirmationPage() {
               <div className="w-7 h-7 rounded-lg bg-teal-100 text-teal-700 font-bold text-xs flex items-center justify-center mb-3">
                 2
               </div>
-              <h3 className="font-bold text-sm text-neutral-900 mb-1">Cold-Chain Packing</h3>
+              <h3 className="font-bold text-sm text-[#075B43] mb-1 font-heading">Cold-Chain Packing</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Items are safely packed in tamper-evident clinical boxes with batch lot verification.
               </p>
@@ -81,7 +81,7 @@ export default function OrderConfirmationPage() {
               <div className="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 font-bold text-xs flex items-center justify-center mb-3">
                 3
               </div>
-              <h3 className="font-bold text-sm text-neutral-900 mb-1">Doorstep Delivery</h3>
+              <h3 className="font-bold text-sm text-[#075B43] mb-1 font-heading">Doorstep Delivery</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 Courier delivers to your address within 24–48 hours. Inspect seal upon arrival.
               </p>
@@ -94,10 +94,10 @@ export default function OrderConfirmationPage() {
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-4 border-b border-neutral-100 gap-2">
             <div>
               <span className="text-xs text-neutral-400 font-bold uppercase tracking-wider">Order Reference</span>
-              <div className="font-bold text-base text-neutral-900">{displayId}</div>
+              <div className="font-bold text-base text-[#075B43]">{displayId}</div>
             </div>
             <div className="text-xs text-neutral-500">
-              Expected Delivery: <strong className="text-neutral-900">Within 24–48 Hours</strong>
+              Expected Delivery: <strong className="text-[#075B43]">Within 24–48 Hours</strong>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export default function OrderConfirmationPage() {
             <span className="font-bold text-neutral-500 uppercase tracking-wider block mb-1 text-[10px]">
               Delivery Destination
             </span>
-            <div className="font-bold text-sm text-neutral-900">{displayDelivery.fullName}</div>
+            <div className="font-bold text-sm text-[#075B43]">{displayDelivery.fullName}</div>
             <div className="text-neutral-600">{displayDelivery.address}, {displayDelivery.city}</div>
             <div className="text-neutral-500 mt-0.5">📞 {displayDelivery.phone}</div>
           </div>
@@ -117,11 +117,11 @@ export default function OrderConfirmationPage() {
               {displayItems.map((item) => (
                 <div key={item.id} className="p-3.5 flex items-center justify-between text-xs">
                   <div>
-                    <span className="font-bold text-neutral-900">{item.name}</span>
+                    <span className="font-bold text-[#075B43]">{item.name}</span>
                     <span className="text-neutral-500 ml-2">x {item.quantity}</span>
                     <div className="text-[11px] text-neutral-400">{item.strength} • {item.dosageForm}</div>
                   </div>
-                  <div className="font-bold text-neutral-900 text-sm">
+                  <div className="font-bold text-[#075B43] text-sm">
                     Rs. {(item.price * item.quantity).toFixed(2)}
                   </div>
                 </div>
@@ -129,7 +129,7 @@ export default function OrderConfirmationPage() {
             </div>
           )}
 
-          <div className="pt-2 flex justify-between items-center text-base font-extrabold text-neutral-900 border-t border-neutral-100">
+          <div className="pt-2 flex justify-between items-center text-base font-extrabold text-[#075B43] border-t border-neutral-100">
             <span>Total Paid / Payable</span>
             <span className="text-xl text-primary-900">Rs. {displayTotal.toFixed(2)}</span>
           </div>

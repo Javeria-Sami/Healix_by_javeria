@@ -36,7 +36,7 @@ export function FaqHero() {
 
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075B43] tracking-tight leading-[1.15]">
             Frequently Asked <br />
-            <span className="font-serif italic font-normal text-[#0D7657]">
+            <span className="font-serif italic font-normal text-primary">
               Questions
             </span>
           </h1>

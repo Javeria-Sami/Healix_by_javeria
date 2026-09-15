@@ -41,7 +41,7 @@ export default function CheckoutPage() {
       <div className="min-h-screen bg-neutral-50/60 py-20 px-4 text-center">
         <div className="max-w-md mx-auto bg-white p-8 rounded-3xl border border-neutral-200/80 shadow-sm">
           <div className="text-4xl mb-4">🛒</div>
-          <h1 className="text-xl font-bold text-neutral-900 mb-2">No Items in Cart</h1>
+          <h1 className="text-xl font-bold text-[#075B43] mb-2">No Items in Cart</h1>
           <p className="text-sm text-neutral-500 mb-6">
             Please add medicines or healthcare products to your cart before proceeding to checkout.
           </p>
@@ -142,7 +142,7 @@ export default function CheckoutPage() {
             <span className="text-neutral-900 font-semibold" aria-current="page">Checkout</span>
           </nav>
 
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] tracking-tight font-heading">
             Secure Pharmacy Checkout
           </h1>
 
@@ -154,7 +154,7 @@ export default function CheckoutPage() {
               }`}>
                 1
               </span>
-              <span className={`text-xs font-semibold ${step >= 1 ? 'text-neutral-900' : 'text-neutral-400'}`}>
+              <span className={`text-xs font-semibold ${step >= 1 ? 'text-[#075B43]' : 'text-neutral-400'}`}>
                 Delivery
               </span>
             </div>
@@ -165,7 +165,7 @@ export default function CheckoutPage() {
               }`}>
                 2
               </span>
-              <span className={`text-xs font-semibold ${step >= 2 ? 'text-neutral-900' : 'text-neutral-400'}`}>
+              <span className={`text-xs font-semibold ${step >= 2 ? 'text-[#075B43]' : 'text-neutral-400'}`}>
                 Review
               </span>
             </div>
@@ -176,7 +176,7 @@ export default function CheckoutPage() {
               }`}>
                 3
               </span>
-              <span className={`text-xs font-semibold ${step >= 3 ? 'text-neutral-900' : 'text-neutral-400'}`}>
+              <span className={`text-xs font-semibold ${step >= 3 ? 'text-[#075B43]' : 'text-neutral-400'}`}>
                 Payment
               </span>
             </div>
@@ -194,7 +194,7 @@ export default function CheckoutPage() {
             {step === 1 && (
               <div className="space-y-6">
                 <div>
-                  <h2 className="text-xl font-bold text-neutral-900 mb-1">
+                  <h2 className="text-xl font-bold text-[#075B43] mb-1 font-heading">
                     1. Delivery Address & Contact
                   </h2>
                   <p className="text-xs text-neutral-500">
@@ -321,7 +321,7 @@ export default function CheckoutPage() {
               <div className="space-y-6">
                 <div className="flex items-center justify-between pb-3 border-b border-neutral-100">
                   <div>
-                    <h2 className="text-xl font-bold text-neutral-900">
+                    <h2 className="text-xl font-bold text-[#075B43] font-heading">
                       2. Review Order & Prescription
                     </h2>
                     <p className="text-xs text-neutral-500">
@@ -339,7 +339,7 @@ export default function CheckoutPage() {
 
                 {/* Delivery Target Preview */}
                 <div className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/70 text-xs text-neutral-700">
-                  <div className="font-bold text-neutral-900 text-sm mb-1">{formData.fullName}</div>
+                  <div className="font-bold text-[#075B43] text-sm mb-1">{formData.fullName}</div>
                   <div>{formData.address}, {formData.city} {formData.area}</div>
                   <div className="text-neutral-500 mt-1">📞 {formData.phone} {formData.email && `• ✉️ ${formData.email}`}</div>
                 </div>
@@ -390,11 +390,11 @@ export default function CheckoutPage() {
                   {cart.map((item) => (
                     <div key={item.id} className="p-3.5 flex items-center justify-between text-xs">
                       <div>
-                        <span className="font-bold text-neutral-900">{item.name}</span>
+                        <span className="font-bold text-[#075B43]">{item.name}</span>
                         <span className="text-neutral-500 ml-2">x {item.quantity}</span>
                         <div className="text-[11px] text-neutral-400">{item.strength} • {item.dosageForm}</div>
                       </div>
-                      <div className="font-bold text-neutral-900 text-sm">
+                      <div className="font-bold text-[#075B43] text-sm">
                         Rs. {(item.price * item.quantity).toFixed(2)}
                       </div>
                     </div>
@@ -424,7 +424,7 @@ export default function CheckoutPage() {
             {step === 3 && (
               <form onSubmit={handlePlaceOrder} className="space-y-6">
                 <div>
-                  <h2 className="text-xl font-bold text-neutral-900 mb-1">
+                  <h2 className="text-xl font-bold text-[#075B43] mb-1 font-heading">
                     3. Select Payment Method
                   </h2>
                   <p className="text-xs text-neutral-500">
@@ -455,7 +455,7 @@ export default function CheckoutPage() {
                         className="text-primary-600 focus:ring-primary-500"
                       />
                       <div>
-                        <div className="font-bold text-sm text-neutral-900">Cash on Delivery (COD)</div>
+                        <div className="font-bold text-sm text-[#075B43]">Cash on Delivery (COD)</div>
                         <div className="text-xs text-neutral-500">Pay securely in cash when your medicines arrive.</div>
                       </div>
                     </div>
@@ -479,7 +479,7 @@ export default function CheckoutPage() {
                           className="text-primary-600 focus:ring-primary-500"
                         />
                         <div>
-                          <div className="font-bold text-sm text-neutral-900">Credit / Debit Card</div>
+                          <div className="font-bold text-sm text-[#075B43]">Credit / Debit Card</div>
                           <div className="text-xs text-neutral-500">Encrypted instant checkout via Visa, Mastercard, AMEX.</div>
                         </div>
                       </div>
@@ -541,7 +541,7 @@ export default function CheckoutPage() {
                         className="text-primary-600 focus:ring-primary-500"
                       />
                       <div>
-                        <div className="font-bold text-sm text-neutral-900">Direct Health Insurance Claim</div>
+                        <div className="font-bold text-sm text-[#075B43]">Direct Health Insurance Claim</div>
                         <div className="text-xs text-neutral-500">Provide insurance membership ID upon pharmacist call.</div>
                       </div>
                     </div>
@@ -571,7 +571,7 @@ export default function CheckoutPage() {
           {/* Sticky Summary on Right */}
           <div className="lg:col-span-4">
             <div className="bg-white rounded-3xl p-6 border border-neutral-200/80 shadow-sm space-y-4 sticky top-24">
-              <h3 className="text-base font-bold text-neutral-900 pb-3 border-b border-neutral-100">
+              <h3 className="text-base font-bold text-[#075B43] pb-3 border-b border-neutral-100 font-heading">
                 Summary ({cart.length} items)
               </h3>
               <div className="space-y-2.5 text-xs">
@@ -591,7 +591,7 @@ export default function CheckoutPage() {
                     {cartDeliveryFee === 0 ? 'FREE' : `Rs. ${cartDeliveryFee.toFixed(2)}`}
                   </span>
                 </div>
-                <div className="pt-2 border-t border-neutral-100 flex justify-between text-sm font-extrabold text-neutral-900">
+                <div className="pt-2 border-t border-neutral-100 flex justify-between text-sm font-extrabold text-[#075B43]">
                   <span>Total Payable</span>
                   <span className="text-base text-primary-900">Rs. {cartTotal.toFixed(2)}</span>
                 </div>

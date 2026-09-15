@@ -59,7 +59,7 @@ export function ProfessionalsGrid({ professionals, activeDepartment, onResetFilt
 
                 {/* Content */}
                 <div className="p-6">
-                  <h2 className="font-heading text-lg font-bold text-text-primary mb-1 group-hover:text-primary transition-colors">
+                  <h2 className="font-heading text-lg font-bold text-[#075B43] mb-1 group-hover:text-primary transition-colors">
                     <Link to={`/professionals/${prof.slug}`} className="focus:outline-none focus-visible:underline">
                       {prof.name}
                     </Link>

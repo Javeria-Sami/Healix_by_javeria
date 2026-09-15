@@ -182,7 +182,7 @@ export default function MedicineSearchInput({
                       </div>
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0 ml-3">
-                      <span className="font-bold text-sm text-neutral-900">
+                      <span className="font-bold text-sm text-[#075B43]">
                         Rs. {item.price.toFixed(2)}
                       </span>
                       {item.prescriptionRequired && (

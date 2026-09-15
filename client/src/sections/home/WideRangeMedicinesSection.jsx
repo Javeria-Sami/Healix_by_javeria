@@ -140,7 +140,7 @@ export function WideRangeMedicinesSection() {
               {/* Product Meta & Pricing */}
               <div className="space-y-3 text-left">
                 <div className="space-y-0.5">
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors leading-snug">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-[#075B43] leading-snug">
                     <Link
                       to={`/pharmacy/medicine/${featuredProduct.slug}`}
                       className="focus:outline-none focus-visible:underline"
@@ -222,7 +222,7 @@ export function WideRangeMedicinesSection() {
                       className="absolute inset-0 bg-neutral-900/30 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-center justify-center p-2 z-20"
                       aria-label={`View details for ${product.name}`}
                     >
-                      <span className="px-3 py-1 rounded-md bg-white/95 text-neutral-900 font-bold text-[11px] shadow-sm transform translate-y-1 group-hover:translate-y-0 transition-transform">
+                      <span className="px-3 py-1 rounded-md bg-white/95 text-[#075B43] font-bold text-[11px] shadow-sm transform translate-y-1 group-hover:translate-y-0 transition-transform">
                         View Item
                       </span>
                     </Link>
@@ -231,7 +231,7 @@ export function WideRangeMedicinesSection() {
                   {/* Product Details & Price */}
                   <div className="space-y-2 text-left">
                     <div className="space-y-0.5">
-                      <h3 className="font-heading text-xs sm:text-sm font-bold text-[#075B43] group-hover:text-[#0D7657] transition-colors line-clamp-1 leading-snug">
+                      <h3 className="font-heading text-xs sm:text-sm font-bold text-[#075B43] line-clamp-1 leading-snug">
                         <Link
                           to={`/pharmacy/medicine/${product.slug}`}
                           className="focus:outline-none focus-visible:underline"

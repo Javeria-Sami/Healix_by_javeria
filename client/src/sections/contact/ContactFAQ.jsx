@@ -25,7 +25,7 @@ export function ContactFAQ() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <HelpCircle className="w-5 h-5 text-primary" />
-          <h2 className="font-heading text-xl sm:text-2xl font-bold text-text-primary">
+          <h2 className="font-heading text-xl sm:text-2xl font-bold text-[#075B43]">
             Frequently Asked Inquiries
           </h2>
         </div>
@@ -38,7 +38,7 @@ export function ContactFAQ() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {CONTACT_FAQS.map((item, idx) => (
           <Card key={idx} className="p-6 border border-border bg-surface space-y-2">
-            <h3 className="font-heading text-sm font-bold text-text-primary leading-snug">
+            <h3 className="font-heading text-sm font-bold text-[#075B43] leading-snug">
               {item.q}
             </h3>
             <p className="text-xs text-text-secondary leading-relaxed">

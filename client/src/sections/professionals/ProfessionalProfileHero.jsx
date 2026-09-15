@@ -35,7 +35,7 @@ export function ProfessionalProfileHero({ professional }) {
                 alt={professional.name}
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute top-3 right-3 bg-surface/95 backdrop-blur-sm text-xs font-bold text-text-primary px-3 py-1 rounded-full border border-border">
+              <div className="absolute top-3 right-3 bg-surface/95 backdrop-blur-sm text-xs font-bold text-[#075B43] px-3 py-1 rounded-full border border-border">
                 {professional.experienceYears}+ Yrs Practice
               </div>
             </div>
@@ -96,7 +96,7 @@ export function ProfessionalProfileHero({ professional }) {
               </Badge>
             </div>
 
-            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-text-primary tracking-tight leading-[1.15]">
+            <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#075B43] tracking-tight leading-[1.15]">
               {professional.name}
             </h1>
 

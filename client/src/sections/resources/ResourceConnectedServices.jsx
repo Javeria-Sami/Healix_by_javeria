@@ -13,7 +13,7 @@ export function ResourceConnectedServices({ serviceSlugs }) {
     <section className="max-w-3xl mx-auto space-y-5 pt-8 border-t border-neutral-100">
       <div className="flex items-center gap-2">
         <Stethoscope className="w-5 h-5 text-[#075B43]" />
-        <h2 className="font-heading text-lg sm:text-xl font-bold text-neutral-900">
+        <h2 className="font-heading text-lg sm:text-xl font-bold text-[#075B43]">
           Related Diagnostic Services & Programs
         </h2>
       </div>
@@ -28,7 +28,7 @@ export function ResourceConnectedServices({ serviceSlugs }) {
               <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#F1F8F4] text-[#075B43] text-[10px] font-bold uppercase tracking-wider">
                 {service.category}
               </span>
-              <h3 className="font-heading text-sm font-bold text-neutral-900 leading-snug">
+              <h3 className="font-heading text-sm font-bold text-[#075B43] leading-snug">
                 {service.title}
               </h3>
               <p className="text-xs text-neutral-500 line-clamp-2">

@@ -85,7 +85,7 @@ export default function PrescriptionUploadPage() {
             <span className="text-neutral-900 font-semibold" aria-current="page">Upload Prescription</span>
           </nav>
 
-          <h1 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl font-extrabold text-[#075B43] tracking-tight font-heading">
             Prescription Upload Portal
           </h1>
           <p className="text-sm text-neutral-500 mt-1 max-w-2xl">
@@ -109,7 +109,7 @@ export default function PrescriptionUploadPage() {
                   >
                     {s.num}
                   </span>
-                  <span className={`text-xs font-semibold hidden sm:inline ${step >= s.num ? 'text-neutral-900' : 'text-neutral-400'}`}>
+                  <span className={`text-xs font-semibold hidden sm:inline ${step >= s.num ? 'text-[#075B43]' : 'text-neutral-400'}`}>
                     {s.label}
                   </span>
                 </div>
@@ -129,7 +129,7 @@ export default function PrescriptionUploadPage() {
           {step === 1 && (
             <div className="space-y-6">
               <div>
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-900 mb-1">
+                <h2 className="text-lg sm:text-xl font-bold text-[#075B43] mb-1 font-heading">
                   1. Choose Prescription Image or Document
                 </h2>
                 <p className="text-xs text-neutral-500">
@@ -158,46 +158,37 @@ export default function PrescriptionUploadPage() {
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-primary-100/70 text-primary-700 flex items-center justify-center text-3xl mb-4">
                   📄
                 </div>
-                <h3 className="text-base font-bold text-neutral-900 mb-1">
-                  Click to select or drag and drop prescription
-                </h3>
-                <p className="text-xs text-neutral-500 max-w-sm mx-auto mb-4">
-                  Supported formats: JPG, PNG, WEBP, or PDF (Max size: 10MB)
+                <div className="font-bold text-sm text-[#075B43] mb-1">
+                  Click to select prescription file
+                </div>
+                <p className="text-xs text-neutral-500 mb-4">
+                  Supports JPG, PNG, WEBP, or PDF (Max 10MB)
                 </p>
-                <span className="inline-block px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-xl text-xs font-semibold transition-colors shadow-sm">
-                  Choose File from Device
-                </span>
+                {file && (
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-primary-50 text-primary-800 rounded-xl text-xs font-semibold border border-primary-200">
+                    <span>✓ Selected: {file.name}</span>
+                    <span className="text-neutral-400">({file.size})</span>
+                  </div>
+                )}
               </div>
 
-              {/* Selected File Card */}
-              {file && (
-                <div className="p-4 bg-primary-50/50 rounded-2xl border border-primary-200 flex items-center justify-between">
-                  <div className="flex items-center gap-3 truncate">
-                    <span className="text-2xl">📎</span>
-                    <div className="truncate">
-                      <div className="font-bold text-sm text-neutral-900 truncate">{file.name}</div>
-                      <div className="text-xs text-neutral-500">{file.size} • Ready for verification</div>
-                    </div>
-                  </div>
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setFile(null);
-                    }}
-                    className="p-1.5 text-neutral-400 hover:text-red-600 rounded-lg hover:bg-white"
-                  >
-                    ✕
-                  </button>
+              {/* Pharmacy Verification Promise */}
+              <div className="p-4 rounded-2xl bg-emerald-50/60 border border-emerald-200/60 flex items-start gap-3 text-xs text-emerald-900">
+                <span className="text-lg">🔒</span>
+                <div>
+                  <strong className="block font-bold">100% HIPAA & Medical Privacy Compliant</strong>
+                  <p className="text-emerald-800 text-[11px] mt-0.5">
+                    Your prescription data is strictly encrypted and shared exclusively with licensed dispensing pharmacists.
+                  </p>
                 </div>
-              )}
+              </div>
 
-              {/* Confidentiality Box */}
-              <div className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/60 text-xs text-neutral-600 space-y-1">
-                <span className="font-semibold text-neutral-900 block">🔒 Privacy & HIPAA Commitment</span>
-                <p className="text-[11px] text-neutral-500">
-                  Prescription images are encrypted and stored in confidential, non-public medical archives accessed solely by licensed pharmacists.
-                </p>
+              {/* Tips for Clear Photos */}
+              <div className="text-xs text-neutral-500 space-y-1">
+                <strong className="text-neutral-700 block">Tips for faster processing:</strong>
+                <p>• Avoid glare or shadows over written prescription text.</p>
+                <p>• Include the doctor's clinic stamp or signature if visible.</p>
+                <p>• Ensure all medicine names and dosages are completely inside the frame.</p>
               </div>
 
               <div className="flex justify-end pt-4 border-t border-neutral-100">
@@ -222,7 +213,7 @@ export default function PrescriptionUploadPage() {
           {step === 2 && (
             <div className="space-y-6">
               <div>
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-900 mb-1">
+                <h2 className="text-lg sm:text-xl font-bold text-[#075B43] mb-1 font-heading">
                   2. Patient Contact & Details
                 </h2>
                 <p className="text-xs text-neutral-500">
@@ -320,7 +311,7 @@ export default function PrescriptionUploadPage() {
           {step === 3 && (
             <div className="space-y-6">
               <div>
-                <h2 className="text-lg sm:text-xl font-bold text-neutral-900 mb-1">
+                <h2 className="text-lg sm:text-xl font-bold text-[#075B43] mb-1 font-heading">
                   3. Review Prescription Submission
                 </h2>
                 <p className="text-xs text-neutral-500">
@@ -331,20 +322,20 @@ export default function PrescriptionUploadPage() {
               <div className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/70 space-y-3 text-xs text-neutral-700">
                 <div className="flex justify-between pb-2 border-b border-neutral-200/60">
                   <span className="font-semibold text-neutral-500">Attached File:</span>
-                  <span className="font-bold text-neutral-900">{file?.name} ({file?.size})</span>
+                  <span className="font-bold text-[#075B43]">{file?.name} ({file?.size})</span>
                 </div>
                 <div className="flex justify-between pb-2 border-b border-neutral-200/60">
                   <span className="font-semibold text-neutral-500">Patient:</span>
-                  <span className="font-bold text-neutral-900">{patientInfo.patientName}</span>
+                  <span className="font-bold text-[#075B43]">{patientInfo.patientName}</span>
                 </div>
                 <div className="flex justify-between pb-2 border-b border-neutral-200/60">
                   <span className="font-semibold text-neutral-500">Phone:</span>
-                  <span className="font-bold text-neutral-900">{patientInfo.phone}</span>
+                  <span className="font-bold text-[#075B43]">{patientInfo.phone}</span>
                 </div>
                 {patientInfo.email && (
                   <div className="flex justify-between pb-2 border-b border-neutral-200/60">
                     <span className="font-semibold text-neutral-500">Email:</span>
-                    <span className="font-bold text-neutral-900">{patientInfo.email}</span>
+                    <span className="font-bold text-[#075B43]">{patientInfo.email}</span>
                   </div>
                 )}
                 {patientInfo.notes && (
@@ -382,7 +373,7 @@ export default function PrescriptionUploadPage() {
               </div>
 
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 mb-2">
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#075B43] mb-2 font-heading">
                   Prescription Received!
                 </h2>
                 <p className="text-sm text-neutral-600 max-w-md mx-auto leading-relaxed">
@@ -391,7 +382,7 @@ export default function PrescriptionUploadPage() {
               </div>
 
               <div className="p-4 bg-neutral-50 rounded-2xl border border-neutral-200/70 max-w-md mx-auto text-xs text-neutral-600 text-left space-y-2">
-                <div className="font-bold text-neutral-900">What happens next:</div>
+                <div className="font-bold text-[#075B43]">What happens next:</div>
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-5 rounded-full bg-primary-100 text-primary-700 font-bold flex items-center justify-center text-[10px]">1</span>
                   <span>Pharmacist reviews medicine dosages and stock</span>
