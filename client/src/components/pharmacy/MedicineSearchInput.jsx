@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Search } from 'lucide-react';
 import { ROUTES } from '../../constants/routes';
 import { searchMedicines } from '../../data/pharmacy';
 import { usePharmacy } from '../../context/PharmacyContext';
@@ -86,13 +87,11 @@ export default function MedicineSearchInput({
           e.preventDefault();
           handleSearchSubmit();
         }}
-        className="relative flex items-center"
+        className="relative flex items-center w-full"
         role="search"
       >
-        <div className="absolute left-4.5 text-neutral-400 pointer-events-none flex items-center justify-center">
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none flex items-center justify-center">
+          <Search className="w-5 h-5 text-neutral-400 stroke-[2]" aria-hidden="true" />
         </div>
 
         <input
