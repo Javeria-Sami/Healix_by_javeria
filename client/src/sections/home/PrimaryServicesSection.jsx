@@ -44,23 +44,13 @@ export function PrimaryServicesSection() {
           {/* ============================================================
               CARD 1: Pharmacy / Order Medicines (Green Theme)
               ============================================================ */}
-          <article className="group relative flex flex-col justify-between bg-gradient-to-r from-[#F4F9F6] via-[#F4F9F6] to-[#E8F4EE] rounded-[28px] sm:rounded-[32px] border border-[#DCE8E3] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px]">
-            {/* Background Arch Shapes */}
-            <div
-              className="absolute -right-12 top-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-[#D7EDE1]/40 pointer-events-none transition-transform duration-500 group-hover:scale-105"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute -right-4 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-60 sm:h-60 rounded-full bg-[#C6E6D3]/40 pointer-events-none"
-              aria-hidden="true"
-            />
-
-            {/* Right Subject Image (Package Delivery) */}
-            <div className="absolute right-0 bottom-0 top-0 h-full w-[45%] sm:w-[50%] pointer-events-none select-none flex items-end justify-end overflow-hidden">
+          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#DCE8E3] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px] bg-[#F4F9F6]">
+            {/* Background Visual Layer */}
+            <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden" aria-hidden="true">
               <img
-                src="/images/service_pharmacy_delivery.png"
-                alt="Healix medicine delivery package delivered with care"
-                className="w-full h-auto max-h-full object-contain object-right-bottom transition-transform duration-500 group-hover:scale-102"
+                src="/images/service_pharmacy_card_bg.png"
+                alt=""
+                className="w-full h-full object-cover object-right transition-transform duration-500 group-hover:scale-[1.02]"
                 loading="lazy"
               />
             </div>
@@ -83,7 +73,7 @@ export function PrimaryServicesSection() {
               {/* 3 Mini Features */}
               <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <ShieldCheck className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
@@ -92,7 +82,7 @@ export function PrimaryServicesSection() {
                 </div>
 
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <Truck className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
@@ -101,7 +91,7 @@ export function PrimaryServicesSection() {
                 </div>
 
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <Heart className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
@@ -126,23 +116,13 @@ export function PrimaryServicesSection() {
           {/* ============================================================
               CARD 2: Diagnostics / Book Lab Tests (Blue Theme)
               ============================================================ */}
-          <article className="group relative flex flex-col justify-between bg-gradient-to-r from-[#F4F8FB] via-[#F4F8FB] to-[#EBF3FA] rounded-[28px] sm:rounded-[32px] border border-[#D8E6F2] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px]">
-            {/* Background Arch Shapes */}
-            <div
-              className="absolute -right-12 top-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-[#D4E7F7]/40 pointer-events-none transition-transform duration-500 group-hover:scale-105"
-              aria-hidden="true"
-            />
-            <div
-              className="absolute -right-4 top-1/2 -translate-y-1/2 w-48 h-48 sm:w-60 sm:h-60 rounded-full bg-[#C2DEF5]/40 pointer-events-none"
-              aria-hidden="true"
-            />
-
-            {/* Right Subject Image (Lab Test Diagnostics) */}
-            <div className="absolute right-0 bottom-0 top-0 h-full w-[45%] sm:w-[50%] pointer-events-none select-none flex items-end justify-end overflow-hidden">
+          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#D8E6F2] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px] bg-[#F4F8FB]">
+            {/* Background Visual Layer */}
+            <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden" aria-hidden="true">
               <img
-                src="/images/service_lab_diagnostics.png"
-                alt="Clinical laboratory diagnostic sample testing"
-                className="w-full h-auto max-h-full object-contain object-right-bottom transition-transform duration-500 group-hover:scale-102"
+                src="/images/service_lab_card_bg.png"
+                alt=""
+                className="w-full h-full object-cover object-right transition-transform duration-500 group-hover:scale-[1.02]"
                 loading="lazy"
               />
             </div>
@@ -165,7 +145,7 @@ export function PrimaryServicesSection() {
               {/* 3 Mini Features */}
               <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <FlaskConical className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
@@ -174,7 +154,7 @@ export function PrimaryServicesSection() {
                 </div>
 
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <HomeIcon className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
@@ -183,7 +163,7 @@ export function PrimaryServicesSection() {
                 </div>
 
                 <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/80 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs">
+                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
                     <Calendar className="w-4 h-4" aria-hidden="true" />
                   </div>
                   <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
