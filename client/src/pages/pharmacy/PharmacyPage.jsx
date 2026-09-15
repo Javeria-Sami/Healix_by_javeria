@@ -6,7 +6,6 @@ import MedicineCard from '../../components/pharmacy/MedicineCard';
 import PrescriptionUploadBanner from '../../components/pharmacy/PrescriptionUploadBanner';
 import RequestMedicineModal from '../../components/pharmacy/RequestMedicineModal';
 import {
-  PHARMACY_CATEGORIES,
   getFeaturedMedicines,
   SAMPLE_MEDICINES
 } from '../../data/pharmacy';
@@ -96,55 +95,7 @@ export default function PharmacyPage() {
         {/* 2. PRESCRIPTION UPLOAD BANNER */}
         <PrescriptionUploadBanner />
 
-        {/* 3. POPULAR CATEGORIES */}
-        <section>
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
-                Explore Top Categories
-              </h2>
-              <p className="text-sm text-neutral-500 mt-1">
-                Browse verified pharmaceutical and health care departments
-              </p>
-            </div>
-            <Link
-              to={ROUTES.PHARMACY_CATEGORIES}
-              className="text-sm font-semibold text-primary-600 hover:text-primary-700 flex items-center gap-1 group"
-            >
-              View all ({PHARMACY_CATEGORIES.length})
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {PHARMACY_CATEGORIES.map((cat) => (
-              <Link
-                key={cat.id}
-                to={`/pharmacy/category/${cat.id}`}
-                className="group relative p-5 bg-white rounded-3xl border border-neutral-200/70 hover:border-primary-300 hover:shadow-lg transition-all duration-200 flex flex-col justify-between"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`w-12 h-12 rounded-2xl ${cat.color} flex items-center justify-center text-2xl group-hover:scale-110 transition-transform`}>
-                    {cat.icon}
-                  </div>
-                  <span className="text-xs font-semibold text-neutral-400 group-hover:text-primary-600 transition-colors">
-                    {cat.itemCount}+ items
-                  </span>
-                </div>
-                <div>
-                  <h3 className="font-bold text-neutral-900 group-hover:text-primary-600 text-sm sm:text-base transition-colors mb-1">
-                    {cat.name}
-                  </h3>
-                  <p className="text-xs text-neutral-500 line-clamp-2">
-                    {cat.description}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* 4. FEATURED MEDICINES */}
+        {/* 3. FEATURED MEDICINES */}
         <section>
           <div className="flex items-center justify-between mb-6">
             <div>
