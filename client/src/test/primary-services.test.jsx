@@ -31,7 +31,7 @@ describe('Section 2 — How Can We Help You? / Our Services Experience', () => {
     ).toBeInTheDocument();
   });
 
-  it('renders both Pharmacy and Diagnostics service cards with authentic features and imagery', () => {
+  it('renders both Pharmacy and Diagnostics service cards with authentic copy and imagery', () => {
     render(
       <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <PharmacyProvider>
@@ -44,17 +44,11 @@ describe('Section 2 — How Can We Help You? / Our Services Experience', () => {
     expect(screen.getByText(/pharmacy/i)).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: /order medicines/i })).toBeInTheDocument();
     expect(screen.getByText(/get genuine medicines from trusted brands, delivered to your doorstep\./i)).toBeInTheDocument();
-    expect(screen.getByText(/genuine products/i)).toBeInTheDocument();
-    expect(screen.getByText(/fast delivery/i)).toBeInTheDocument();
-    expect(screen.getByText(/care you can trust/i)).toBeInTheDocument();
 
     // Card 2: Diagnostics / Book Lab Tests
     expect(screen.getByText(/diagnostics/i)).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: /book lab tests/i })).toBeInTheDocument();
     expect(screen.getByText(/home-sampling & in-lab bookings at your convenience\./i)).toBeInTheDocument();
-    expect(screen.getByText(/accurate results/i)).toBeInTheDocument();
-    expect(screen.getByText(/home collection/i)).toBeInTheDocument();
-    expect(screen.getByText(/easy scheduling/i)).toBeInTheDocument();
   });
 
   it('renders interactive CTA buttons linking to pharmacy and diagnostics', () => {

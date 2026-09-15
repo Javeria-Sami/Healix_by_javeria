@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes.js';
 import { Container } from '../../components/common/Container.jsx';
-import { ShieldCheck, Truck, Heart, FlaskConical, Home as HomeIcon, Calendar, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export function PrimaryServicesSection() {
   return (
@@ -44,7 +44,7 @@ export function PrimaryServicesSection() {
           {/* ============================================================
               CARD 1: Pharmacy / Order Medicines (Green Theme)
               ============================================================ */}
-          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#DCE8E3] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px] bg-[#F4F9F6]">
+          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#DCE8E3] p-7 sm:p-9 lg:p-11 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[300px] sm:min-h-[320px] bg-[#F4F9F6]">
             {/* Background Visual Layer */}
             <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden" aria-hidden="true">
               <img
@@ -56,12 +56,11 @@ export function PrimaryServicesSection() {
             </div>
 
             {/* Card Content (Left-aligned) */}
-            <div className="relative z-10 max-w-[65%] sm:max-w-[58%] space-y-4 text-left">
-              <span className="text-[11px] font-bold tracking-[0.2em] text-[#075C49] uppercase block font-sans">
-                PHARMACY
-              </span>
-
-              <div className="space-y-1.5">
+            <div className="relative z-10 max-w-[62%] sm:max-w-[55%] flex flex-col justify-between h-full space-y-6 text-left">
+              <div className="space-y-2.5">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-[#075C49] uppercase block font-sans">
+                  PHARMACY
+                </span>
                 <h3 className="font-heading text-2xl sm:text-[28px] font-extrabold text-[#10231F] tracking-tight leading-snug">
                   Order Medicines
                 </h3>
@@ -70,41 +69,11 @@ export function PrimaryServicesSection() {
                 </p>
               </div>
 
-              {/* 3 Mini Features */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <ShieldCheck className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Genuine<br className="hidden sm:inline" /> Products
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <Truck className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Fast<br className="hidden sm:inline" /> Delivery
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#DCE8E3] text-[#075C49] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <Heart className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Care You<br className="hidden sm:inline" /> Can Trust
-                  </span>
-                </div>
-              </div>
-
               {/* Action Button */}
               <div className="pt-2">
                 <Link
                   to={ROUTES.PHARMACY}
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#075C49] hover:bg-[#054839] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 rounded-xl bg-[#075C49] hover:bg-[#054839] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] focus-visible:ring-offset-2"
                 >
                   <span>Order Medicines</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true" />
@@ -116,7 +85,7 @@ export function PrimaryServicesSection() {
           {/* ============================================================
               CARD 2: Diagnostics / Book Lab Tests (Blue Theme)
               ============================================================ */}
-          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#D8E6F2] p-6 sm:p-8 lg:p-10 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[320px] sm:min-h-[340px] bg-[#F4F8FB]">
+          <article className="group relative flex flex-col justify-between rounded-[28px] sm:rounded-[32px] border border-[#D8E6F2] p-7 sm:p-9 lg:p-11 overflow-hidden shadow-soft-xs hover:shadow-soft-sm transition-all duration-300 min-h-[300px] sm:min-h-[320px] bg-[#F4F8FB]">
             {/* Background Visual Layer */}
             <div className="absolute inset-0 w-full h-full pointer-events-none select-none overflow-hidden" aria-hidden="true">
               <img
@@ -128,12 +97,11 @@ export function PrimaryServicesSection() {
             </div>
 
             {/* Card Content (Left-aligned) */}
-            <div className="relative z-10 max-w-[65%] sm:max-w-[58%] space-y-4 text-left">
-              <span className="text-[11px] font-bold tracking-[0.2em] text-[#1A5276] uppercase block font-sans">
-                DIAGNOSTICS
-              </span>
-
-              <div className="space-y-1.5">
+            <div className="relative z-10 max-w-[62%] sm:max-w-[55%] flex flex-col justify-between h-full space-y-6 text-left">
+              <div className="space-y-2.5">
+                <span className="text-[11px] font-bold tracking-[0.2em] text-[#1A5276] uppercase block font-sans">
+                  DIAGNOSTICS
+                </span>
                 <h3 className="font-heading text-2xl sm:text-[28px] font-extrabold text-[#10231F] tracking-tight leading-snug">
                   Book Lab Tests
                 </h3>
@@ -142,41 +110,11 @@ export function PrimaryServicesSection() {
                 </p>
               </div>
 
-              {/* 3 Mini Features */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 pt-1">
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <FlaskConical className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Accurate<br className="hidden sm:inline" /> Results
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <HomeIcon className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Home<br className="hidden sm:inline" /> Collection
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-left">
-                  <div className="w-7 h-7 rounded-lg bg-white/90 border border-[#D8E6F2] text-[#1A5276] flex items-center justify-center flex-shrink-0 shadow-2xs backdrop-blur-xs">
-                    <Calendar className="w-4 h-4" aria-hidden="true" />
-                  </div>
-                  <span className="text-[11px] font-semibold text-neutral-700 leading-tight">
-                    Easy<br className="hidden sm:inline" /> Scheduling
-                  </span>
-                </div>
-              </div>
-
               {/* Action Button */}
               <div className="pt-2">
                 <Link
                   to={ROUTES.LAB_TESTS || ROUTES.SERVICES}
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-[#1A5276] hover:bg-[#133F5C] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A5276] focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 rounded-xl bg-[#1A5276] hover:bg-[#133F5C] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1A5276] focus-visible:ring-offset-2"
                 >
                   <span>Book a Lab Test</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true" />
