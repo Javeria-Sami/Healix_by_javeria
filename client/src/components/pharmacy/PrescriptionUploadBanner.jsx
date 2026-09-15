@@ -46,18 +46,18 @@ export default function PrescriptionUploadBanner({ className = '' }) {
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
           <Link
             to={ROUTES.PHARMACY_PRESCRIPTION}
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-primary-950 font-semibold text-sm sm:text-base hover:bg-neutral-100 transition-all shadow-md focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-900"
+            className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white hover:bg-neutral-50 text-[#075B43] font-bold text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-[0.98]"
           >
-            <svg className="w-5 h-5 text-primary-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+            <svg className="w-5 h-5 text-[#075B43]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
             </svg>
-            Upload Prescription
+            <span>Upload Prescription</span>
           </Link>
           <Link
             to={ROUTES.PHARMACY_MEDICINES}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-medium text-sm sm:text-base border border-white/20 backdrop-blur-sm transition-all focus:outline-none focus:ring-2 focus:ring-white"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base border border-white/25 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
-            Browse Catalog
+            <span>Browse Catalog</span>
           </Link>
         </div>
       </div>
