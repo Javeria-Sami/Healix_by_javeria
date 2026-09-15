@@ -29,6 +29,7 @@ describe('Phase 8 About Experience', () => {
     expect(headings).toHaveLength(1);
     expect(headings[0]).toHaveTextContent(/Dedicated to Proactive/i);
     expect(screen.getByText('About Healix')).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /explore clinical programs/i })).toHaveAttribute('href', '/services');
   });
 
   it('renders StorySection with paradigm shift narrative', () => {
