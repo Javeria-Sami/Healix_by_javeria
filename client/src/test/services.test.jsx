@@ -64,7 +64,7 @@ describe('Phase 9 Services Experience Tests', () => {
     it('renders single semantic H1 and left-aligned breadcrumb elements', () => {
       const headings = screen.getAllByRole('heading', { level: 1 });
       expect(headings).toHaveLength(1);
-      expect(headings[0]).toHaveTextContent(/Modern Pharmacy Care/i);
+      expect(headings[0]).toHaveTextContent(/Proactive Healthcare/i);
 
       // Verify breadcrumb
       const nav = screen.getByRole('navigation', { name: /breadcrumb/i });
@@ -75,10 +75,10 @@ describe('Phase 9 Services Experience Tests', () => {
 
     it('renders Modern Pharmacy Care primary service section with both cards', () => {
       expect(screen.getByRole('region', { name: /modern pharmacy care/i })).toBeInTheDocument();
-      expect(screen.getByRole('heading', { level: 1, name: /modern pharmacy care/i })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { level: 2, name: /modern pharmacy care/i })).toBeInTheDocument();
       expect(screen.getByRole('heading', { level: 3, name: /prescription care,\s*made simpler/i })).toBeInTheDocument();
       expect(screen.getByRole('heading', { level: 3, name: /what we offer/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /explore pharmacy services/i })).toBeInTheDocument();
+      expect(screen.getAllByRole('link', { name: /explore pharmacy services/i }).length).toBeGreaterThanOrEqual(1);
     });
 
     it('renders services FAQ', () => {

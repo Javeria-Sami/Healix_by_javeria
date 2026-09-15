@@ -41,7 +41,7 @@ describe('Healix Routing & Design System Architecture Tests', () => {
       </MemoryRouter>
     );
 
-    expect(await screen.findByRole('heading', { level: 1, name: /Modern Pharmacy Care/i }, { timeout: 4000 })).toBeInTheDocument();
+    expect(await screen.findByRole('heading', { level: 1, name: /Proactive Healthcare/i }, { timeout: 4000 })).toBeInTheDocument();
   });
 
   it('renders ServiceDetailPage successfully on dynamic slug /services/preventive-health-screenings', async () => {

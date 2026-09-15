@@ -2,6 +2,7 @@ import React from 'react';
 import { SEO } from '../components/common/SEO.jsx';
 import { generateBreadcrumbSchema } from '../utils/structuredData.js';
 import { 
+  ServicesHero,
   ModernPharmacyCare,
   ServicesFaq 
 } from '../sections/index.js';
@@ -21,10 +22,13 @@ export function ServicesPage() {
         structuredData={generateBreadcrumbSchema(breadcrumbs)}
       />
 
-      {/* 1. Modern Pharmacy Care (Integrated Left-Aligned Breadcrumb + Primary Header + 2-Card Grid) */}
+      {/* 1. Services Hero with Breadcrumb Navigation */}
+      <ServicesHero />
+
+      {/* 2. Modern Pharmacy Care (2-Card Interactive Grid & Offerings) */}
       <ModernPharmacyCare />
 
-      {/* 2. Frequently Asked Questions */}
+      {/* 3. Frequently Asked Questions */}
       <ServicesFaq />
     </div>
   );

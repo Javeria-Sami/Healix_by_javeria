@@ -85,7 +85,7 @@ describe('Phase 22 — Production Deployment & Smoke Verification Suite', () => 
       await waitFor(
         () => {
           expect(
-            screen.getByRole('heading', { level: 1, name: /modern pharmacy care/i })
+            screen.getByRole('heading', { level: 1, name: /proactive healthcare/i })
           ).toBeInTheDocument();
         },
         { timeout: 4000 }
