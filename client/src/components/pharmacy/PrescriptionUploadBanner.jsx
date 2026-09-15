@@ -9,9 +9,9 @@ export default function PrescriptionUploadBanner({ className = '' }) {
       <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 rounded-full bg-teal-500/10 blur-2xl pointer-events-none" />
       <div className="absolute bottom-0 left-1/3 -mb-20 w-80 h-80 rounded-full bg-primary-500/10 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col justify-between gap-6 sm:gap-8">
-        {/* TOP AREA: Informational Content & Trust Indicators */}
-        <div className="space-y-4 max-w-2xl text-left">
+      <div className="relative z-10 flex flex-col items-center text-center justify-between gap-6 sm:gap-8 max-w-3xl mx-auto">
+        {/* TOP AREA: Informational Content & Trust Indicators (Centered) */}
+        <div className="space-y-4 max-w-2xl mx-auto text-center flex flex-col items-center">
           {/* 1. Licensed Pharmacy Service Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-xs font-semibold text-teal-200">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
@@ -19,17 +19,17 @@ export default function PrescriptionUploadBanner({ className = '' }) {
           </div>
 
           {/* 2. Main Heading */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white font-heading">
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white font-heading">
             Have a Doctor's Prescription?
           </h3>
 
           {/* 3. Short Supporting Description */}
-          <p className="text-sm sm:text-base text-primary-100/90 leading-relaxed max-w-xl font-body">
+          <p className="text-sm sm:text-base text-primary-100/90 leading-relaxed max-w-xl mx-auto font-body">
             Upload your prescription photo or PDF. Our certified clinical pharmacists will review your order, verify dosages, and arrange fast doorstep delivery.
           </p>
 
           {/* 4. Trust/Feature Indicators */}
-          <div className="flex flex-wrap items-center gap-y-2 gap-x-5 pt-1 text-xs text-primary-200">
+          <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-5 pt-1 text-xs text-primary-200">
             <span className="flex items-center gap-1.5">
               <svg className="w-4 h-4 text-teal-300 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -51,11 +51,11 @@ export default function PrescriptionUploadBanner({ className = '' }) {
           </div>
         </div>
 
-        {/* BOTTOM AREA: Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 sm:pt-4">
+        {/* BOTTOM AREA: Action Buttons (Centered) */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2 sm:pt-4 w-full sm:w-auto">
           <Link
             to={ROUTES.PHARMACY_PRESCRIPTION}
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-bold text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-bold text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] active:scale-[0.98] w-full sm:w-auto"
           >
             <svg className="w-5 h-5 text-[#10231E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
@@ -64,7 +64,7 @@ export default function PrescriptionUploadBanner({ className = '' }) {
           </Link>
           <Link
             to={ROUTES.PHARMACY_MEDICINES}
-            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base border border-white/25 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base border border-white/25 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white w-full sm:w-auto"
           >
             <span>Browse Catalog</span>
           </Link>
