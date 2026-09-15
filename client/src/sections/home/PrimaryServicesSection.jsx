@@ -69,10 +69,10 @@ export function PrimaryServicesSection() {
             {/* Main Heading */}
             <h2
               id="primary-services-heading"
-              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-neutral-900 tracking-tight leading-[1.18]"
+              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075C49] tracking-tight leading-[1.18]"
             >
               Simple Pharmacy Care, <br />
-              <span className="font-serif italic font-normal text-[#075C49]">
+              <span className="font-serif italic font-normal text-[#8FD21F]">
                 Built Around You
               </span>
             </h2>

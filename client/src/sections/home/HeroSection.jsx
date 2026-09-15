@@ -24,7 +24,7 @@ export const HERO_SLIDES = [
     eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Reliable Medicines',
     titleAccent: 'for a Healthier You',
-    accentColor: 'text-[#075C49]',
+    accentColor: 'text-[#8FD21F]',
     description:
       'Get genuine medicines from trusted brands, delivered to your doorstep — because your health matters.',
     ctaText: 'Order Medicines Now',
@@ -57,7 +57,7 @@ export const HERO_SLIDES = [
     eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Accurate Lab Tests',
     titleAccent: 'for a Healthier Tomorrow',
-    accentColor: 'text-[#075C49]',
+    accentColor: 'text-[#8FD21F]',
     description:
       'Book lab tests from trusted labs with home sampling or visit a nearby collection center — fast, easy and reliable.',
     ctaText: 'Book a Lab Test Now',
@@ -90,7 +90,7 @@ export const HERO_SLIDES = [
     eyebrowColor: 'text-[#0C6F58]',
     titleMain: 'Healthcare,',
     titleAccent: 'Made Simpler',
-    accentColor: 'text-[#075C49]',
+    accentColor: 'text-[#8FD21F]',
     description:
       'Find medicines, book lab tests, and manage everyday healthcare needs — all in one place.',
     ctaText: 'Explore Healix',
@@ -251,7 +251,7 @@ export function HeroSection() {
                 </div>
 
                 {/* Main Headline (Single Semantic H1 on Homepage) */}
-                <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] font-extrabold text-neutral-900 leading-[1.12] tracking-tight">
+                <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-[52px] font-extrabold text-[#075C49] leading-[1.12] tracking-tight">
                   {currentSlide.titleMain} <br />
                   <span className={clsx('font-serif italic font-normal', currentSlide.accentColor)}>
                     {currentSlide.titleAccent}

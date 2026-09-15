@@ -67,9 +67,9 @@ export function WideRangeMedicinesSection() {
 
             <h2
               id="wide-range-medicines-heading"
-              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+              className="font-heading text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#075C49] tracking-tight leading-tight"
             >
-              Wide Range of Medicines
+              Wide Range of <span className="text-[#8FD21F]">Medicines</span>
             </h2>
 
             <p className="font-body text-xs sm:text-sm text-neutral-600 max-w-xl leading-relaxed">

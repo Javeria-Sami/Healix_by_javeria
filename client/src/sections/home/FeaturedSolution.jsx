@@ -104,7 +104,7 @@ export function FeaturedSolution() {
 
             <h2 id="featured-solution-heading" className="font-heading text-3xl sm:text-4xl font-extrabold text-[#075C49] leading-tight">
               The Longitudinal <br />
-              <span className="font-editorial italic font-normal text-primary">Longevity Assessment</span>
+              <span className="font-editorial italic font-normal text-[#8FD21F]">Longevity Assessment</span>
             </h2>
 
             <p className="font-body text-base text-text-secondary leading-relaxed">

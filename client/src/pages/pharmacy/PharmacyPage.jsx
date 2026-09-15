@@ -36,8 +36,8 @@ export default function PharmacyPage() {
             Verified Online Pharmacy & Health Store
           </div>
 
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-text-primary mb-6 leading-tight max-w-4xl mx-auto font-heading">
-            Your Medicines, Delivered With Care
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#075C49] mb-6 leading-tight max-w-4xl mx-auto font-heading">
+            Your Medicines, <span className="text-[#8FD21F]">Delivered With Care</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-text-secondary mb-10 max-w-2xl mx-auto leading-relaxed font-body">
@@ -101,8 +101,8 @@ export default function PharmacyPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                <h2 className="text-2xl sm:text-3xl font-bold text-neutral-900 tracking-tight">
-                  Featured Healthcare Products
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#075C49] tracking-tight">
+                  Featured <span className="text-[#8FD21F]">Healthcare Products</span>
                 </h2>
               </div>
               <p className="text-sm text-neutral-500 mt-1">

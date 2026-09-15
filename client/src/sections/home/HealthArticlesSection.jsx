@@ -52,9 +52,9 @@ export function HealthArticlesSection() {
 
           <h2
             id="health-articles-heading"
-            className="font-heading text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+            className="font-heading text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-[#075C49] tracking-tight leading-tight"
           >
-            Helpful Reads for Better Health
+            Helpful Reads for <span className="text-[#8FD21F]">Better Health</span>
           </h2>
 
           <p className="font-body text-xs sm:text-sm text-neutral-600 max-w-lg mx-auto leading-relaxed">

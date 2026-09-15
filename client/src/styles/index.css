@@ -28,7 +28,7 @@
   /* Headings Defaults */
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    color: var(--color-text-primary);
+    color: var(--healix-green, #075C49);
     letter-spacing: -0.02em;
     font-weight: var(--weight-bold);
     line-height: var(--leading-tight);

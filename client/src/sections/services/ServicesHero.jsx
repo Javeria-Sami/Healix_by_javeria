@@ -36,7 +36,7 @@ export function ServicesHero() {
 
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#075C49] tracking-tight leading-[1.15]">
             Proactive Healthcare & <br />
-            <span className="font-serif italic font-normal text-primary">
+            <span className="font-serif italic font-normal text-[#8FD21F]">
               Diagnostic Specializations
             </span>
           </h1>
