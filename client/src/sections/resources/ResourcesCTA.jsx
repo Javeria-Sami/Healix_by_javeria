@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '../../components/common/Button.jsx';
-import { ROUTES } from '../../constants/routes.js';
-import { ArrowRight, BookOpen, Stethoscope, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export function ResourcesCTA() {
   return (
@@ -20,29 +17,6 @@ export function ResourcesCTA() {
         <p className="text-[#DCE8E3] text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
           Schedule a comprehensive preventative diagnostic evaluation with our interdisciplinary medical directors.
         </p>
-
-        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link to={ROUTES.CONTACT} className="w-full sm:w-auto">
-            <Button
-              variant="primary"
-              size="lg"
-              iconTrailing={ArrowRight}
-              className="w-full sm:w-auto whitespace-nowrap hover:bg-white hover:text-[#075C49]"
-            >
-              Schedule Physician Review
-            </Button>
-          </Link>
-          <Link to={ROUTES.SERVICES} className="w-full sm:w-auto">
-            <Button
-              variant="ghost"
-              size="lg"
-              iconLeading={Stethoscope}
-              className="text-white border border-white/30 hover:bg-white/10 w-full sm:w-auto whitespace-nowrap rounded-full"
-            >
-              Explore Diagnostic Programs
-            </Button>
-          </Link>
-        </div>
       </div>
     </section>
   );
