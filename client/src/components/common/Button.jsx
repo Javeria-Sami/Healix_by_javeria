@@ -5,25 +5,25 @@ import { Loader2 } from 'lucide-react';
 
 const variantMap = {
   primary:
-    'bg-primary text-white hover:bg-primary-hover active:bg-primary-active shadow-soft-sm hover:shadow-soft-md focus-visible:ring-primary',
+    'bg-[#8FD21F] bg-primary text-[#075C49] hover:bg-[#7CB919] hover:text-[#075C49] active:bg-[#6FA816] font-bold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 focus-visible:ring-[#8FD21F] transition-all duration-200',
   secondary:
-    'bg-secondary border border-primary text-primary hover:bg-primary-soft active:bg-primary-light focus-visible:ring-primary',
+    'bg-secondary border border-[#DCE8E3] text-[#075C49] hover:bg-[#F5F8F6] active:bg-[#EAF5EF] font-bold focus-visible:ring-[#075C49]',
   accent:
-    'bg-[#8FD21F] text-[#10231F] hover:bg-[#7CB919] font-bold shadow-soft-sm focus-visible:ring-[#8FD21F]',
+    'bg-[#8FD21F] text-[#075C49] hover:bg-[#7CB919] font-bold shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 focus-visible:ring-[#8FD21F]',
   outline:
-    'border border-border bg-surface text-text-primary hover:bg-surface-muted hover:border-primary/60 focus-visible:ring-primary',
+    'border border-[#DCE8E3] bg-white text-[#075C49] hover:bg-[#F5F8F6] hover:border-[#075C49]/60 font-bold focus-visible:ring-[#075C49]',
   ghost:
-    'bg-transparent text-text-secondary hover:text-text-primary hover:bg-surface-muted focus-visible:ring-primary',
+    'bg-transparent text-[#075C49] hover:text-[#054839] hover:bg-[#F5F8F6] font-semibold focus-visible:ring-[#075C49]',
   destructive:
     'bg-status-error text-white hover:bg-red-700 active:bg-red-800 shadow-soft-sm focus-visible:ring-status-error',
   link:
-    'bg-transparent text-primary hover:text-primary-dark underline-offset-4 hover:underline p-0 h-auto font-semibold focus-visible:ring-primary',
+    'bg-transparent text-[#075C49] hover:text-[#054839] underline-offset-4 hover:underline p-0 h-auto font-semibold focus-visible:ring-[#075C49]',
 };
 
 const sizeMap = {
-  sm: 'px-3.5 py-2 text-xs rounded-healix-sm gap-1.5',
-  md: 'px-5 py-2.5 text-sm rounded-healix-md gap-2',
-  lg: 'px-7 py-3.5 text-base rounded-healix-md gap-2.5',
+  sm: 'px-4 py-2 text-xs rounded-full gap-1.5',
+  md: 'px-6 py-2.5 text-sm rounded-full gap-2',
+  lg: 'px-8 py-3.5 text-base rounded-full gap-2.5',
 };
 
 export function Button({

@@ -24,10 +24,10 @@ export function ResourcesCTA() {
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link to={ROUTES.CONTACT} className="w-full sm:w-auto">
             <Button
-              variant="secondary"
+              variant="primary"
               size="lg"
-              iconLeading={ArrowRight}
-              className="bg-white text-primary hover:bg-neutral-100 font-bold shadow-soft-md w-full sm:w-auto whitespace-nowrap"
+              iconTrailing={ArrowRight}
+              className="w-full sm:w-auto whitespace-nowrap hover:bg-white hover:text-[#075C49]"
             >
               Schedule Physician Review
             </Button>
@@ -37,7 +37,7 @@ export function ResourcesCTA() {
               variant="ghost"
               size="lg"
               iconLeading={Stethoscope}
-              className="text-white border border-white/30 hover:bg-white/10 w-full sm:w-auto whitespace-nowrap"
+              className="text-white border border-white/30 hover:bg-white/10 w-full sm:w-auto whitespace-nowrap rounded-full"
             >
               Explore Diagnostic Programs
             </Button>

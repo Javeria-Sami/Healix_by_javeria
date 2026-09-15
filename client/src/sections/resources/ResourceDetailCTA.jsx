@@ -19,17 +19,17 @@ export function ResourceDetailCTA() {
         <div className="flex flex-wrap items-center justify-center gap-3 flex-shrink-0">
           <Link
             to={ROUTES.RESOURCES}
-            className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-neutral-300 bg-white hover:bg-neutral-50 text-neutral-700 text-xs font-bold transition-colors shadow-2xs"
+            className="inline-flex items-center gap-1.5 px-5 py-3 rounded-full border border-[#DCE8E3] bg-white hover:bg-[#F5F8F6] text-[#075C49] text-xs sm:text-sm font-bold transition-colors shadow-2xs"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>All Resources</span>
           </Link>
           <Link
             to={`${ROUTES.CONTACT}?type=Clinical%20Services%20Consultation`}
-            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#075C49] hover:bg-[#054839] text-white text-xs font-bold transition-all shadow-xs hover:shadow-sm"
+            className="inline-flex items-center gap-1.5 px-6 py-3 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] text-xs sm:text-sm font-bold transition-all shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5"
           >
             <span>Schedule Clinical Review</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <ArrowRight className="w-3.5 h-3.5 text-[#10231E]" />
           </Link>
         </div>
       </div>

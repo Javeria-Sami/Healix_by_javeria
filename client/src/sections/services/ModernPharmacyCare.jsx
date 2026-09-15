@@ -128,10 +128,10 @@ export function ModernPharmacyCare() {
               <div className="pt-3">
                 <Link
                   to={ROUTES.PHARMACY}
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 rounded-full bg-[#075C49] hover:bg-[#054839] text-white font-bold text-xs sm:text-sm shadow-xs hover:shadow-md transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49] focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-extrabold text-xs sm:text-sm shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all duration-200 group/btn focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] focus-visible:ring-offset-2"
                 >
                   <span>Explore Pharmacy Services</span>
-                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1" aria-hidden="true" />
+                  <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1 text-[#10231E]" aria-hidden="true" />
                 </Link>
               </div>
             </div>

@@ -39,13 +39,13 @@ export function ProfessionalsCTA() {
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
             <Button
               to={ROUTES.CONTACT}
-              variant="secondary"
+              variant="primary"
               size="lg"
-              className="bg-white text-primary hover:bg-neutral-100 font-semibold shadow-soft-md inline-flex items-center gap-2"
+              className="hover:bg-white hover:text-[#075C49] inline-flex items-center gap-2"
             >
-              <Calendar className="w-4 h-4" />
+              <Calendar className="w-4 h-4 text-[#075C49]" />
               <span>Request Consultation</span>
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-4 h-4 text-[#075C49]" />
             </Button>
             <Button
               to={ROUTES.SERVICES}

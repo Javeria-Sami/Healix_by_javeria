@@ -46,16 +46,16 @@ export default function PrescriptionUploadBanner({ className = '' }) {
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
           <Link
             to={ROUTES.PHARMACY_PRESCRIPTION}
-            className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white hover:bg-neutral-50 text-[#075C49] font-bold text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-bold text-sm sm:text-base transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] active:scale-[0.98]"
           >
-            <svg className="w-5 h-5 text-[#075C49]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="w-5 h-5 text-[#10231E]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
             </svg>
             <span>Upload Prescription</span>
           </Link>
           <Link
             to={ROUTES.PHARMACY_MEDICINES}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base border border-white/25 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-sm sm:text-base border border-white/25 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             <span>Browse Catalog</span>
           </Link>

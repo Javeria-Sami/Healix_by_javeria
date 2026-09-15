@@ -33,19 +33,19 @@ export function FaqCTA() {
         <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link to={ROUTES.CONTACT}>
             <Button
-              variant="secondary"
+              variant="primary"
               size="lg"
-              className="bg-white text-primary hover:bg-neutral-100 font-bold shadow-soft-md w-full sm:w-auto"
+              className="hover:bg-white hover:text-[#075C49] w-full sm:w-auto"
             >
               <span>Schedule Initial Consultation</span>
-              <ArrowRight className="w-4 h-4 ml-2" />
+              <ArrowRight className="w-4 h-4 ml-2 text-[#075C49]" />
             </Button>
           </Link>
           <Link to={ROUTES.PLANS}>
             <Button
               variant="ghost"
               size="lg"
-              className="text-white border border-white/30 hover:bg-white/10 w-full sm:w-auto"
+              className="text-white border border-white/30 hover:bg-white/10 w-full sm:w-auto rounded-full"
             >
               <PhoneCall className="w-4 h-4 mr-2" />
               <span>Compare Membership Plans</span>

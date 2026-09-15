@@ -268,10 +268,10 @@ export function MobileMenu({ isOpen, onClose, triggerRef }) {
               });
               onClose();
             }}
-            className="min-h-[48px] w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-hover transition-colors shadow-soft-sm"
+            className="min-h-[48px] w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] text-sm font-extrabold transition-all shadow-soft-sm hover:shadow-soft-md"
           >
             <span>Schedule Consultation</span>
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-4 h-4 text-[#10231E]" />
           </Link>
         </div>
       </nav>

@@ -65,15 +65,16 @@ export default function PharmacyPage() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
               to={ROUTES.PHARMACY_PRESCRIPTION}
-              className="px-6 py-3.5 bg-primary hover:bg-primary-hover text-white font-bold rounded-2xl transition-all shadow-md"
+              className="inline-flex items-center gap-2.5 px-8 py-3.5 bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-extrabold rounded-full transition-all duration-200 shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 group"
             >
-              Upload Prescription
+              <span>Upload Prescription</span>
+              <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Link>
             <Link
               to={ROUTES.PHARMACY_CATEGORIES}
-              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-semibold rounded-2xl border border-border shadow-xs transition-all"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-white hover:bg-[#F5F8F6] text-[#075C49] font-bold rounded-full border border-[#DCE8E3] shadow-2xs transition-all hover:border-[#075C49]/40"
             >
-              All Categories
+              <span>All Categories</span>
             </Link>
           </div>
         </div>
