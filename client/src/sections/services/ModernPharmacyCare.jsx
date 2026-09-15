@@ -71,9 +71,9 @@ export function ModernPharmacyCare() {
             </span>
             <h1
               id="modern-pharmacy-heading"
-              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-neutral-900 tracking-tight leading-tight"
+              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075C49] tracking-tight leading-tight"
             >
-              Modern Pharmacy Care
+              Modern Pharmacy <span className="text-[#8FD21F]">Care</span>
             </h1>
             <p className="font-body text-sm sm:text-base text-[#42554E] max-w-xl leading-relaxed pt-1">
               Safe, convenient, and personalized pharmacy support to help you and your family live healthier, every day.
@@ -115,9 +115,9 @@ export function ModernPharmacyCare() {
                 <span className="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] text-neutral-600 uppercase block">
                   TRUSTED PHARMACY SUPPORT
                 </span>
-                <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[32px] font-extrabold text-neutral-900 tracking-tight leading-tight">
+                <h3 className="font-heading text-2xl sm:text-[28px] lg:text-[32px] font-extrabold text-[#075C49] tracking-tight leading-tight">
                   Prescription Care, <br />
-                  Made Simpler
+                  <span className="text-[#8FD21F]">Made Simpler</span>
                 </h3>
                 <p className="font-body text-xs sm:text-sm text-neutral-600 leading-relaxed pt-1">
                   From prescription refills to expert guidance, we make it easy to access the medicines you need with confidence and care.
@@ -149,8 +149,8 @@ export function ModernPharmacyCare() {
           <article className="lg:col-span-5 bg-white border border-[#DCE8E3] rounded-[28px] sm:rounded-[32px] p-6 sm:p-8 flex flex-col justify-between shadow-soft-xs hover:shadow-soft-sm transition-all duration-300">
             {/* Header: Title & Action Link */}
             <div className="flex items-center justify-between pb-4 border-b border-[#DCE8E3]/60">
-              <h3 className="font-heading text-xl sm:text-2xl font-bold text-neutral-900">
-                What We Offer
+              <h3 className="font-heading text-xl sm:text-2xl font-bold text-[#075C49]">
+                What We <span className="text-[#8FD21F]">Offer</span>
               </h3>
               <Link
                 to={ROUTES.PHARMACY_CATEGORIES}
