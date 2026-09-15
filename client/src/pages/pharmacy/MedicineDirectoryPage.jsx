@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
-import AlphabetFilter from '../../components/pharmacy/AlphabetFilter';
 import MedicineCard from '../../components/pharmacy/MedicineCard';
 import MedicineSearchInput from '../../components/pharmacy/MedicineSearchInput';
 import RequestMedicineModal from '../../components/pharmacy/RequestMedicineModal';
@@ -55,7 +54,7 @@ export default function MedicineDirectoryPage() {
   return (
     <div className="min-h-screen bg-neutral-50/60 pb-24">
       {/* Header & Breadcrumb */}
-      <div className="bg-white border-b border-neutral-200/80 pt-8 pb-8 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white border-b border-neutral-200/80 pt-6 pb-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <nav className="flex items-center gap-2 text-xs text-neutral-500 mb-4" aria-label="Breadcrumb">
             <Link to={ROUTES.HOME} className="hover:text-primary-600 transition-colors">Home</Link>
@@ -65,41 +64,13 @@ export default function MedicineDirectoryPage() {
             <span className="text-neutral-900 font-semibold" aria-current="page">Medicines Directory</span>
           </nav>
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
-              <h1 className="text-2xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight">
-                Browse Medicines A–Z
-              </h1>
-              <p className="text-sm text-neutral-500 mt-1.5 max-w-xl">
-                Comprehensive directory of verified pharmaceuticals, generic alternatives, and healthcare products.
-              </p>
-            </div>
-            <div className="w-full md:w-80">
-              <MedicineSearchInput placeholder="Search within catalog..." showRecent={false} />
-            </div>
+          <div className="max-w-2xl">
+            <MedicineSearchInput placeholder="Search medicines by name, generic name, or condition..." showRecent={false} />
           </div>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
-        {/* A to Z Filter Bar */}
-        <div className="bg-white p-4 rounded-3xl border border-neutral-200/80 shadow-sm mb-8">
-          <div className="flex items-center justify-between gap-4 mb-3 px-1">
-            <span className="text-xs font-bold text-neutral-500 uppercase tracking-wider">
-              Alphabetical Filter
-            </span>
-            {selectedLetter && (
-              <button
-                type="button"
-                onClick={() => handleSelectLetter('')}
-                className="text-xs font-semibold text-primary-600 hover:text-primary-800 transition-colors"
-              >
-                Clear Letter Filter ({selectedLetter})
-              </button>
-            )}
-          </div>
-          <AlphabetFilter selectedLetter={selectedLetter} onSelectLetter={handleSelectLetter} />
-        </div>
 
         {/* Results Controls & Filters */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
