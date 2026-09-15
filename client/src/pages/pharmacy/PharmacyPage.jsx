@@ -65,20 +65,14 @@ export default function PharmacyPage() {
           {/* Quick Action CTAs */}
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Link
-              to={ROUTES.PHARMACY_MEDICINES}
-              className="px-6 py-3.5 bg-primary hover:bg-primary-hover text-white font-bold rounded-2xl transition-all shadow-md"
-            >
-              Shop Medicines A–Z
-            </Link>
-            <Link
               to={ROUTES.PHARMACY_PRESCRIPTION}
-              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-semibold rounded-2xl border border-border shadow-xs transition-all"
+              className="px-6 py-3.5 bg-primary hover:bg-primary-hover text-white font-bold rounded-2xl transition-all shadow-md"
             >
               Upload Prescription
             </Link>
             <Link
               to={ROUTES.PHARMACY_CATEGORIES}
-              className="px-6 py-3.5 bg-surface hover:bg-surface-muted text-text-secondary hover:text-text-primary font-medium rounded-2xl border border-border transition-all"
+              className="px-6 py-3.5 bg-white hover:bg-neutral-50 text-text-primary font-semibold rounded-2xl border border-border shadow-xs transition-all"
             >
               All Categories
             </Link>
