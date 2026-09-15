@@ -176,8 +176,10 @@ describe('Phase 22 — Production Deployment & Smoke Verification Suite', () => 
         { timeout: 4000 }
       );
 
-      const robotsMeta = document.querySelector('meta[name="robots"]');
-      expect(robotsMeta.getAttribute('content')).toBe('noindex, nofollow');
+      await waitFor(() => {
+        const robotsMeta = document.querySelector('meta[name="robots"]');
+        expect(robotsMeta?.getAttribute('content')).toBe('noindex, nofollow');
+      });
     });
   });
 

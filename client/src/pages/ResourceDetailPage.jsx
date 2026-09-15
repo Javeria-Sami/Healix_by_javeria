@@ -8,9 +8,6 @@ import { EmptyState } from '../components/common/EmptyState.jsx';
 import {
   ResourceDetailHero,
   ResourceContentBody,
-  ResourceConnectedAuthor,
-  ResourceConnectedServices,
-  RelatedResources,
   ResourceDetailCTA,
 } from '../sections/index.js';
 import { SEO } from '../components/common/SEO.jsx';
@@ -99,27 +96,11 @@ export function ResourceDetailPage() {
       {/* 1. Article Hero & Header Visual */}
       <ResourceDetailHero article={article} />
 
-      <PageContainer className="py-12 md:py-16 space-y-16">
-        {/* 2. Main Article Content & Embedded Disclaimer */}
+      <PageContainer className="py-12 md:py-16 space-y-12">
+        {/* 2. Main Article Content */}
         <ResourceContentBody article={article} />
 
-        {/* 3. Author Profile Connection */}
-        <ResourceConnectedAuthor
-          authorSlug={article.authorSlug}
-          authorName={article.author}
-          authorRole={article.authorRole}
-        />
-
-        {/* 4. Connected Clinical Services */}
-        <ResourceConnectedServices serviceSlugs={article.serviceSlugs} />
-
-        {/* 5. Related Articles */}
-        <RelatedResources
-          currentArticleId={article.id}
-          relatedArticleIds={article.relatedArticleIds}
-        />
-
-        {/* 6. Contextual Conversion CTA */}
+        {/* 3. Contextual Conversion CTA */}
         <ResourceDetailCTA />
       </PageContainer>
     </div>

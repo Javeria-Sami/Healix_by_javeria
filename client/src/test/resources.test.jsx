@@ -133,8 +133,6 @@ describe('Resources & Blog Experience Tests (Phase 13)', () => {
       expect(await screen.findByRole('heading', { level: 1, name: /Beyond Standard Cholesterol/i })).toBeInTheDocument();
       expect(screen.getByText(/Key Clinical Takeaways/i)).toBeInTheDocument();
       expect(screen.getByText(/The Limitations of Standard Fasting Lipid Panels/i)).toBeInTheDocument();
-      expect(screen.getByText(/Article Author & Clinical Lead/i)).toBeInTheDocument();
-      expect(screen.getByText(/Related Diagnostic Services & Programs/i)).toBeInTheDocument();
       expect(screen.getByRole('heading', { name: /Have Questions on These Clinical Markers\?/i })).toBeInTheDocument();
     });
 

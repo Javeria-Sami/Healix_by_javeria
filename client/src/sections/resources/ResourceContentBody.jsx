@@ -1,5 +1,4 @@
 import React from 'react';
-import { ResourcesDisclaimer } from './ResourcesDisclaimer.jsx';
 import { CheckCircle2, Sparkles } from 'lucide-react';
 
 export function ResourceContentBody({ article }) {
@@ -44,24 +43,6 @@ export function ResourceContentBody({ article }) {
           <p>{article.content || article.summary}</p>
         </div>
       )}
-
-      {/* 3. Tags */}
-      {article.tags && article.tags.length > 0 && (
-        <div className="pt-6 border-t border-neutral-100 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-bold text-neutral-400 mr-1 uppercase tracking-wider">Topics:</span>
-          {article.tags.map((tag, idx) => (
-            <span
-              key={idx}
-              className="text-xs bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full font-medium"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
-      )}
-
-      {/* 4. Embedded Healthcare Disclaimer */}
-      <ResourcesDisclaimer />
     </article>
   );
 }
