@@ -44,11 +44,11 @@ export function PrimaryServicesSection() {
     <section
       id="primary-services"
       aria-label="Pharmacy Services"
-      className="py-14 sm:py-18 lg:py-22 bg-[#F4F8F5] border-b border-[#DCE8E3]/60 transition-colors relative overflow-hidden"
+      className="py-14 sm:py-18 lg:py-22 bg-[#F4F8F5] border-b border-[#DCEBE4]/60 transition-colors relative overflow-hidden"
     >
       {/* Subtle ambient lighting */}
       <div 
-        className="absolute top-0 right-1/4 w-96 h-96 bg-[#075C49]/5 rounded-full blur-3xl pointer-events-none -z-10" 
+        className="absolute top-0 right-1/4 w-96 h-96 bg-[#075B43]/5 rounded-full blur-3xl pointer-events-none -z-10" 
         aria-hidden="true" 
       />
 
@@ -59,9 +59,9 @@ export function PrimaryServicesSection() {
               ============================================================ */}
           <div className="lg:col-span-5 space-y-6 text-left">
             {/* Small Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#DCE8E3] shadow-2xs">
-              <span className="w-2 h-2 rounded-full bg-[#8FD21F]" aria-hidden="true" />
-              <span className="text-[11px] font-bold tracking-[0.2em] text-[#075C49] uppercase">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#DCEBE4] shadow-2xs">
+              <span className="w-2 h-2 rounded-full bg-[#98CF2D]" aria-hidden="true" />
+              <span className="text-[11px] font-bold tracking-[0.2em] text-[#075B43] uppercase">
                 PHARMACY SERVICES
               </span>
             </div>
@@ -69,10 +69,10 @@ export function PrimaryServicesSection() {
             {/* Main Heading */}
             <h2
               id="primary-services-heading"
-              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-[#075C49] tracking-tight leading-[1.18]"
+              className="font-heading text-3xl sm:text-4xl lg:text-[42px] font-extrabold text-neutral-900 tracking-tight leading-[1.18]"
             >
               Simple Pharmacy Care, <br />
-              <span className="font-serif italic font-normal text-[#8FD21F]">
+              <span className="font-serif italic font-normal text-[#075B43]">
                 Built Around You
               </span>
             </h2>
@@ -86,10 +86,10 @@ export function PrimaryServicesSection() {
             <div className="pt-2">
               <Link
                 to={ROUTES.PHARMACY}
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#8FD21F] hover:bg-[#7CB919] text-[#10231E] font-extrabold text-sm sm:text-base shadow-soft-sm hover:shadow-soft-md hover:-translate-y-0.5 transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8FD21F] focus-visible:ring-offset-2 min-h-[44px]"
+                className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#075B43] hover:bg-[#064C38] text-white font-bold text-sm shadow-xs hover:shadow-md transition-all duration-200 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075B43] focus-visible:ring-offset-2 min-h-[44px]"
               >
                 <span>Explore Pharmacy</span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1 text-[#10231E]" aria-hidden="true" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
               </Link>
             </div>
           </div>
@@ -104,21 +104,21 @@ export function PrimaryServicesSection() {
                 <Link
                   key={service.number}
                   to={service.link}
-                  className="group relative flex flex-col justify-between p-6 sm:p-7 bg-white rounded-2xl border border-[#DCE8E3] hover:border-[#B7D9CA] hover:shadow-soft-sm transition-all duration-200 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075C49]"
+                  className="group relative flex flex-col justify-between p-6 sm:p-7 bg-white rounded-2xl border border-[#DCEBE4] hover:border-[#B7D9CA] hover:shadow-soft-sm transition-all duration-200 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075B43]"
                 >
                   <div>
                     {/* Card Top: Number & Icon */}
                     <div className="flex items-center justify-between mb-4">
-                      <div className="w-10 h-10 rounded-xl bg-[#F5F8F6] text-[#075C49] flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
+                      <div className="w-10 h-10 rounded-xl bg-[#EAF4EF] text-[#075B43] flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
                         <Icon className="w-5 h-5 stroke-[1.75]" aria-hidden="true" />
                       </div>
-                      <span className="text-xs font-bold font-mono text-[#075C49]/60 tracking-wider">
+                      <span className="text-xs font-bold font-mono text-[#075B43]/60 tracking-wider">
                         {service.number}
                       </span>
                     </div>
 
                     {/* Service Title */}
-                    <h3 className="font-heading text-base sm:text-lg font-bold text-neutral-900 group-hover:text-[#075C49] transition-colors leading-snug mb-1.5">
+                    <h3 className="font-heading text-base sm:text-lg font-bold text-neutral-900 group-hover:text-[#075B43] transition-colors leading-snug mb-1.5">
                       {service.title}
                     </h3>
 
@@ -129,7 +129,7 @@ export function PrimaryServicesSection() {
                   </div>
 
                   {/* Subtle Action Link Footer */}
-                  <div className="pt-4 mt-2 flex items-center gap-1 text-xs font-bold text-[#075C49] opacity-80 group-hover:opacity-100 transition-opacity">
+                  <div className="pt-4 mt-2 flex items-center gap-1 text-xs font-bold text-[#075B43] opacity-80 group-hover:opacity-100 transition-opacity">
                     <span>{service.actionLabel}</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true" />
                   </div>
