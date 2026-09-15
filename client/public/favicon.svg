@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="10" fill="#075B43"/>
+  <!-- Top Head Dot -->
+  <circle cx="24" cy="12" r="3.5" fill="#98CF2D"/>
+  <!-- X Figure Wings / Limbs -->
+  <!-- Top Left Wing -->
+  <polygon points="17,17 22,17 24,20 21,22" fill="#FFFFFF"/>
+  <!-- Top Right Wing -->
+  <polygon points="31,17 26,17 24,20 27,22" fill="#FFFFFF"/>
+  <!-- Bottom Left Leg -->
+  <polygon points="17,31 22,31 25,26 21,24" fill="#FFFFFF"/>
+  <!-- Bottom Right Leg (Lime) -->
+  <polygon points="31,31 26,31 23,26 27,24" fill="#98CF2D"/>
+  <!-- Center Cross Overlap -->
+  <rect x="22" y="19" width="4" height="10" fill="#075B43"/>
+  <rect x="19" y="22" width="10" height="4" fill="#075B43"/>
+</svg>

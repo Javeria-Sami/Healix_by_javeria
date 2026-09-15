@@ -1,0 +1,26 @@
+# Healix Healthcare Robots.txt
+# User-Agent rules for web search crawlers and bots
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /services/*
+Allow: /professionals
+Allow: /professionals/*
+Allow: /plans
+Allow: /portfolio
+Allow: /portfolio/*
+Allow: /resources
+Allow: /resources/*
+Allow: /faq
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+
+# Disallow internal development/design showcase
+Disallow: /design-system
+
+# XML Sitemap declaration
+Sitemap: https://healix.health/sitemap.xml
