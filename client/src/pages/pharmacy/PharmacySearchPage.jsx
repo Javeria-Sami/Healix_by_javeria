@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
+import { FileText, ArrowRight } from 'lucide-react';
 import { ROUTES } from '../../constants/routes';
 import MedicineSearchInput from '../../components/pharmacy/MedicineSearchInput';
 import MedicineCard from '../../components/pharmacy/MedicineCard';
@@ -198,18 +199,25 @@ export default function PharmacySearchPage() {
               </div>
             </div>
 
-            {/* Need Help Box */}
-            <div className="bg-primary-950 text-white p-5 rounded-3xl space-y-3">
-              <span className="text-xl">🩺</span>
-              <h3 className="font-bold text-sm text-white">Can't find what you need?</h3>
-              <p className="text-xs text-primary-200 leading-relaxed">
-                Upload your doctor's prescription or request an unlisted medicine directly.
-              </p>
+            {/* Need Help / Prescription Card */}
+            <div className="bg-[#F1F8F4] border border-[#DCEBE4] p-5 sm:p-6 rounded-[24px] space-y-3.5 shadow-soft-xs text-left relative overflow-hidden">
+              <div className="w-10 h-10 rounded-xl bg-[#EAF5EF] text-[#075B43] flex items-center justify-center shadow-2xs">
+                <FileText className="w-5 h-5 stroke-[2]" aria-hidden="true" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="font-heading text-sm sm:text-base font-bold text-neutral-900">
+                  Can't find what you need?
+                </h3>
+                <p className="font-body text-xs sm:text-[13px] text-[#42554E] leading-relaxed">
+                  Upload your doctor's prescription or request an unlisted medicine directly.
+                </p>
+              </div>
               <Link
                 to={ROUTES.PHARMACY_PRESCRIPTION}
-                className="inline-block w-full py-2 bg-primary-600 hover:bg-primary-500 text-white rounded-xl text-center text-xs font-bold transition-colors"
+                className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#075B43] hover:bg-[#064C38] text-white rounded-xl text-xs sm:text-sm font-bold transition-all shadow-xs hover:shadow-sm group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#075B43]"
               >
-                Upload Prescription →
+                <span>Upload Prescription</span>
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" aria-hidden="true" />
               </Link>
             </div>
           </div>
